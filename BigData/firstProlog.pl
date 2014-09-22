@@ -51,7 +51,8 @@ quicksort([X|L],L1):-partitionner(X,L,L2,L3),
 						
 
 
-
+/* intall & test weka
+	echec 8 dames*/
 
 
 
