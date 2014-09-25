@@ -49,6 +49,12 @@ quicksort([X|L],L1):-partitionner(X,L,L2,L3),
 						quicksort(L3,L6),
 						concate(L4,[X|L6],L1).
 						
+<<<<<<< HEAD
+
+
+/* intall & test weka
+	echec 8 dames*/
+=======
 /* NQueens */
 solution([]).
 solution([reine(X,Y)|Rs]):-
@@ -77,6 +83,7 @@ trouver(X) :-
 	
 /* dans l'interpreteur saisir : trouver(X).*/
 
+>>>>>>> d1293550622baca16a53ad19691dd275b5696a9b
 
 
 
