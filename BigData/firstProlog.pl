@@ -49,13 +49,12 @@ quicksort([X|L],L1):-partitionner(X,L,L2,L3),
 						quicksort(L3,L6),
 						concate(L4,[X|L6],L1).
 						
-<<<<<<< HEAD
 
 
 /* intall & test weka
-	echec 8 dames*/
-=======
-/* NQueens */
+	echec 8 dames
+	
+	 NQueens */
 solution([]).
 solution([reine(X,Y)|Rs]):-
 	solution(Rs),
@@ -81,10 +80,14 @@ soluce([reine(1,_),reine(2,_),reine(3,_),reine(4,_),reine(5,_),reine(6,_),reine(
 trouver(X) :-
 	soluce(X),solution(X).
 	
-/* dans l'interpreteur saisir : trouver(X).*/
+/* dans l'interpreteur saisir : trouver(X).
 
->>>>>>> d1293550622baca16a53ad19691dd275b5696a9b
+Reverse list */
+renverse([],[]).
+renverse([X|L],L1):-renverse(L,L2),concate(L2,[X],L1).
 
+/*
+ renverse([a,e,2,O],A).
 
-
+*/
 
