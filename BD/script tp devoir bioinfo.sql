@@ -390,7 +390,7 @@ CREATE OR REPLACE PROCEDURE ajout_piece(
 	ACCEPT myTitre PROMPT 'Entrer le titre de la pièce : ';
 	ACCEPT myType PROMPT 'Entrer le type de la pièce : ';
 	ACCEPT myIdTheatre PROMPT 'Entrer le numero du theatre de la pièce : ';
-	ACCEPT myIdAuteur PROMPT 'Entrer le numero de l\'auteur de la pièce : ';
+	ACCEPT myIdAuteur PROMPT 'Entrer le numero de l''auteur de la pièce : ';
 		
 	BEGIN
 		ajout_piece(&myId,'&myTitre','&myType',&myIdTheatre,&myIdAuteur);
@@ -508,7 +508,6 @@ Lors de l’affichage du nombre des autres acteurs qui jouent dans la pièce s�
 
 	SET SERVEROUTPUT ON;
 	
-	
 	CREATE OR REPLACE PROCEDURE acteurTravaux(myIdActeur Auteurs.idAuteur%TYPE) IS
 		
 	CURSOR piecesJouee IS 
@@ -526,6 +525,7 @@ Lors de l’affichage du nombre des autres acteurs qui jouent dans la pièce s�
 	
 	BEGIN
 		SELECT idActeur INTO excep_idActeur FROM Acteurs WHERE idActeur = myIdActeur;
+		SELECT nomActeur, prenomActeur INTO myNomActeur, myPrenomActeur FROM Acteurs WHERE idActeur = myIdActeur;
 		
 		SELECT nomTheatre INTO myNomTheatre FROM Theatres t
 		INNER JOIN Acteurs a ON t.idTheatre=a.idTheatre
@@ -537,7 +537,7 @@ Lors de l’affichage du nombre des autres acteurs qui jouent dans la pièce s�
 		FOR unePiece IN piecesJouee LOOP
 			SELECT COUNT(idActeur) INTO nbActeursPiece FROM Joue1 WHERE idPiece=unePiece.idPiece;
 			dbms_output.put_line('	'||unePiece.titre||' écrite par '||unePiece.nomAuteur||'.');
-			dbms_output.put_line('Il y a '||nbActeursPiece||' qui participent à cette pièces et ils travaillent au théatre '||myNomTheatre||'.');
+			dbms_output.put_line('Il y a '||nbActeursPiece||' acteurs qui participent à cette pièces et ils travaillent au théatre '||myNomTheatre||'.');
 		END LOOP;
 		
 		EXCEPTION
@@ -549,7 +549,6 @@ Lors de l’affichage du nombre des autres acteurs qui jouent dans la pièce s�
 	show errors 
 
 	SET SERVEROUTPUT ON;
-	CREATE OR REPLACE PROCEDURE acteurTravauxPrompt IS
 	
 	ACCEPT myIdActeur PROMPT 'Entrer le numero de l''Acteur : ';
 	

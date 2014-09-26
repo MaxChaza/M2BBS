@@ -547,11 +547,25 @@ end;
 --Q3
 
 CREATE OR REPLACE PROCEDURE ADD_MATCH(dateMatch Match.dateM%TYPE, locaux Match.ideqloc%TYPE, visiteur Match.ideqvis%TYPE, compet Match.idcomp%TYPE) IS
-	CURSOR joueurEqu IS SELECT * FROM Joueur WHERE (idEq = visiteur OR idEq = locaux) AND est='o';
+	CURSOR joueurEqu IS SELECT * FROM Joueur WHERE (idEq = visiteur OR idEq = locaux) AND estvalide='o';
 	id Match.idMatch%TYPE;	
 BEGIN
 	SELECT COUNT(idMatch)+1 INTO id FROM Match;
 	
+	INSERT INTO Match (idMatch, dateM, ideqloc, ideqvis, idcomp) VALUES (id, dateMatch, locaux, visiteur, compet);
+	
+	FOR joueurEqu_ligne IN joueurEqu LOOP
+		INSERT INTO Joue (idMatch, idJoueur) VALUES (id, joueurEqu_ligne.idJoueur);
+	END LOOP;
+END;
+/
+show errors
+
+--Q3bis
+
+CREATE OR REPLACE PROCEDURE ADD_MATCH(id Match.idMatch%TYPE, dateMatch Match.dateM%TYPE, locaux Match.ideqloc%TYPE, visiteur Match.ideqvis%TYPE, compet Match.idcomp%TYPE) IS
+	CURSOR joueurEqu IS SELECT * FROM Joueur WHERE (idEq = visiteur OR idEq = locaux) AND estvalide='o';
+BEGIN
 	INSERT INTO Match (idMatch, dateM, ideqloc, ideqvis, idcomp) VALUES (id, dateMatch, locaux, visiteur, compet);
 	
 	FOR joueurEqu_ligne IN joueurEqu LOOP
@@ -562,23 +576,97 @@ END;
 show errors
 
 --Q4
-
-CREATE OR REPLACE PROCEDURE ADD_MATCH(dateMatch Match.dateM%TYPE, locaux Match.ideqloc%TYPE, visiteur Match.ideqvis%TYPE, compet Match.idcomp%TYPE) IS
-	CURSOR joueurEqu IS SELECT idjoueur FROM Joueur WHERE idEq = visiteur OR idEq = locaux;
-	id Match.idMatch%TYPE;	
+ 
+CREATE OR REPLACE PROCEDURE ADD_MATCH(id Match.idMatch%TYPE, dateMatch Match.dateM%TYPE, locaux Match.ideqloc%TYPE, visiteur Match.ideqvis%TYPE, compet Match.idcomp%TYPE) IS
+	CURSOR joueurEqu IS SELECT * FROM Joueur WHERE (idEq = visiteur OR idEq = locaux) AND estvalide='o';
+	vcomp match.idComp%TYPE;
+	vloc match.ideqloc%TYPE;
+	vvis match.idEqVis%TYPE;
+	i int;
 BEGIN
-	SELECT COUNT(idMatch)+1 INTO id FROM Match;
-	
+	i:=1; select ideq into vloc from  Equipe WHERE ideq=locaux;
+	i:=2; select ideq into vvis from  Equipe WHERE ideq=visiteur;
+	i:=3; select idComp into vcomp from  TypeComp WHERE idComp=compet;
 	INSERT INTO Match (idMatch, dateM, ideqloc, ideqvis, idcomp) VALUES (id, dateMatch, locaux, visiteur, compet);
 	
 	FOR joueurEqu_ligne IN joueurEqu LOOP
 		INSERT INTO Joue (idMatch, idJoueur) VALUES (id, joueurEqu_ligne.idJoueur);
 	END LOOP;
 EXCEPTION
-	
+	WHEN NO_DATA_FOUND THEN
+	  IF i = 1 THEN bms_output.put_line('l"equipe locale est inconnue');
+	  END IF;
+	  if i = 2 then bms_output.put_line('l"equipe visiteuse est inconnue');
+	  END IF;
+	  if i = 3 then bms_output.put_line('la compétition  est inconnue');
+	  END IF;
 END;
 /
 show errors
 
 SET serveroutput on;
-execute ADD_MATCH('01/02/2009',1,2,'cf');
+execute ADD_MATCH_EXCEPTION(1,'01/02/2009',1,2,'cf');
+
+
+--Q5
+
+CREATE OR REPLACE PROCEDURE NomJ(nomEq Equipe.club%TYPE ) IS
+	CURSOR joueurEqu IS SELECT nomJoueur,FROM Joueur j INNER JOIN Equipe e ON j.idEq = e.idEq WHERE club = nomEq;
+BEGIN
+	dbms_output.put_line('les joueurs appartenant au club '|| nomEq ||' sont : ');
+	FOR joueurEqu_ligne IN joueurEqu LOOP
+		dbms_output.put_line(joueurEqu_ligne.nomJoueur);
+	END LOOP;	
+END;
+/
+show errors
+
+SET serveroutput on;
+execute NomJ('Stade toulousain');
+
+--Q6
+
+CREATE OR REPLACE PROCEDURE NomJM(nomEq Equipe.club%TYPE ) IS
+	CURSOR joueurEqu IS SELECT idJoueur, nomJoueur FROM Joueur j INNER JOIN Equipe e ON j.idEq = e.idEq WHERE club = nomEq;
+	vnbre_m Number;	
+BEGIN
+	dbms_output.put_line('les joueurs appartenant au club '|| nomEq ||' sont : ');
+	FOR joueurEqu_ligne IN joueurEqu LOOP
+	    select count(*) into vnbre_m
+	    from Joue
+	    where idjoueur=joueurEqu_ligne.idJoueur;
+	
+	    dbms_output.put_line(joueurEqu_ligne.nomJoueur||' '|| vnbre_m );
+	END LOOP;	
+END;
+/
+show errors
+
+SET serveroutput on;
+execute NomJM('Stade toulousain');
+
+--Q7
+
+CREATE OR REPLACE PROCEDURE NomJMJ(nomEq Equipe.club%TYPE ) IS
+	CURSOR joueurEqu IS SELECT idJoueur, nomJoueur FROM Joueur j INNER JOIN Equipe e ON j.idEq = e.idEq WHERE club = nomEq;
+	CURSOR matchJoueur(idJ Joueur.idJoueur%TYPE) IS SELECT idEqLoc,idEqVis,score1,score2 FROM Match m INNER JOIN Joue j ON m.idMatch=j.idMatch WHERE idJoueur = idJ;
+	eqLoc Equipe.club%TYPE;
+	eqVis Equipe.club%TYPE;
+BEGIN
+	dbms_output.put_line('les joueurs appartenant au club '|| nomEq ||' sont : ');
+	FOR joueurEqu_ligne IN joueurEqu LOOP
+	    dbms_output.put_line(joueurEqu_ligne.nomJoueur);
+	    
+	    FOR matchJoueur_ligne IN matchJoueur(joueurEqu_ligne.idJoueur) LOOP
+	      SELECT club INTO eqLoc FROM Equipe WHERE idEq=matchJoueur_ligne.idEqLoc;
+	      SELECT club INTO eqVis FROM Equipe WHERE idEq=matchJoueur_ligne.idEqVis;
+	      dbms_output.put_line(eqLoc||' '||matchJoueur_ligne.score1||' - '||matchJoueur_ligne.score2||' '||eqVis);
+	    
+	    END LOOP;
+	END LOOP;	
+END;
+/
+show errors
+
+SET serveroutput on;
+execute NomJMJ('Stade toulousain');
