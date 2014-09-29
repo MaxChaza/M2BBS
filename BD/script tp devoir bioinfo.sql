@@ -390,7 +390,7 @@ CREATE OR REPLACE PROCEDURE ajout_piece(
 	ACCEPT myTitre PROMPT 'Entrer le titre de la pièce : ';
 	ACCEPT myType PROMPT 'Entrer le type de la pièce : ';
 	ACCEPT myIdTheatre PROMPT 'Entrer le numero du theatre de la pièce : ';
-	ACCEPT myIdAuteur PROMPT 'Entrer le numero de l\'auteur de la pièce : ';
+	ACCEPT myIdAuteur PROMPT 'Entrer le numero de l''auteur de la pièce : ';
 		
 	BEGIN
 		ajout_piece(&myId,'&myTitre','&myType',&myIdTheatre,&myIdAuteur);
@@ -520,6 +520,9 @@ Lors de l’affichage du nombre des autres acteurs qui jouent dans la pièce s�
 	myNomActeur Acteurs.nomActeur%TYPE; 
 	myPrenomActeur Acteurs.prenomActeur%TYPE; 
 	nbActeursPiece NUMBER;
+	monNomActeur Acteurs.nomActeur%TYPE; 
+	monPrenomActeur Acteurs.prenomActeur%TYPE; 
+	monNomTheatre Theatres.nomTheatre%TYPE;
 	myNomTheatre Theatres.nomTheatre%TYPE;
 	
 	excep_idActeur Acteurs.idActeur%TYPE;
@@ -527,21 +530,40 @@ Lors de l’affichage du nombre des autres acteurs qui jouent dans la pièce s�
 	BEGIN
 		SELECT idActeur INTO excep_idActeur FROM Acteurs WHERE idActeur = myIdActeur;
 		
-		SELECT nomTheatre INTO myNomTheatre FROM Theatres t
-		INNER JOIN Acteurs a ON t.idTheatre=a.idTheatre
-		WHERE idActeur=myIdActeur;
+		SELECT nomActeur, prenomActeur, nomTheatre into myNomActeur, myPrenomActeur, myNomTheatre FROM Acteurs a
+		INNER JOIN Theatres t ON t.idTheatre=a.idTheatre
+		WHERE idActeur = myIdActeur;
 		
-		dbms_output.put_line('Cet acteur s''appelle '||myPrenomActeur||' '||myNomActeur||'.');
+		dbms_output.put_line('---------------------------------------------');
+		dbms_output.put_line('---------------------------------------------');
+		dbms_output.put_line('Cet acteur s''appelle '||myPrenomActeur||' '||myNomActeur||'. Il travail au théatre '||myNomTheatre||'.');
+		dbms_output.put_line('---------------------------------------------');
 		dbms_output.put_line('Il à joué dans les pièces suivantes : ');
-		
+			
 		FOR unePiece IN piecesJouee LOOP
-			SELECT COUNT(idActeur) INTO nbActeursPiece FROM Joue1 WHERE idPiece=unePiece.idPiece;
-			dbms_output.put_line('	'||unePiece.titre||' écrite par '||unePiece.nomAuteur||'.');
-			dbms_output.put_line('Il y a '||nbActeursPiece||' qui participent à cette pièces et ils travaillent au théatre '||myNomTheatre||'.');
+			dbms_output.put_line('---- '||unePiece.titre||' écrite par '||unePiece.nomAuteur||'.');
+			SELECT COUNT(idActeur)-1 INTO nbActeursPiece FROM Joue1 
+			WHERE idPiece=unePiece.idPiece;
+			IF nbActeursPiece=0 THEN
+				dbms_output.put_line('---- Il n''y a pas autres acteurs qui participent à cette pièce.');
+			ELSE
+				dbms_output.put_line('---- Il y a '||nbActeursPiece||' autres acteurs qui participent à cette pièce.');
+				dbms_output.put_line('---- Les autres acteurs sont : ');
+					
+				FOR unActeur IN (SELECT idActeur FROM Joue1 WHERE idPiece = unePiece.idPiece AND IDActeur!=myIdActeur) LOOP
+					SELECT nomActeur, prenomActeur, nomTheatre into monNomActeur, monPrenomActeur, monNomTheatre FROM Acteurs a
+					INNER JOIN Theatres t ON t.idTheatre=a.idTheatre
+					WHERE idActeur = unActeur.idActeur;
+					
+					dbms_output.put_line('-------- '||monPrenomActeur||' '||monNomActeur||' du théatre '||monNomTheatre||'.');
+				END LOOP;
+			END IF;
+			dbms_output.put_line('---------------------------------------------');		
 		END LOOP;
+		dbms_output.put_line('---------------------------------------------');		
+				
 		
 		EXCEPTION
-		
 			WHEN no_data_found THEN
 				dbms_output.put_line('Identifiant d''acteur inconnue.');
 	END;
@@ -549,8 +571,7 @@ Lors de l’affichage du nombre des autres acteurs qui jouent dans la pièce s�
 	show errors 
 
 	SET SERVEROUTPUT ON;
-	CREATE OR REPLACE PROCEDURE acteurTravauxPrompt IS
-	
+
 	ACCEPT myIdActeur PROMPT 'Entrer le numero de l''Acteur : ';
 	
 	BEGIN
