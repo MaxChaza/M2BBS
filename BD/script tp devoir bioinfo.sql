@@ -508,7 +508,6 @@ Lors de l’affichage du nombre des autres acteurs qui jouent dans la pièce s�
 
 	SET SERVEROUTPUT ON;
 	
-	
 	CREATE OR REPLACE PROCEDURE acteurTravaux(myIdActeur Auteurs.idAuteur%TYPE) IS
 		
 	CURSOR piecesJouee IS 
@@ -529,6 +528,7 @@ Lors de l’affichage du nombre des autres acteurs qui jouent dans la pièce s�
 	
 	BEGIN
 		SELECT idActeur INTO excep_idActeur FROM Acteurs WHERE idActeur = myIdActeur;
+		SELECT nomActeur, prenomActeur INTO myNomActeur, myPrenomActeur FROM Acteurs WHERE idActeur = myIdActeur;
 		
 		SELECT nomActeur, prenomActeur, nomTheatre into myNomActeur, myPrenomActeur, myNomTheatre FROM Acteurs a
 		INNER JOIN Theatres t ON t.idTheatre=a.idTheatre
@@ -559,6 +559,7 @@ Lors de l’affichage du nombre des autres acteurs qui jouent dans la pièce s�
 				END LOOP;
 			END IF;
 			dbms_output.put_line('---------------------------------------------');		
+
 		END LOOP;
 		dbms_output.put_line('---------------------------------------------');		
 				
@@ -571,7 +572,6 @@ Lors de l’affichage du nombre des autres acteurs qui jouent dans la pièce s�
 	show errors 
 
 	SET SERVEROUTPUT ON;
-
 	ACCEPT myIdActeur PROMPT 'Entrer le numero de l''Acteur : ';
 	
 	BEGIN
