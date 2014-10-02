@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ 
+    <string name="participant">Nom du participant :</string>
+    
+    <string name="serie">Serie :</string>
+    
+    <string name="app_name">prism3</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="presentation">Plateforme d\'évaluation d\'une sélection d\'objet dans un environnement 3D</string>
+    
+    <string name="radioBoutonAleatoire">Aléatoire</string>
+    <string name="radioBoutonRange">Rangé</string>
+    
+    <string name="nbDivisions">Choisissez le nombre de divisions par axe :</string>
+    <string name="nbDivisionsChoisi">1 division.</string>
+    
+    <string name="nbSpheres">Choisissez le nombre de sphères :</string>
+    <string name="nbChoisi">1 sphère.</string>
+
+    <string name="tailleSpheres">Choisissez la taille des spheres :</string>
+    <string name="tailleChoisie">0.2</string>
+    
+    <string name="typeSelection">Choisissez le type de sélection :</string>
+    <string name="radioDichotomie">Dichotomie</string>
+    <string name="radioCirculation">Circulation</string>
+    <string name="radioScroll">Scroll</string>
+   
+    
+    <string name="choiceTopViewText">Souhaitez vous une vue par dessus?</string>
+    <string name="checkTopView">Oui</string>
+    
+    <string name="valider">Valider</string>
+    
+    <string name="dialog_title">Merci</string>
+    <string name="dialog_message">Vous avez terminé ce test.</string>
+    
+</resources>

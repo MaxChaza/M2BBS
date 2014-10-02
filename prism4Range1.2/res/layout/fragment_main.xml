@@ -1,0 +1,348 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tailleView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFFFF"
+        tools:context="com.example.prism3.MainActivity$PlaceholderFragment" >
+
+        <TextView
+            android:id="@+id/presentationAppli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FF9ACAB7"
+            android:gravity="center"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:text="@string/presentation"
+            android:textColor="#FFFFFFFF"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_height="2dip"
+            android:background="#FFFFFFFF" />
+
+        <!-- Number of divisions -->
+
+        <TableRow
+            android:background="#FF5C6361"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin" >
+
+            <TextView
+                android:id="@+id/nombreDivisions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nbDivisions"
+                android:textColor="#FFFFFFFF"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:background="#FFFFFFFF"
+            android:gravity="center"
+            android:paddingTop="@dimen/activity_vertical_margin" >
+
+            <SeekBar
+                android:id="@+id/seekBarNbDivisions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:progress="1"
+                android:progressDrawable="@drawable/jaune_scrubber_progress_horizontal_holo_light"
+                android:thumb="@drawable/jaune_scrubber_control_selector_holo_light" />
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin" >
+
+            <TextView
+                android:id="@+id/textViewNbDivisions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nbDivisionsChoisi"
+                android:textColor="#FF5C6361"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <!-- Number of spheres -->
+
+        <TableRow
+            android:background="#FF5C6361"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin" >
+
+            <TextView
+                android:id="@+id/nombreSpheres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nbSpheres"
+                android:textColor="#FFFFFFFF"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:background="#FFFFFFFF"
+            android:gravity="center"
+            android:paddingTop="@dimen/activity_vertical_margin" >
+
+            <SeekBar
+                android:id="@+id/seekBarNbSpheres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:progress="1"
+                android:progressDrawable="@drawable/jaune_scrubber_progress_horizontal_holo_light"
+                android:thumb="@drawable/jaune_scrubber_control_selector_holo_light" />
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin" >
+
+            <TextView
+                android:id="@+id/textViewNbSpheres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nbChoisi"
+                android:textColor="#FF5C6361"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <!-- Size of spheres -->
+
+        <TableRow
+            android:background="#FF5C6361"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin" >
+
+            <TextView
+                android:id="@+id/tailleSpheres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tailleSpheres"
+                android:textColor="#FFFFFFFF"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:background="#FFFFFFFF"
+            android:gravity="center"
+            android:paddingTop="@dimen/activity_vertical_margin" >
+
+            <SeekBar
+                android:id="@+id/seekBarTailleSpheres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:progress="1"
+                android:progressDrawable="@drawable/jaune_scrubber_progress_horizontal_holo_light"
+                android:thumb="@drawable/jaune_scrubber_control_selector_holo_light" />
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin" >
+
+            <TextView
+                android:id="@+id/textViewTailleSpheres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tailleChoisie"
+                android:textColor="#FF5C6361"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <!-- Kind of selection -->
+
+        <TableRow
+            android:background="#FF5C6361"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin" >
+
+            <TextView
+                android:id="@+id/typeSelection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/typeSelection"
+                android:textColor="#FFFFFFFF"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:background="#FFFFFFFF"
+            android:gravity="center"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin" >
+
+            <RadioGroup
+                android:id="@+id/radioSelection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radioDichotomie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/jaune_btn_radio_holo_light"
+                    android:checked="true"
+                    android:text="@string/radioDichotomie"
+                    android:textColor="#FF5C6361" />
+
+                <RadioButton
+                    android:id="@+id/radioCirculation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/jaune_btn_radio_holo_light"
+                    android:text="@string/radioCirculation"
+                    android:textColor="#FF5C6361" />
+
+                <RadioButton
+                    android:id="@+id/radioScroll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/jaune_btn_radio_holo_light"
+                    android:text="@string/radioScroll"
+                    android:textColor="#FF5C6361" />
+            </RadioGroup>
+        </TableRow>
+
+        <!-- Top view or not top view?? -->
+
+        <TableRow
+            android:background="#FF5C6361"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin" >
+
+            <TextView
+                android:id="@+id/choiceTopViewTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/choiceTopViewText"
+                android:textColor="#FFFFFFFF"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:background="#FFFFFFFF"
+            android:gravity="center"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin" >
+
+            <CheckBox
+                android:id="@+id/choiceTopViewCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:gravity="center|center_vertical"
+                android:orientation="horizontal"
+                android:text="@string/checkTopView"
+                android:textColor="#FF5C6361" />
+
+        </TableRow>
+
+        <!-- Saisie du nom du participant -->
+
+        <TableRow
+            android:background="#FF5C6361"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin" >
+
+            <TextView
+                android:id="@+id/participant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/participant"
+                android:textColor="#FFFFFFFF"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/champParticipant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawable="@drawable/apptheme_edit_text_holo_light"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#FFFFFFFF" >
+            </EditText>
+        </TableRow>
+
+        <View
+            android:layout_height="2dip"
+            android:background="#FFFFFFFF" />
+
+        <!-- Saisie de la serie -->
+
+        <TableRow
+            android:background="#FF5C6361"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin" >
+
+            <TextView
+                android:id="@+id/serie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/serie"
+                android:textColor="#FFFFFFFF"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/champSerie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawable="@drawable/apptheme_edit_text_holo_light"
+                android:ems="10"
+                android:inputType="text"
+                android:textColor="#FFFFFFFF" >
+            </EditText>
+        </TableRow>
+
+        <!-- Validation button -->
+
+        <TableRow android:gravity="center" >
+
+            <Button
+                android:id="@+id/buttonValider"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_default_holo_light"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/valider"
+                android:textColor="#FFFFFFFF" />
+        </TableRow>
+    </TableLayout>
+
+</ScrollView>
