@@ -1,0 +1,26 @@
+\beginnet{procon}
+
+\place{P_2}{\name{ready_to_send}\capacity{1}\init{0}}
+\place{P_3}{\name{ready_to_produce}\capacity{1}\init{1}}
+\place{P_4}{\name{ready_to_consume}\capacity{1}\init{0}}
+\place{P_5}{\name{ready_to_receive}\capacity{1}\init{1}}
+\place{P_6}{\name{buffer}\capacity{1}\init{0}}
+
+\transition{T_2}{\name{produce}}
+\transition{T_3}{\name{send}}
+\transition{T_4}{\name{consume}}
+\transition{T_5}{\name{receive}}
+
+\arc{A_0}{\from{P_3} \to{T_2} \weight{1} \type{ordinary}}
+\arc{A_1}{\from{T_2} \to{P_2} \weight{1} \type{ordinary}}
+\arc{A_2}{\from{P_2} \to{T_3} \weight{1} \type{ordinary}}
+\arc{A_3}{\from{T_3} \to{P_3} \weight{1} \type{ordinary}}
+\arc{A_4}{\from{T_3} \to{P_6} \weight{1} \type{ordinary}}
+\arc{A_5}{\from{P_4} \to{T_4} \weight{1} \type{ordinary}}
+\arc{A_6}{\from{T_4} \to{P_5} \weight{1} \type{ordinary}}
+\arc{A_7}{\from{P_6} \to{T_5} \weight{1} \type{ordinary}}
+\arc{A_8}{\from{P_5} \to{T_5} \weight{1} \type{ordinary}}
+\arc{A_9}{\from{T_5} \to{P_4} \weight{1} \type{ordinary}}
+
+
+\endnet

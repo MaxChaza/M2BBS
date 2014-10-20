@@ -1,0 +1,63 @@
+\beginnet{travel}
+
+\place{P_0}{\name{next_vacation}\capacity{1}\init{1}}
+\place{P_1}{\name{accommodation_open}\capacity{1}\init{0}}
+\place{P_2}{\name{transport_means_open}\capacity{1}\init{0}}
+\place{P_3}{\name{luggage_open}\capacity{1}\init{0}}
+\place{P_4}{\name{hotel}\capacity{1}\init{0}}
+\place{P_5}{\name{train}\capacity{1}\init{0}}
+\place{P_6}{\name{car}\capacity{1}\init{0}}
+\place{P_7}{\name{luggage}\capacity{1}\init{0}}
+\place{P_8}{\name{accommodation}\capacity{1}\init{0}}
+\place{P_9}{\name{transport_means}\capacity{1}\init{0}}
+\place{P_10}{\name{ready}\capacity{1}\init{0}}
+\place{P_11}{\name{phone}\capacity{1}\init{1}}
+
+\transition{T_0}{\name{T_0}}
+\transition{T_1}{\name{T_1}}
+\transition{T_2}{\name{T_2}}
+\transition{T_3}{\name{T_3}}
+\transition{T_4}{\name{T_4}}
+\transition{T_5}{\name{T_5}}
+\transition{T_6}{\name{T_6}}
+\transition{T_7}{\name{T_7}}
+\transition{T_8}{\name{T_8}}
+\transition{T_9}{\name{T_9}}
+\transition{T_10}{\name{T_10}}
+\transition{T_11}{\name{T_11}}
+
+\arc{A_0}{\from{P_0} \to{T_0} \weight{1} \type{ordinary}}
+\arc{A_1}{\from{T_0} \to{P_1} \weight{1} \type{ordinary}}
+\arc{A_2}{\from{T_0} \to{P_2} \weight{1} \type{ordinary}}
+\arc{A_3}{\from{T_0} \to{P_3} \weight{1} \type{ordinary}}
+\arc{A_4}{\from{P_1} \to{T_1} \weight{1} \type{ordinary}}
+\arc{A_5}{\from{T_1} \to{P_8} \weight{1} \type{ordinary}}
+\arc{A_6}{\from{P_1} \to{T_2} \weight{1} \type{ordinary}}
+\arc{A_7}{\from{T_2} \to{P_4} \weight{1} \type{ordinary}}
+\arc{A_8}{\from{P_2} \to{T_3} \weight{1} \type{ordinary}}
+\arc{A_9}{\from{T_3} \to{P_5} \weight{1} \type{ordinary}}
+\arc{A_10}{\from{P_2} \to{T_4} \weight{1} \type{ordinary}}
+\arc{A_11}{\from{T_4} \to{P_6} \weight{1} \type{ordinary}}
+\arc{A_12}{\from{P_2} \to{T_5} \weight{1} \type{ordinary}}
+\arc{A_13}{\from{T_5} \to{P_9} \weight{1} \type{ordinary}}
+\arc{A_14}{\from{P_3} \to{T_6} \weight{1} \type{ordinary}}
+\arc{A_15}{\from{T_6} \to{P_7} \weight{1} \type{ordinary}}
+\arc{A_16}{\from{P_8} \to{T_7} \weight{1} \type{ordinary}}
+\arc{A_17}{\from{P_9} \to{T_7} \weight{1} \type{ordinary}}
+\arc{A_18}{\from{P_7} \to{T_7} \weight{1} \type{ordinary}}
+\arc{A_19}{\from{T_7} \to{P_10} \weight{1} \type{ordinary}}
+\arc{A_20}{\from{P_10} \to{T_8} \weight{1} \type{ordinary}}
+\arc{A_21}{\from{T_8} \to{P_0} \weight{1} \type{ordinary}}
+\arc{A_22}{\from{P_11} \to{T_9} \weight{1} \type{ordinary}}
+\arc{A_23}{\from{P_4} \to{T_9} \weight{1} \type{ordinary}}
+\arc{A_24}{\from{T_9} \to{P_11} \weight{1} \type{ordinary}}
+\arc{A_25}{\from{T_9} \to{P_8} \weight{1} \type{ordinary}}
+\arc{A_26}{\from{P_11} \to{T_10} \weight{1} \type{ordinary}}
+\arc{A_27}{\from{P_5} \to{T_10} \weight{1} \type{ordinary}}
+\arc{A_28}{\from{T_10} \to{P_11} \weight{1} \type{ordinary}}
+\arc{A_29}{\from{T_10} \to{P_9} \weight{1} \type{ordinary}}
+\arc{A_30}{\from{P_6} \to{T_11} \weight{1} \type{ordinary}}
+\arc{A_31}{\from{T_11} \to{P_9} \weight{1} \type{ordinary}}
+
+
+\endnet

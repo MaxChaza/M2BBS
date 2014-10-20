@@ -1,0 +1,171 @@
+Session started : 20/10/14 16:56
+ Charlie (v2.0-b194-r229) - 
+
+Analyzer has finished: Structural Analyzer
+starts analysis with following options:
+charlie.analyzer.structural.StructuralOptionSet
+input places:
+no input places
+output places:
+no output places
+input transitions:
+no input transitions
+output transitions:
+	|6.Deg_BCA	:1,
+	|7.Deg_BcCcAc	:1,
+	|9.Deg_Olg	:1
+
+number of places: 8
+number of transitions: 10
+number of arcs: 30
+
+Structural coupled conflict sets: 
+
+1	|0.Stress_Im__Stress_Dm	:1,
+	|4.Im_BcCcAc__Im_BCA	:1,
+	|7.Deg_BcCcAc	:1
+2	|1.Dm_Olg__Im_Olg	:1,
+	|2.TF__BCA_Olg	:1,
+	|3.Dm_BCAF__Dm_BcCcAc_TF	:1,
+	|5.DmBCA_BcCcAc	:1,
+	|6.Deg_BCA	:1,
+	|8.BCA_TF__BCAF	:1,
+	|9.Deg_Olg	:1
+ 
+Structural equal conflict sets: 
+
+1	|0.Stress_Im__Stress_Dm	:1
+2	|4.Im_BcCcAc__Im_BCA	:1
+3	|7.Deg_BcCcAc	:1
+4	|1.Dm_Olg__Im_Olg	:1
+5	|2.TF__BCA_Olg	:1
+6	|3.Dm_BCAF__Dm_BcCcAc_TF	:1
+7	|5.DmBCA_BcCcAc	:1
+8	|6.Deg_BCA	:1
+9	|8.BCA_TF__BCAF	:1
+10	|9.Deg_Olg	:1
+ 
+time:  0 m 0 s
+
+
+Structural Analysis Results:
+  PUR   ORD   HOM   NBM   CSV   SCF   FT0   TF0   FP0   PF0   CON   SC    NC  
+   N     Y     Y     Y     N     N     Y     N     Y     Y     Y     N    nES 
+ RKTH   STP   CPI   CTI  SCTI    SB   k-B   1-B   DCF   DSt   DTr   LIV   REV 
+   -     -     -     -     -     -     -     N     -     -     -     -     -  
+  SSI   RNK  SCCS  SECS 
+   -     -      2    10 
+
+Analyzer has finished: InvariantAnalyzer
+Analyzer: InvariantAnalyzer
+start time: 20/10/14 16:56
+starts analysis with following options:
+Invariant Options:
+compute: T-Invariants
+delete Trivial Invariants: no
+check coverage: yes
+check extended coverage: no
+enable MCSC: no
+Invariant Analyzer: computing T-Invariants
+check coverage:
+net is NOT covered by T-Invariants	|5.DmBCA_BcCcAc	:1
+minimal semipositive transition invariants:
+4
+time: 00:00:00:013
+
+
+AppliedResults output:
+
+
+Applying rule:
+!CTI => !REV
+
+
+Applying rule:
+!CTI => !SCTI
+
+  PUR   ORD   HOM   NBM   CSV   SCF   FT0   TF0   FP0   PF0   CON   SC    NC  
+   -     -     -     -     -     -     -     -     -     -     -     -     -  
+ RKTH   STP   CPI   CTI  SCTI    SB   k-B   1-B   DCF   DSt   DTr   LIV   REV 
+   -     -     -     -     N     -     -     -     -     -     -     -     N  
+  SSI   RNK  SCCS  SECS 
+   -     -     -     -  
+
+
+Analyzer has finished: InvariantAnalyzer
+Analyzer: InvariantAnalyzer
+start time: 20/10/14 16:57
+starts analysis with following options:
+Invariant Options:
+compute: P-Invariants
+delete Trivial Invariants: no
+check coverage: yes
+check extended coverage: no
+enable MCSC: no
+Invariant Analyzer: computing P-Invariants
+check coverage:
+net is NOT covered by P-Invariants (CPI) because of:
+	|1.im	:1,
+	|3.BcCcAc	:1,
+	|5.BCA	:1,
+	|6.dm	:1,
+	|7.olg	:1
+minimal semipositive place invariants: 
+2
+time: 00:00:00:014
+
+
+
+Analyzer has finished: InvariantAnalyzer
+Analyzer: InvariantAnalyzer
+start time: 20/10/14 16:58
+starts analysis with following options:
+Invariant Options:
+compute: P-Invariants
+delete Trivial Invariants: no
+check coverage: yes
+check extended coverage: no
+enable MCSC: no
+exportFile: /home/guest/Documents/M2BBS/SystemsBiology/firstPetri_P.inv
+Invariant Analyzer: computing P-Invariants
+check coverage:
+net is NOT covered by P-Invariants (CPI) because of:
+	|1.im	:1,
+	|3.BcCcAc	:1,
+	|5.BCA	:1,
+	|6.dm	:1,
+	|7.olg	:1
+minimal semipositive place invariants: 
+2
+time: 00:00:00:008
+
+
+Analyzer has finished: InvariantAnalyzer
+Analyzer: InvariantAnalyzer
+start time: 20/10/14 16:59
+starts analysis with following options:
+Invariant Options:
+compute: T-Invariants
+delete Trivial Invariants: no
+check coverage: yes
+check extended coverage: no
+enable MCSC: no
+exportFile: /home/guest/Documents/M2BBS/SystemsBiology/firstPetri_T.inv
+Invariant Analyzer: computing T-Invariants
+check coverage:
+net is NOT covered by T-Invariants	|5.DmBCA_BcCcAc	:1
+minimal semipositive transition invariants:
+4
+time: 00:00:00:019
+
+
+---------------FINAL RESULTS----------------------
+
+  PUR   ORD   HOM   NBM   CSV   SCF   FT0   TF0   FP0   PF0   CON   SC    NC  
+   N     Y     Y     Y     N     N     Y     N     Y     Y     Y     N    nES 
+ RKTH   STP   CPI   CTI  SCTI    SB   k-B   1-B   DCF   DSt   DTr   LIV   REV 
+   -     -     N     N     N     -     -     N     -     -     -     -     N  
+  SSI   RNK  SCCS  SECS 
+   -     -      2    10 
+--------------------------------------------------
+Session finsihed : 20/10/14 17:09

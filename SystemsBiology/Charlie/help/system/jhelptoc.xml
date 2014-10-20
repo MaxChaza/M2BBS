@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
+
+<!DOCTYPE toc
+  PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp TOC Version 1.0//EN" "http://java.sun.com/products/javahelp/toc_1_0.dtd">
+<toc version="1.0">
+   <tocitem target="d5e1" text="Charlie Help">
+      <tocitem target="index" text="Charlie Help"/>
+      <tocitem target="menu" text="Menu">
+         <tocitem target="menu.File" text="File">
+            <tocitem target="menu.File.Open" text="Open"/>
+            <tocitem target="menu.File.Reload" text="Reload"/>
+            <tocitem target="menu.File.LoadSaveSession" text="Load/Save Session"/>
+            <tocitem target="menu.File.RecentFiles" text="Recent Files"/>
+         </tocitem>
+         <tocitem target="menu.Show" text="Show">
+            <tocitem target="menu.Show.ShowInSnoopy" text="Show in Snoopy"/>
+            <tocitem target="menu.Show.DebugPN" text="Debug Petri Net"/>
+         </tocitem>
+         <tocitem target="menu.Preferences" text="Preferences">
+            <tocitem target="menu.Preferences.AlwaysApplyRules" text="Always Apply Rules"/>
+         </tocitem>
+         <tocitem target="menu.Help" text="Help"/>
+      </tocitem>
+      <tocitem target="toolbar" text="Toolbar">
+         <tocitem target="toolbar.Open" text="Open"/>
+         <tocitem target="toolbar.Reload" text="Reload"/>
+         <tocitem target="toolbar.Protocol" text="Protocol"/>
+         <tocitem target="toolbar.FastAccess" text="Fast access combo box"/>
+      </tocitem>
+      <tocitem target="analyzer" text="Analyzers">
+         <tocitem target="analyzer.MarkingEditor" text="Marking Editor"/>
+         <tocitem target="analyzer.ImBasedAnalysis" text="IM Based Analysis">
+            <tocitem target="analyzer.ImBasedAnalysis.RankTheorem" text="Rank Theorem"/>
+            <tocitem target="analyzer.ImBasedAnalysis.CheckStrurualBoundedness" text="Check Strurual Boundedness"/>
+            <tocitem target="analyzer.ImBasedAnalysis.PInvariants" text="P-Invariants"/>
+            <tocitem target="analyzer.ImBasedAnalysis.TInvariants" text="T-Invariants"/>
+            <tocitem target="analyzer.ImBasedAnalysis.DependentSets" text="Dependent Sets"/>
+         </tocitem>
+         <tocitem target="analyzer.SiphonTrapComputation" text="Siphon/Trap Computation">
+            <tocitem target="analyzer.SiphonTrapComputation.Siphon" text="Siphon"/>
+            <tocitem target="analyzer.SiphonTrapComputation.Trap" text="Trap"/>
+            <tocitem target="analyzer.SiphonTrapComputation.Options" text="Options"/>
+            <tocitem target="analyzer.SiphonTrapComputation.PlaceSetAnalyzer" text="Place Set Analyzer"/>
+         </tocitem>
+         <tocitem target="analyzer.ReachabilityGraph" text="Reachability Graph"/>
+         <tocitem target="analyzer.ModelChecking" text="Model Checking"/>
+         <tocitem target="analyzer.PathSearch" text="Path Search"/>
+         <tocitem target="analyzer.NetProperties" text="Net Properties"/>
+      </tocitem>
+      <tocitem target="abbrevation" text="Abbrevations">
+         <tocitem target="abbrevation.PUR" text="PUR = pure"/>
+         <tocitem target="abbrevation.ORD" text="ORD = ordinary"/>
+         <tocitem target="abbrevation.HOM" text="HOM = homogeneous"/>
+         <tocitem target="abbrevation.NBM" text="NBM = non-blocking multiplicity"/>
+         <tocitem target="abbrevation.CSV" text="CSV = conservative"/>
+         <tocitem target="abbrevation.SCF" text="SCF = structurally conflict free"/>
+         <tocitem target="abbrevation.FT0" text="FT0 = every transition has a pre-place"/>
+         <tocitem target="abbrevation.TF0" text="FT0 = every transition has a post-place"/>
+         <tocitem target="abbrevation.FP0" text="FP0 = every transition has a pre-transition"/>
+         <tocitem target="abbrevation.PF0" text="FP0 = every transition has a post-transition"/>
+         <tocitem target="abbrevation.CON" text="CON = connected"/>
+         <tocitem target="abbrevation.SC" text="SC = stronglyl connected"/>
+         <tocitem target="abbrevation.NC" text="NC = netclass">
+            <tocitem target="abbrevation.NC.SM" text="State-Machine"/>
+            <tocitem target="abbrevation.NC.MG" text="Marked Graph"/>
+            <tocitem target="abbrevation.NC.FC" text="Free Choice"/>
+            <tocitem target="abbrevation.NC.EFC" text="Extended Free Choice"/>
+            <tocitem target="abbrevation.NC.ES" text="Extended Simple"/>
+         </tocitem>
+         <tocitem target="abbrevation.RKTH" text="RKTH = rank theorem"/>
+         <tocitem target="abbrevation.STP" text="STP = siphon-trap property (aka: deadlock-trap property)"/>
+         <tocitem target="abbrevation.CPI" text="CPI = covered by p-invariants"/>
+         <tocitem target="abbrevation.CTI" text="CTI = covered by t-invariants"/>
+         <tocitem target="abbrevation.SCTI" text="SCTI = strongly covered by t-invariants"/>
+         <tocitem target="abbrevation.SB" text="SB = structurally bound"/>
+         <tocitem target="abbrevation.kB" text="k-B = k-bound"/>
+         <tocitem target="abbrevation.DCF" text="DCF = dynamically conflict free"/>
+         <tocitem target="abbrevation.DSt" text="DSt = no dead states"/>
+         <tocitem target="abbrevation.DTr" text="DTr = no dead transitions"/>
+         <tocitem target="abbrevation.LIV" text="LIV = live"/>
+         <tocitem target="abbrevation.REV" text="REV = reversible"/>
+      </tocitem>
+   </tocitem>
+</toc>

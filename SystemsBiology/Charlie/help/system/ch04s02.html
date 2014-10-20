@@ -1,0 +1,81 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>IM Based Analysis</title><meta name="generator" content="DocBook XSL Stylesheets V1.76.1-RC2"><link rel="home" href="index.html" title="Charlie Help"><link rel="up" href="ch04.html" title="Chapter&nbsp;4.&nbsp;Analyzers"><link rel="prev" href="ch04.html" title="Chapter&nbsp;4.&nbsp;Analyzers"><link rel="next" href="ch04s03.html" title="Siphon/Trap Computation"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="sect1" title="IM Based Analysis"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="analyzer.ImBasedAnalysis"></a>IM Based Analysis</h2></div></div></div>
+			
+			<p>
+				In this dialog one can setup analyzers that are based on the incidence matrix of the loaded Petri net.
+				The different analyzers are
+				</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+						<p>rank theorem: to start the analysis if the rank theorem holds</p>
+					</li><li class="listitem">
+						<p>check structural boundedness: to start the analysis if the Petri net is structurally bounded</p>
+					</li><li class="listitem">
+						<p>p-invariants: to start the analysis of p-invariants; there are several options that can be setup</p>
+					</li><li class="listitem">
+						<p>t-invariants: to start the analysis of t-invariants; there are several options that can be setup</p>
+					</li></ul></div><p>
+			</p>
+				
+			<div class="sect2" title="Rank Theorem"><div class="titlepage"><div><div><h3 class="title"><a name="analyzer.ImBasedAnalysis.RankTheorem"></a>Rank Theorem</h3></div></div></div>
+				
+				<p>
+					The rank theorem is a theorem from that one can make conslusions about the liveness behavior of a Petri net.
+					The property in this context is that the rank-theorem-property holds if
+					 the rank of the incidence matrix is equal to the cardinal number of set of structuraly conflicts,
+					 i.e., if 
+					
+						<span class="mathphrase">rank(IM) = |SCCS| - 1</span>
+					
+					holds.
+				</p>
+				<p>
+					The rules that can be applied can be looked up in the rule set help.
+				</p>
+			</div>
+			<div class="sect2" title="Check Strurual Boundedness"><div class="titlepage"><div><div><h3 class="title"><a name="analyzer.ImBasedAnalysis.CheckStrurualBoundedness"></a>Check Strurual Boundedness</h3></div></div></div>
+				
+				<p>
+					If a Petri net has the structural boundedness property it is bounded with any marking.
+					The property is validated by solving a linear programming problem using the simplex algorithm.
+				</p>
+				<p>
+					The rules that can be applied can be looked up in the rule set help.
+				</p>
+			</div>
+			<div class="sect2" title="P-Invariants"><div class="titlepage"><div><div><h3 class="title"><a name="analyzer.ImBasedAnalysis.PInvariants"></a>P-Invariants</h3></div></div></div>
+				
+				<p>
+					Laxly speaking a P-invariant of a Petri net is a set of places where the sum of the tokens on the places is always equal.
+					Formally, a P-invariant is a vector <span class="mathphrase">p</span> so that
+					<span class="mathphrase">p C = 0</span>, where <span class="mathphrase">C</span>
+					is the incidence matrix.
+				</p>
+				<p>
+					There are several options for the calculation of invariants.
+					</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">delete trivial invariants: removes all trivial invariants from the list, i.e., only those invariants are listed that are not trivial</li><li class="listitem">check coverage: an invariant covers the Petri net if the vector <span class="mathphrase">p</span> is positive.</li><li class="listitem">check strong coverage: an invariant strongly covers the Petri net if "TODO"</li><li class="listitem">export invariants to file: with this option one can set a file to that the calculated invariants are written; this file can be imported by snoopy</li></ul></div><p>
+				</p>
+			</div>
+			<div class="sect2" title="T-Invariants"><div class="titlepage"><div><div><h3 class="title"><a name="analyzer.ImBasedAnalysis.TInvariants"></a>T-Invariants</h3></div></div></div>
+				
+				<p>
+					Laxly speaking a T-invariant of a Petri net is a set of transitions that, when they are fired, do not change the marking of the Petri net.
+					Formally, a T-invariant is a vector <span class="mathphrase">t</span> so that
+					<span class="mathphrase">C t = 0</span>, where <span class="mathphrase">C</span>
+					is the incidence matrix.
+				</p>
+				<p>
+					There are several options for the calculation of invariants.
+					</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">delete trivial invariants: removes all trivial invariants from the list, i.e., only those invariants are listed that are not trivial</li><li class="listitem">check coverage: an invariant covers the Petri net if the vector <span class="mathphrase">t</span> is positive.</li><li class="listitem">check strong coverage: an invariant strongly covers the Petri net if "TODO"</li><li class="listitem">export invariants to file: with this option one can set a file to that the calculated invariants are written; this file can be imported by snoopy</li></ul></div><p>
+				</p>
+			</div>
+			<div class="sect2" title="Dependent Sets"><div class="titlepage"><div><div><h3 class="title"><a name="analyzer.ImBasedAnalysis.DependentSets"></a>Dependent Sets</h3></div></div></div>
+				
+				<p>
+					By enabling the checkbox "dependent sets" once can also calculate the dependent set when an invariant is computed.
+					By default only the abstract depended sets are computed.
+					Further calculations can be set by opening the options menu for dependent sets.
+					
+					</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">strong dependent sets: calculates the strongly dependent sets of the invariant</li><li class="listitem">export sds to file: enable this checkbox in order to export the strong dependent sets to a file; a file chooser will be opened</li><li class="listitem">abstract dependent sets: calculates the abstract dependent sets of the invariant</li><li class="listitem">export ads to file: enable this checkbox in order to export the abstract dependent sets to a file; a file chooser will be opened</li><li class="listitem">connected ADS: calculates the connected abstract dependent sets of the invariant</li><li class="listitem">export cads to file: enable this checkbox in order to export the connected abstract dependent sets to a file; a file chooser will be opened</li></ul></div><p>
+				</p>
+			</div>
+		</div></body></html>
