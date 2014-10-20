@@ -1,0 +1,82 @@
+Charlie command line interface.
+
+Start the commandline interface with :
+Windows:		 tCharlie.bat
+Unix/Mac:		 sh ./tCharlie.sh
+or in general:	java -cp charlie.jar charlie.Charlie 
+
+This help can be displayed by passing /? or --help as parameter, then no 
+analysis are started even if correct parameters are passed! So these 
+strings should not be used in any passed parameter if a analysis 
+is to be started!
+
+The values must be wrapped in brackets ( )!
+If any path or value contains brackets the parameters will not be recognized
+correctly. So those characters are not allowed inside parameter values!
+Incorrect options are not recognized and therefore ignored!
+
+the first option is always the net file which is to be analyzed
+--netfile(path/filename.file)	
+	provide a path to the net file.
+
+--outputfile(path/filename.txt)	
+	provide a path where the screen output is stored.
+
+--sequential(0)	/ --sequential(1)	
+	choose if the analyses should be started parallel (value=0)
+	or in sequence (value=1) then only one analysis is active at a time.
+	The treadmanager uses Runtime.availableProcessors() to determine the
+	maximial number of parallel threads. The memory consumption of 
+	single threads may be very large, so in this case the parallel 
+	analyses may fail.
+	The initial value is 1, so sequential analyses are standard.
+	If an analyse needs the result of a former analyse then it is per-
+	formed after the result is computed, no matter what value 
+	sequential is set to.
+--analyze(name)
+	This starts the sequence of options for a analysis, as name choose 
+	the result object which is to be computed e.g. rg, traps, props 
+	(for structural properties), deadlocks ...
+	See all possible value in the special optionset help.
+								
+Only these four options and the --help parameter use the leading 
+hyphens! At the moment they should not be used as path or file 
+names or values, in this case the options would not be recognized 
+correctly.
+								
+Each option parameter must match the following pattern 
+	name ( value )
+The name is defined by the option set of the analyzer e.g. backEdges.
+The names of the options are case sensitive! 
+So 		backedges(0) 		will be incorrect.
+Then a equal sign separates name and value.
+The value may be a string or a integer or what the optionset requires. 
+(see special optionset help)
+The semikolon at the end must be provided to recognize the parameter 
+correctly!
+
+Pattern for a option set:
+ --analyze(Name_of_the_analyzed_object) OptionName(VALUE) ...
+RGAnalyzer
+--analyze(rg) backEdges(1)
+TrapAnalyzer
+--analyze(traps)
+etc.
+
+A full parameter set would look like:
+java -cp charlie.jar charlie.Charlie --netfile(examples\travel.apnn)_
+--sequential(1) --outputfile(log.txt --analyze(props) --analyze(rg)_
+backEdges(1) --analyze(mc) -formulaFile(travel1.ctl) -mode(CTL)
+
+(the underscore means the line continues !)
+The order of the options for a single analyzer is not relevant, but 
+the program only recognizes options as options for a analyzer 
+which are between two
+			--analyze(A) .... --analyzer(B) 
+statements.
+Each analysis can be performed several times with different options, 
+so:
+	--analyze(A) ...options ... --analyze(A) ... different_options... 
+is also possible.
+
+Special help for each option set:

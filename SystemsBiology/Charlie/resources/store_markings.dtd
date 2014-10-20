@@ -1,0 +1,12 @@
+<!ELEMENT markingset (marking)*>
+<!ATTLIST markingset
+	netfile	CDATA 	#REQUIRED>
+<!ELEMENT marking (place)*>
+<!ATTLIST marking 
+	name CDATA #REQUIRED>
+	
+<!ELEMENT place EMPTY>
+<!ATTLIST place
+	name CDATA 	#REQUIRED
+	id	CDATA	#REQUIRED
+	token CDATA #REQUIRED>

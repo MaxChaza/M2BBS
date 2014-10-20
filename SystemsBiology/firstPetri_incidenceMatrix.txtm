@@ -1,0 +1,12 @@
+placeNames = {Stress im BCAF BcCcAc TF BCA dm olg };
+transitionNames = {Stress_Im__Stress_Dm Dm_Olg__Im_Olg TF__BCA_Olg Dm_BCAF__Dm_BcCcAc_TF Im_BcCcAc__Im_BCA DmBCA_BcCcAc Deg_BCA Deg_BcCcAc BCA_TF__BCAF Deg_Olg };
+C=[
+0 0 0 0 0 0 0 0 0 0 ;
+-1 1 0 0 0 0 0 0 0 0 ;
+0 0 0 -1 0 0 0 0 1 0 ;
+0 0 0 1 -1 1 0 -1 0 0 ;
+0 0 0 1 0 0 0 0 -1 0 ;
+0 0 1 0 1 -1 -1 0 -1 0 ;
+1 -1 0 0 0 -1 0 0 0 0 ;
+0 0 1 0 0 0 0 0 0 -1 ;
+];

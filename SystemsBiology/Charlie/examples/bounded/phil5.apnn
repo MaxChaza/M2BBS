@@ -1,0 +1,112 @@
+\beginnet{phil5}
+
+\place{P_0}{\name{p1_eating}\capacity{1}\init{0}}
+\place{P_1}{\name{p1_releasing}\capacity{1}\init{0}}
+\place{P_2}{\name{p1_waiting}\capacity{1}\init{0}}
+\place{P_3}{\name{p1_thinking}\capacity{1}\init{1}}
+\place{P_4}{\name{fork1}\capacity{1}\init{1}}
+\place{P_5}{\name{p3_eating}\capacity{1}\init{0}}
+\place{P_6}{\name{p3_releasing}\capacity{1}\init{0}}
+\place{P_7}{\name{p3_waiting}\capacity{1}\init{0}}
+\place{P_8}{\name{p3_thinking}\capacity{1}\init{1}}
+\place{P_9}{\name{p2_eating}\capacity{1}\init{0}}
+\place{P_10}{\name{p2_releasing}\capacity{1}\init{0}}
+\place{P_11}{\name{p2_waiting}\capacity{1}\init{0}}
+\place{P_12}{\name{p2_thinking}\capacity{1}\init{1}}
+\place{P_13}{\name{fork3}\capacity{1}\init{1}}
+\place{P_14}{\name{fork2}\capacity{1}\init{1}}
+\place{P_15}{\name{fork5}\capacity{1}\init{1}}
+\place{P_16}{\name{p4_eating}\capacity{1}\init{0}}
+\place{P_17}{\name{p4_releasing}\capacity{1}\init{0}}
+\place{P_18}{\name{p4_waiting}\capacity{1}\init{0}}
+\place{P_19}{\name{p4_thinking}\capacity{1}\init{1}}
+\place{P_20}{\name{fork4}\capacity{1}\init{1}}
+\place{P_21}{\name{eating5}\capacity{1}\init{0}}
+\place{P_22}{\name{releasing5}\capacity{1}\init{0}}
+\place{P_23}{\name{waiting5}\capacity{1}\init{0}}
+\place{P_24}{\name{thinking5}\capacity{1}\init{1}}
+
+\transition{T_0}{\name{p1_put_right}}
+\transition{T_1}{\name{p1_put_left}}
+\transition{T_2}{\name{p1_take_right}}
+\transition{T_3}{\name{p1_take_left}}
+\transition{T_4}{\name{p3_put_right}}
+\transition{T_5}{\name{p3_put_left}}
+\transition{T_6}{\name{p3_take_right}}
+\transition{T_7}{\name{p3_take_left}}
+\transition{T_8}{\name{p2_put_right}}
+\transition{T_9}{\name{p2_put_left}}
+\transition{T_10}{\name{p2_take_right}}
+\transition{T_11}{\name{p2_take_left}}
+\transition{T_12}{\name{p4_put_right}}
+\transition{T_13}{\name{p4_put_left}}
+\transition{T_14}{\name{p4_take_right}}
+\transition{T_15}{\name{p4_take_left}}
+\transition{T_16}{\name{put_right5}}
+\transition{T_17}{\name{put_left5}}
+\transition{T_18}{\name{take_right5}}
+\transition{T_19}{\name{take_left5}}
+
+\arc{A_0}{\from{P_0} \to{T_0} \weight{1} \type{ordinary}}
+\arc{A_1}{\from{T_0} \to{P_1} \weight{1} \type{ordinary}}
+\arc{A_2}{\from{T_0} \to{P_14} \weight{1} \type{ordinary}}
+\arc{A_3}{\from{P_1} \to{T_1} \weight{1} \type{ordinary}}
+\arc{A_4}{\from{T_1} \to{P_3} \weight{1} \type{ordinary}}
+\arc{A_5}{\from{T_1} \to{P_4} \weight{1} \type{ordinary}}
+\arc{A_6}{\from{P_2} \to{T_2} \weight{1} \type{ordinary}}
+\arc{A_7}{\from{P_14} \to{T_2} \weight{1} \type{ordinary}}
+\arc{A_8}{\from{T_2} \to{P_0} \weight{1} \type{ordinary}}
+\arc{A_9}{\from{P_3} \to{T_3} \weight{1} \type{ordinary}}
+\arc{A_10}{\from{P_4} \to{T_3} \weight{1} \type{ordinary}}
+\arc{A_11}{\from{T_3} \to{P_2} \weight{1} \type{ordinary}}
+\arc{A_12}{\from{P_5} \to{T_4} \weight{1} \type{ordinary}}
+\arc{A_13}{\from{T_4} \to{P_6} \weight{1} \type{ordinary}}
+\arc{A_14}{\from{T_4} \to{P_20} \weight{1} \type{ordinary}}
+\arc{A_15}{\from{P_6} \to{T_5} \weight{1} \type{ordinary}}
+\arc{A_16}{\from{T_5} \to{P_8} \weight{1} \type{ordinary}}
+\arc{A_17}{\from{T_5} \to{P_13} \weight{1} \type{ordinary}}
+\arc{A_18}{\from{P_7} \to{T_6} \weight{1} \type{ordinary}}
+\arc{A_19}{\from{P_20} \to{T_6} \weight{1} \type{ordinary}}
+\arc{A_20}{\from{T_6} \to{P_5} \weight{1} \type{ordinary}}
+\arc{A_21}{\from{P_8} \to{T_7} \weight{1} \type{ordinary}}
+\arc{A_22}{\from{P_13} \to{T_7} \weight{1} \type{ordinary}}
+\arc{A_23}{\from{T_7} \to{P_7} \weight{1} \type{ordinary}}
+\arc{A_24}{\from{P_9} \to{T_8} \weight{1} \type{ordinary}}
+\arc{A_25}{\from{T_8} \to{P_10} \weight{1} \type{ordinary}}
+\arc{A_26}{\from{T_8} \to{P_13} \weight{1} \type{ordinary}}
+\arc{A_27}{\from{P_10} \to{T_9} \weight{1} \type{ordinary}}
+\arc{A_28}{\from{T_9} \to{P_12} \weight{1} \type{ordinary}}
+\arc{A_29}{\from{T_9} \to{P_14} \weight{1} \type{ordinary}}
+\arc{A_30}{\from{P_11} \to{T_10} \weight{1} \type{ordinary}}
+\arc{A_31}{\from{P_13} \to{T_10} \weight{1} \type{ordinary}}
+\arc{A_32}{\from{T_10} \to{P_9} \weight{1} \type{ordinary}}
+\arc{A_33}{\from{P_12} \to{T_11} \weight{1} \type{ordinary}}
+\arc{A_34}{\from{P_14} \to{T_11} \weight{1} \type{ordinary}}
+\arc{A_35}{\from{T_11} \to{P_11} \weight{1} \type{ordinary}}
+\arc{A_36}{\from{P_16} \to{T_12} \weight{1} \type{ordinary}}
+\arc{A_37}{\from{T_12} \to{P_17} \weight{1} \type{ordinary}}
+\arc{A_38}{\from{T_12} \to{P_15} \weight{1} \type{ordinary}}
+\arc{A_39}{\from{P_17} \to{T_13} \weight{1} \type{ordinary}}
+\arc{A_40}{\from{T_13} \to{P_19} \weight{1} \type{ordinary}}
+\arc{A_41}{\from{T_13} \to{P_20} \weight{1} \type{ordinary}}
+\arc{A_42}{\from{P_18} \to{T_14} \weight{1} \type{ordinary}}
+\arc{A_43}{\from{P_15} \to{T_14} \weight{1} \type{ordinary}}
+\arc{A_44}{\from{T_14} \to{P_16} \weight{1} \type{ordinary}}
+\arc{A_45}{\from{P_19} \to{T_15} \weight{1} \type{ordinary}}
+\arc{A_46}{\from{P_20} \to{T_15} \weight{1} \type{ordinary}}
+\arc{A_47}{\from{T_15} \to{P_18} \weight{1} \type{ordinary}}
+\arc{A_48}{\from{P_21} \to{T_16} \weight{1} \type{ordinary}}
+\arc{A_49}{\from{T_16} \to{P_22} \weight{1} \type{ordinary}}
+\arc{A_50}{\from{T_16} \to{P_4} \weight{1} \type{ordinary}}
+\arc{A_51}{\from{P_22} \to{T_17} \weight{1} \type{ordinary}}
+\arc{A_52}{\from{T_17} \to{P_24} \weight{1} \type{ordinary}}
+\arc{A_53}{\from{T_17} \to{P_15} \weight{1} \type{ordinary}}
+\arc{A_54}{\from{P_23} \to{T_18} \weight{1} \type{ordinary}}
+\arc{A_55}{\from{P_4} \to{T_18} \weight{1} \type{ordinary}}
+\arc{A_56}{\from{T_18} \to{P_21} \weight{1} \type{ordinary}}
+\arc{A_57}{\from{P_24} \to{T_19} \weight{1} \type{ordinary}}
+\arc{A_58}{\from{P_15} \to{T_19} \weight{1} \type{ordinary}}
+\arc{A_59}{\from{T_19} \to{P_23} \weight{1} \type{ordinary}}
+
+
+\endnet

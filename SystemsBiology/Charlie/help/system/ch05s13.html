@@ -1,0 +1,60 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>NC = netclass</title><meta name="generator" content="DocBook XSL Stylesheets V1.76.1-RC2"><link rel="home" href="index.html" title="Charlie Help"><link rel="up" href="ch05.html" title="Chapter&nbsp;5.&nbsp;Abbrevations"><link rel="prev" href="ch05s12.html" title="SC = stronglyl connected"><link rel="next" href="ch05s14.html" title="RKTH = rank theorem"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="sect1" title="NC = netclass"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="abbrevation.NC"></a>NC = netclass</h2></div></div></div>
+			
+			<p>
+				This property shows the netclass of the net.
+				The netclass can be one of the following:
+				</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">SM: state-machine;</li><li class="listitem">MG: marked graph;</li><li class="listitem">SM &amp; MG: state-machine and marked graph;</li><li class="listitem">FC: free choice;</li><li class="listitem">EFC: extended free choice;</li><li class="listitem">ES: extended simple;</li><li class="listitem">NC: no specific netclass.</li></ul></div><p>
+			</p>
+			
+			<div class="sect2" title="State-Machine"><div class="titlepage"><div><div><h3 class="title"><a name="abbrevation.NC.SM"></a>State-Machine</h3></div></div></div>
+				
+				<p>
+					A Petri net is a state-machine if all transitions have exactly one pre- and exactly one post-place.
+				</p>
+				<p>
+					Mathematically speaking: &#8704; t &#8714; T : |&#8226;t| = |t&#8226;| = 1.
+				</p>
+			</div>
+			
+			<div class="sect2" title="Marked Graph"><div class="titlepage"><div><div><h3 class="title"><a name="abbrevation.NC.MG"></a>Marked Graph</h3></div></div></div>
+				
+				<p>
+					A Petri net is a marked graph if all places have exactly one pre- and exactly one post-transition.
+				</p>
+				<p>
+					Mathematically speaking: &#8704; p &#8714; P : |&#8226;p| = |p&#8226;| = 1.
+				</p>
+			</div>
+			
+			<div class="sect2" title="Free Choice"><div class="titlepage"><div><div><h3 class="title"><a name="abbrevation.NC.FC"></a>Free Choice</h3></div></div></div>
+				
+				<p>
+					A Petri net is a free choice net if all places have either at most one post-transition or it is the only pre-place of a transition.
+				</p>
+				<p>
+					Mathematically speaking: &#8704; p &#8714; P : |p&#8226;| = 1 &#8897; &#8226;(p&#8226;) = {p}.
+				</p>
+			</div>
+			
+			<div class="sect2" title="Extended Free Choice"><div class="titlepage"><div><div><h3 class="title"><a name="abbrevation.NC.EFC"></a>Extended Free Choice</h3></div></div></div>
+				
+				<p>
+					A Petri net is an extended free choice net if all transitions in conflict have identical sets of pre-places.
+				</p>
+				<p>
+					Mathematically speaking: &#8704; p,q &#8714; P : p&#8226; &#8745; q&#8226; = &#8709; &#8897; p&#8226; = q&#8226;.
+				</p>
+			</div>
+			
+			<div class="sect2" title="Extended Simple"><div class="titlepage"><div><div><h3 class="title"><a name="abbrevation.NC.ES"></a>Extended Simple</h3></div></div></div>
+				
+				<p>
+					A Petri net is extended simple if every transitions is involved in conflict at most.
+				</p>
+				<p>
+					Mathematically speaking: &#8704; p,q &#8714; P : p&#8226; &#8745; q&#8226; = &#8709; &#8897; p&#8226; &#8838; q&#8226; &#8897; q&#8226; &#8838; p&#8226;.
+				</p>
+			</div>
+		</div></body></html>
