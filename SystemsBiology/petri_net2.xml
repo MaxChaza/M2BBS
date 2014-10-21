@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level2/version3" level="2" version="3">
+  <model id="petri_net_spstochpn">
+    <listOfCompartments>
+      <compartment id="compartment" size="1"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="stress" compartment="compartment" initialAmount="1" hasOnlySubstanceUnits="true"/>
+      <species id="dm" compartment="compartment" initialAmount="0" hasOnlySubstanceUnits="true"/>
+      <species id="im" compartment="compartment" initialAmount="60" hasOnlySubstanceUnits="true"/>
+      <species id="olg" compartment="compartment" initialAmount="0" hasOnlySubstanceUnits="true"/>
+      <species id="hBCAF" compartment="compartment" initialAmount="20" hasOnlySubstanceUnits="true"/>
+      <species id="TF" compartment="compartment" initialAmount="0" hasOnlySubstanceUnits="true"/>
+      <species id="hBCA" compartment="compartment" initialAmount="0" hasOnlySubstanceUnits="true"/>
+      <species id="hBcCcAc" compartment="compartment" initialAmount="0" hasOnlySubstanceUnits="true"/>
+    </listOfSpecies>
+    <listOfParameters>
+      <parameter id="c1" value="1" />
+      <parameter id="c2" value="1" />
+      <parameter id="c3" value="1" />
+      <parameter id="c4" value="1" />
+      <parameter id="c5" value="1" />
+      <parameter id="c6" value="1" />
+      <parameter id="c7" value="1" />
+      <parameter id="c8" value="1" />
+      <parameter id="c9" value="1" />
+      <parameter id="c10" value="1" />
+    </listOfParameters>
+    <listOfReactions>
+      <reaction id="tr1" reversible="false">
+        <listOfReactants>
+          <speciesReference species="stress"/>
+          <speciesReference species="im"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="stress"/>
+          <speciesReference species="dm"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> c1 </ci>
+              <ci> stress </ci>
+              <ci> im </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="tr2" reversible="false">
+        <listOfReactants>
+          <speciesReference species="dm"/>
+          <speciesReference species="olg"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="im"/>
+          <speciesReference species="olg"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> c2 </ci>
+              <ci> dm </ci>
+              <ci> olg </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="tr5" reversible="false">
+        <listOfReactants>
+          <speciesReference species="dm"/>
+          <speciesReference species="hBCAF"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="dm"/>
+          <speciesReference species="TF"/>
+          <speciesReference species="hBcCcAc"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> c5 </ci>
+              <ci> dm </ci>
+              <ci> hBCAF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="tr10" reversible="false">
+        <listOfReactants>
+          <speciesReference species="olg"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> c10 </ci>
+              <ci> olg </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="tr4" reversible="false">
+        <listOfReactants>
+          <speciesReference species="TF"/>
+          <speciesReference species="hBCA"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="hBCAF"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> c4 </ci>
+              <ci> TF </ci>
+              <ci> hBCA </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="tr3" reversible="false">
+        <listOfReactants>
+          <speciesReference species="TF"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="TF"/>
+          <speciesReference species="olg"/>
+          <speciesReference species="hBCA" stoichiometry="10"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> c3 </ci>
+              <ci> TF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="tr6" reversible="false">
+        <listOfReactants>
+          <speciesReference species="hBcCcAc"/>
+          <speciesReference species="im"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="hBCA"/>
+          <speciesReference species="im"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> c6 </ci>
+              <ci> hBcCcAc </ci>
+              <ci> im </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="tr7" reversible="false">
+        <listOfReactants>
+          <speciesReference species="hBCA"/>
+          <speciesReference species="dm"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="hBcCcAc"/>
+          <speciesReference species="dm"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> c7 </ci>
+              <ci> hBCA </ci>
+              <ci> dm </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="tr8" reversible="false">
+        <listOfReactants>
+          <speciesReference species="hBCA"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> c8 </ci>
+              <ci> hBCA </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="tr9" reversible="false">
+        <listOfReactants>
+          <speciesReference species="hBcCcAc"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> c9 </ci>
+              <ci> hBcCcAc </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>
