@@ -1,0 +1,21 @@
+state-variable: X_a
+  zero-parameter: z_a
+  box-parameter: max_a
+  threshold-parameters: t_a_1, t_a_2
+  production-parameters: k_a
+  degradation-parameters: g_a
+  state-equation:
+    d/dt X_a = k_a * s-(X_a, t_a_2) * s-(X_b, t_b_1) - g_a * X_a
+  parameter-inequalities:
+    z_a < t_a_1 < t_a_2 < k_a / g_a < max_a
+
+state-variable: X_b
+  zero-parameter: z_b
+  box-parameter: max_b
+  threshold-parameters: t_b_1, t_b_2
+  production-parameters: k_b
+  degradation-parameters: g_b
+  state-equation:
+    d/dt X_b = k_b * s-(X_b, t_b_2) * s-(X_a, t_a_1) - g_b * X_b
+  parameter-inequalities:
+    z_b < t_b_1 < t_b_2 < k_b / g_b < max_b

@@ -1,0 +1,82 @@
+[slf5s.start]24 Oct 2014 10:52:56,110[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+helix.util.log4j.LogSystem[slf5s.CATEGORY]
+-> LogSystem init[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:52:56,443[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+helix.util.log4j.LogSystem[slf5s.CATEGORY]
+
+_______________________________________________________________
+
+### Log System Info (Fri Oct 24 10:52:56 CEST 2014) ###
+
+-------- Modules VERSION : --------
+AROM 2.5.2 build July 27 2012 in VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaCore.jar
+AROMApi 2.5.0 build December 16 2010 in arom/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaCore.jar
+AROMGCL 1.4.2 build July 27 2012 in arom/gui/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaCore.jar
+AROMQuery 1.5.0 build December 16 2010 in arom/kr/query/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaCore.jar
+AROMTasks 1.5.1 build July 5 2011 in romans/arom/tasks/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaCore.jar
+CartoBean 1.6.3 build July 30 2012 in helix/beans/carto/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaViews.jar
+CartoSeqBean 1.6.3 build July 30 2012 in helix/beans/cartoSeq/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaViews.jar
+ChromoBean 1.2.0 build December 16 2010 in helix/beans/chromo/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/ChromoBean.jar
+DataManager 1.5.3 build July 30 2012 in iogma/core/datamanager/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/DataManager.jar
+Expresso 1.2.3 build July 30 2012 in iogma/core/expresso/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/Expresso.jar
+GNA 8.4.0 build July 31 2012 in gna/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/GNA/bin/GNA.jar
+GeKo 1.0.1 build July 31 2012 in geko/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/GeKo.jar
+HelixUtils 1.4.3 build July 27 2012 in helix/util/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/HelixUtils.jar
+IRAROM 2.5.0 build December 16 2010 in romans/arom/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaCore.jar
+InstantAROM 1.3.0 build December 16 2010 in arom/kr/instant/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaCore.jar
+Iogma 3.11.0 build July 31 2012 in iogma/platform/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/Iogma.jar
+IogmaCore 2.4.3 build July 30 2012 in iogma/core/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaCore.jar
+IogmaMGM 1.7.0 build December 16 2010 in iogma/core/mgm/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaCore.jar
+IogmaModule 1.3.1 build July 6 2011 in iogma/core/module/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaModule.jar
+IogmaNetwork 1.1.3 build July 30 2012 in iogma/network/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaNetwork.jar
+IogmaType 1.5.3 build July 30 2012 in iogma/core/type/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaCore.jar
+IogmaUI 1.2.3 build July 30 2012 in iogma/core/ui/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaUI.jar
+IogmaViews 1.5.3 build July 30 2012 in iogma/core/views/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaViews.jar
+QueryManager 1.4.2 build December 8 2011 in iogma/core/querymanager/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/QueryManager.jar
+Sequence 2.5.3 build July 30 2012 in iogma/core/type/sequence/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaCore.jar
+TasksManager 2.3.3 build July 30 2012 in iogma/core/tasksmanager/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/TasksManager.jar
+
+
+-------- Java Properties : --------
+ java.home : /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/jre
+ java.version : 1.6.0_29
+ java.vm.name : Java HotSpot(TM) Server VM
+ java.vm.version : 20.4-b02
+ java.class.path : /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/.install4j/i4jruntime.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/activation.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/aloe.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/ant-apache-oro.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/ant-apache-regexp.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/ant.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/ant-launcher.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/avalon-framework.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/axis-ant.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/axis.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/axis-schema.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/batik-anim.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/batik-awt-util.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/batik-css.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/batik-dom.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/batik-ext.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/batik-parser.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/batik-svg-dom.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/batik-svggen.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/batik-util.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/batik-xml.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/bcprov-jdk14-136.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/biojava.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/browserlauncher2.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/bsh.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/bytecode-0.92.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/castor-xml.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/ChromoBean.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/commons-cli.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/commons-codec.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/commons-collections.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/commons-dbcp-1.1.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/commons-discovery.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/commons-httpclient.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/commons-io.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/commons-lang.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/commons-logging.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/commons-pool-1.1.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/DataManager.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/Expresso.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/fop-hyph.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/fop.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/forms.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/ganymed-ssh2.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/GeKo.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/HelixUtils.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/i4jruntime.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/icu4j-3.4.4.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/idw.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaCore.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/Iogma.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaModule.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaNetwork.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaUI.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaViews.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/jai_codec.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/jai_core.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/jasypt.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/jaxme2-rt.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/jaxmeapi.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/jaxmexs.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/jaxrpc.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/jdic.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/jdic_stub_linux.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/jdic_stub_windows.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/jgraph4.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/jgraph5.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/jgraph.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/jhall.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/jpf-boot.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/jpf.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/JSAP.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/jug.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/junit.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/log4j.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/octet.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/oro.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/pal.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/plot.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/poi.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/postgresql.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/Protection.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/QueryManager.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/rosetta.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/saaj.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/serializer.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/swingx.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/tar.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/TasksManager.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/TMNetBean.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/velocity.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/wsdl4j.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/xalan27.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/xalan.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/xercesImpl.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/xlayouts.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/xml-apis.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/xmlgraphics-commons.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/GNA/bin/GNA.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/GNA/bin/java_cup.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/GNA/bin/JobHandler.client.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/GNA/bin/MSBChart.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/GNA/bin/sat4j-1.5.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/GNA/bin/saxon8-dom.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/GNA/bin/saxon8.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/GNA/bin/wizard-framework.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/plugins/iogma.core.data/bin/iogma.core.data.jar
+ os.name : Linux
+ os.arch : i386
+ os.version : 3.16.2-201.fc20.x86_64
+ user.name : guest
+ user.home : /home/guest
+ user.dir : /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0
+
+-------- Memory Properties : --------
+ Runtime.maxMemory (normally -Xmx) : 954466304
+ Runtime.totalMemory : 128647168
+ Runtime.freeMemory : 106467816
+
+-------- Iogma Properties : --------
+ iogma.port : i386-linux
+ iogma.dev : null
+ iogma.debug : null
+ iogma.home : /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/
+ iogma.data : /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/GenoData
+ iogma.externals : /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/Externals
+ iogma.user.home : /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0
+ iogma.user.data : /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/
+ iogma.user.externals : /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/
+ iogma.tmp : /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/Externals/tmp
+_______________________________________________________________
+[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:52:56,443[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+helix.util.log4j.LogSystem[slf5s.CATEGORY]
+<- LogSystem init[slf5s.MESSAGE]
+

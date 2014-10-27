@@ -1,0 +1,140 @@
+<html><head><META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>2.8.&nbsp;Functions of the graphical user interface</title><link href="javahelp.css" rel="stylesheet" type="text/css"><meta content="DocBook XSL Stylesheets V1.75.2" name="generator"><link rel="home" href="index.html" title="Genetic Network Analyzer Tutorial"><link rel="up" href="ch02.html" title="Part 2. Using GNA"><link rel="prev" href="ch02s07.html" title="2.7.&nbsp;Checking properties of the state transition graph"><link rel="next" href="ch03.html" title="Part 3. Appendices"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="section" title="2.8.&nbsp;Functions of the graphical user interface"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="iogma.gna.help.using.gna_functions"></a>2.8.&nbsp;Functions of the graphical user interface</h2></div></div></div><p>In this section, the functions of GNA are summarized. The overview
+    is structured according to the menus in the toolbar (<a class="xref" href="ch02s08.html#figure.toolbar_network" title="Fig.&nbsp;2.20.&nbsp;&nbsp;Menu of the graphical user interface (network editor)">Figure&nbsp;2.20</a>, <a class="xref" href="ch02s08.html#figure.toolbar_model" title="Fig.&nbsp;2.21.&nbsp;&nbsp;Menu of the graphical user interface (model editor)">Figure&nbsp;2.21</a>), which is slightly different depending
+    on whether you are editing the network or the model.</p><div class="section" title="2.8.1.&nbsp;Network editor"><div class="titlepage"><div><div><h3 class="title"><a name="N109D6"></a>2.8.1.&nbsp;Network editor</h3></div></div></div><div class="figure"><a name="figure.toolbar_network"></a><div class="figure-contents"><div class="mediaobject" align="center"><img src="images/GNAscreen11b.png" align="middle" alt="Menu of the graphical user interface (network editor)"></div></div><p class="title"><b>Fig.&nbsp;2.20.&nbsp;&nbsp;Menu of the graphical user interface (network editor)</b></p></div><br class="figure-break"><div class="section" title="2.8.1.1.&nbsp;File menu"><div class="titlepage"><div><div><h4 class="title"><a name="N109E8"></a>2.8.1.1.&nbsp;<span class="guimenu">File</span> menu</h4></div></div></div><p>This menu contains functions to load and save files.</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem" style="list-style-type: disc"><p><span class="guimenuitem">New project</span>: Start a new
+            project;</p></li><li class="listitem" style="list-style-type: disc"><p><span class="guimenuitem">New model</span>: Start a new model
+            (project without regulatory network);</p></li><li class="listitem" style="list-style-type: disc"><p><span class="guimenuitem">Open project...</span>: Open project
+            stored in <code class="filename">.gnaml</code>
+            file;</p></li><li class="listitem" style="list-style-type: disc"><p><span class="guimenuitem">Open recent file</span>: Open a recently
+            opened file (last 10 files are listed);</p></li><li class="listitem" style="list-style-type: disc"><p><span class="guimenuitem">Save project</span>: Save project to
+            <code class="filename">.gnaml</code> file;</p></li><li class="listitem" style="list-style-type: disc"><p><span class="guimenuitem">Save project as...</span>: Save project
+            to <code class="filename">.gnaml</code> file under new
+            name;</p></li><li class="listitem" style="list-style-type: disc"><p><span class="guimenuitem">Import</span> </p><div class="itemizedlist"><ul class="itemizedlist" type="circle"><li class="listitem"><p><span class="guimenuitem">Import model</span>: Import model
+                  stored in a <code class="filename">.gna</code>
+                  file;</p></li><li class="listitem"><p><span class="guimenuitem">Import initial conditions</span>:
+                  Import initial conditions stored in <code class="filename">.dat</code> file;</p></li><li class="listitem"><p><span class="guimenuitem">Import property...</span>: Import
+                  property stored in <code class="filename">.prop</code> file;</p></li><li class="listitem"><p><span class="guimenuitem">Import from SBML</span>: Import
+                  model and initial conditions from an SBML Level 2
+                  document;</p></li></ul></div></li><li class="listitem" style="list-style-type: disc"><p><span class="guimenuitem">Export</span> </p><div class="itemizedlist"><ul class="itemizedlist" type="circle"><li class="listitem"><p><span class="guimenuitem">Export model...</span>: Export
+                  model to <code class="filename">.gna</code>
+                  file;</p></li><li class="listitem"><p><span class="guimenuitem">Export initial
+                  conditions...</span>: Export initial conditions to
+                  <code class="filename">.dat</code> file;</p></li><li class="listitem"><p><span class="guimenuitem">Export property...</span>: Export
+                  property to <code class="filename">.prop</code>
+                  file;</p></li><li class="listitem"><p><span class="guimenuitem">Export to SBML</span>: Export
+                  model and initial conditions to an SBML document;</p></li></ul></div></li></ul></div><p>Some of the above import and export functions are accessible by
+        clicking the <span class="mousebutton">right</span> mouse button in the
+        <span class="guilabel">Project</span> tree or in the corresponding
+        windows.</p></div><div class="section" title="2.8.1.2.&nbsp;Edit menu"><div class="titlepage"><div><div><h4 class="title"><a name="N10A8C"></a>2.8.1.2.&nbsp;Edit menu</h4></div></div></div><p>This menu contains functions for editing the
+        network.</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem" style="list-style-type: disc"><p><span class="guisubmenu">New</span> </p><div class="itemizedlist"><ul class="itemizedlist" type="circle"><li class="listitem"><p><span class="guimenuitem">Gene</span>: Create a new
+                    gene;</p></li><li class="listitem"><p><span class="guimenuitem">Regulating entity</span>: Create
+                    new regulating entity;</p></li><li class="listitem"><p><span class="guimenuitem">Degradation</span>: Create new
+                    degradation product for an entity;</p></li><li class="listitem"><p><span class="guimenuitem">Complex</span>: Create new
+                    complex made of two or more entities;</p></li><li class="listitem"><p><span class="guimenuitem">Conversion</span>: Create
+                    conversion link between two or more entities;</p></li><li class="listitem"><p><span class="guimenuitem">Transport</span>: Create
+                    transport link between two entities;</p></li><li class="listitem"><p><span class="guimenuitem">Activation</span>: Create
+                    activation link between an entity and a reaction;</p></li><li class="listitem"><p><span class="guimenuitem">Inhibition</span>: Create
+                    inhibition link between an entity and a reaction;</p></li><li class="listitem"><p><span class="guimenuitem">Catalysis</span>: Create
+                    catalysis link between an entity and a reaction.</p></li></ul></div></li><li class="listitem" style="list-style-type: disc"><p><span class="guimenuitem">Rename</span>: Rename selected
+              entity;</p></li><li class="listitem" style="list-style-type: disc"><p><span class="guimenuitem">Switch gene orientation</span>: Switch
+              gene orientation from right to left to left to right, or
+              reverse;</p></li><li class="listitem" style="list-style-type: disc"><p><span class="guimenuitem">Add promoter</span>: Add new promoter
+              to selected gene;</p></li><li class="listitem" style="list-style-type: disc"><p><span class="guimenuitem">Delete</span>: Delete selected entity,
+              reaction or regulation;</p></li><li class="listitem" style="list-style-type: disc"><p><span class="guimenuitem">Preferences</span>: Edit preferences
+              for GNA.</p></li></ul></div><p>Most of the above functions are also accessible by clicking the
+        <span class="mousebutton">right</span> mouse button in the editor window or
+        by means of the toolbar.</p></div><div class="section" title="2.8.1.3.&nbsp;View menu"><div class="titlepage"><div><div><h4 class="title"><a name="N10AF5"></a>2.8.1.3.&nbsp;View menu</h4></div></div></div><p>This menu contains functions to view and analyze the
+        network.</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p><span class="guimenuitem">Show whole network</span>: Display
+              whole network as opposed to the reduced network;</p></li><li class="listitem"><p><span class="guimenuitem">Show reduced network</span>: Display
+              reduced network;</p></li><li class="listitem"><p><span class="guimenuitem">Zoom in</span>: Zoom in on
+              network;</p></li><li class="listitem"><p><span class="guimenuitem">Zoom out</span>: Zoom out of
+              network.</p></li><li class="listitem"><p><span class="guimenuitem">Fit content</span>: Zoom in or out so
+              that the whole network is displayed in the window</p></li><li class="listitem"><p><span class="guimenuitem">Reset zoom</span>: Zoom to 1:1
+              level</p></li></ul></div></div><div class="section" title="2.8.1.4.&nbsp;Help menu"><div class="titlepage"><div><div><h4 class="title"><a name="N10B1F"></a>2.8.1.4.&nbsp;<span class="guimenu">Help</span> menu</h4></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem" style="list-style-type: disc"><p><span class="guimenuitem">Help</span>: Open help pages;</p></li><li class="listitem" style="list-style-type: disc"><p><span class="guimenuitem">About GNA</span>: Display GNA
+            version.</p></li></ul></div></div></div><div class="section" title="2.8.2.&nbsp;Model editor"><div class="titlepage"><div><div><h3 class="title"><a name="N10B34"></a>2.8.2.&nbsp;Model editor</h3></div></div></div><div class="figure"><a name="figure.toolbar_model"></a><div class="figure-contents"><div class="mediaobject" align="center"><img src="images/GNAscreen11.png" align="middle" alt="Menu of the graphical user interface (model editor)"></div></div><p class="title"><b>Fig.&nbsp;2.21.&nbsp;&nbsp;Menu of the graphical user interface (model editor)</b></p></div><br class="figure-break"><div class="section" title="2.8.2.1.&nbsp;File menu"><div class="titlepage"><div><div><h4 class="title"><a name="N10B46"></a>2.8.2.1.&nbsp;<span class="guimenu">File</span> menu</h4></div></div></div><p>This menu contains functions to load and save files.</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem" style="list-style-type: disc"><p><span class="guimenuitem">New project</span>: Start a new
+            project;</p></li><li class="listitem" style="list-style-type: disc"><p><span class="guimenuitem">New model</span>: Start a new model
+            (project without regulatory network);</p></li><li class="listitem" style="list-style-type: disc"><p><span class="guimenuitem">Open project...</span>: Open project
+            stored in <code class="filename">.gnaml</code>
+            file;</p></li><li class="listitem" style="list-style-type: disc"><p><span class="guimenuitem">Open recent file</span>: Open a recently
+            opened file (last 10 files are listed);</p></li><li class="listitem" style="list-style-type: disc"><p><span class="guimenuitem">Save project</span>: Save project to
+            <code class="filename">.gnaml</code> file;</p></li><li class="listitem" style="list-style-type: disc"><p><span class="guimenuitem">Save project as...</span>: Save project
+            to <code class="filename">.gnaml</code> file under new
+            name;</p></li><li class="listitem" style="list-style-type: disc"><p><span class="guimenuitem">Import</span> </p><div class="itemizedlist"><ul class="itemizedlist" type="circle"><li class="listitem"><p><span class="guimenuitem">Import model</span>: Import model
+                  stored in a <code class="filename">.gna</code>
+                  file;</p></li><li class="listitem"><p><span class="guimenuitem">Import initial conditions</span>:
+                  Import initial conditions stored in <code class="filename">.dat</code> file;</p></li><li class="listitem"><p><span class="guimenuitem">Import property...</span>: Import
+                  property stored in <code class="filename">.prop</code> file;</p></li><li class="listitem"><p><span class="guimenuitem">Import from SBML</span>: Import
+                  model and initial conditions from an SBML Level 2
+                  document;</p></li></ul></div></li><li class="listitem" style="list-style-type: disc"><p><span class="guimenuitem">Export</span> </p><div class="itemizedlist"><ul class="itemizedlist" type="circle"><li class="listitem"><p><span class="guimenuitem">Export model...</span>: Export
+                  model to <code class="filename">.gna</code>
+                  file;</p></li><li class="listitem"><p><span class="guimenuitem">Export initial
+                  conditions...</span>: Export initial conditions to
+                  <code class="filename">.dat</code> file;</p></li><li class="listitem"><p><span class="guimenuitem">Export property...</span>: Export
+                  property to <code class="filename">.prop</code>
+                  file;</p></li><li class="listitem"><p><span class="guimenuitem">Export to SBML</span>: Export
+                  model and initial conditions to an SBML document;</p></li><li class="listitem"><p><span class="guimenuitem">Export explicit graph to &lt;model
+                  checker&gt;...</span>: Export state transition graph
+                  in a file that can be read by the &lt;model
+                  checker&gt;;</p></li><li class="listitem"><p><span class="guimenuitem">Export implicit graph to &lt;model
+                  checker&gt;...</span>: Export implicit graph defined
+                  by given initial conditions in a file that can be read by
+                  the &lt;model checker&gt;;</p></li></ul></div></li></ul></div><p>Some of the above import and export functions are accessible by
+        clicking the <span class="mousebutton">right</span> mouse button in the
+        <span class="guilabel">Project</span> tree or in the corresponding
+        windows.</p></div><div class="section" title="2.8.2.2.&nbsp;Edit menu"><div class="titlepage"><div><div><h4 class="title"><a name="N10BF6"></a>2.8.2.2.&nbsp;<span class="guimenu">Edit</span> menu</h4></div></div></div><p>This menu contains functions for editing the model, in
+        particular the variables composing the model.</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem" style="list-style-type: disc"><p><span class="guisubmenu">New</span> </p><div class="itemizedlist"><ul class="itemizedlist" type="circle"><li class="listitem"><p><span class="guimenuitem">Variable</span>: Create a new
+                  variable;</p></li><li class="listitem"><p><span class="guimenuitem">Initial conditions</span>: Create
+                  new initial conditions;</p></li><li class="listitem"><p><span class="guimenuitem">Atomic proposition</span>: Create
+                  new atomic proposition;</p></li><li class="listitem"><p><span class="guimenuitem">Property</span>: Create new
+                  property;</p></li></ul></div></li><li class="listitem" style="list-style-type: disc"><p><span class="guimenuitem">Edit</span>: Edit selected variable,
+            initial conditions, atomic proposition or property;</p></li><li class="listitem" style="list-style-type: disc"><p><span class="guimenuitem">Rename</span>: Rename selected variable,
+            initial conditions, atomic proposition or property;</p></li><li class="listitem" style="list-style-type: disc"><p><span class="guimenuitem">Delete</span>: Delete selected variable,
+            initial conditions, atomic proposition or property;</p></li><li class="listitem" style="list-style-type: disc"><p><span class="guimenuitem">View comment</span>: View comment for
+            selected variable, initial conditions, atomic proposition or
+            property;</p></li><li class="listitem" style="list-style-type: disc"><p><span class="guimenuitem">Preferences</span>: Edit preferences for
+            GNA.</p></li></ul></div><p>Most of the above functions are also accessible by clicking the
+        <span class="mousebutton">right</span> mouse button in the
+        <span class="guilabel">Project</span> window. The <span class="guilabel">Variable
+        window</span> for a variable contains an equation editor for
+        defining the state equation. The following key combinations can be
+        used to edit the information in the <span class="guilabel">State
+        equation</span> field:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem" style="list-style-type: disc"><p><span class="keycap"><strong>Ctrl</strong></span>+<span class="keycap"><strong>X</strong></span>: Cut and add to buffer;</p></li><li class="listitem" style="list-style-type: disc"><p><span class="keycap"><strong>Ctrl</strong></span>+<span class="keycap"><strong>C</strong></span>: Copy and add to buffer;</p></li><li class="listitem" style="list-style-type: disc"><p><span class="keycap"><strong>Ctrl</strong></span>+<span class="keycap"><strong>V</strong></span>: Paste buffer;</p></li><li class="listitem" style="list-style-type: disc"><p><span class="keycap"><strong>Ctrl</strong></span>+<span class="keycap"><strong>Z</strong></span>: Undo;</p></li><li class="listitem" style="list-style-type: disc"><p><span class="keycap"><strong>Ctrl</strong></span>+<span class="keycap"><strong>Y</strong></span>: Redo;</p></li><li class="listitem" style="list-style-type: disc"><p><span class="keycap"><strong>Ctrl</strong></span>+<span class="keycap"><strong>space</strong></span>: Complete current name.</p></li></ul></div></div><div class="section" title="2.8.2.3.&nbsp;Analysis menu"><div class="titlepage"><div><div><h4 class="title"><a name="N10C9C"></a>2.8.2.3.&nbsp;<span class="guimenu">Analysis</span> menu</h4></div></div></div><p>This menu contains functions to analyze the model
+        defined.</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem" style="list-style-type: disc"><p><span class="guimenuitem">Search attractors</span>: Search phase
+            space for qualitative steady states of the model;</p></li><li class="listitem" style="list-style-type: disc"><p><span class="guimenuitem">Specify simulation</span>: Specify
+            simulation parameters for given initial conditions;</p></li><li class="listitem" style="list-style-type: disc"><p><span class="guimenuitem">Specify verification</span>: Specify
+            verfication parameters for given property.</p></li></ul></div><p>The above functions are also accessible by clicking the
+        <span class="mousebutton">right</span> mouse button in the
+        <span class="guilabel">Project</span> tree.</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p><span class="guimenuitem">Run</span>: Run specified attractor
+            search, simulation or verification;</p></li><li class="listitem"><p><span class="guimenuitem">Abort</span>: Abort current running
+            attractor search, simulation or verification.</p></li></ul></div><p>These function are also accessible from the buttons in each
+        <span class="guilabel">Attractor search</span>, <span class="guilabel">Simulation</span>
+        or <span class="guilabel">Verification</span> window.</p></div><div class="section" title="2.8.2.4.&nbsp;Results menu (model editor mode)"><div class="titlepage"><div><div><h4 class="title"><a name="N10CDE"></a>2.8.2.4.&nbsp;<span class="guimenu">Results</span> menu (model editor mode)</h4></div></div></div><p>This menu contains functions to view and analyze simulation
+        results.</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem" style="list-style-type: disc"><p><span class="guimenuitem">Deselect all states</span>: Deselect all
+            states in the state transition graph;</p></li><li class="listitem" style="list-style-type: disc"><p><span class="guimenuitem">Filter instantaneous states</span>:
+            Generate the state transition graph from which all states that are
+            instantaneously traversed have been removed. Display this graph in
+            a new tab;</p></li><li class="listitem" style="list-style-type: disc"><p><span class="guimenuitem">Subgraph spanning selected
+            states</span>: Construct the subgraph spanning the selected
+            states in the state transition graph. Display this graph in a new
+            tab;</p></li><li class="listitem" style="list-style-type: disc"><p><span class="guimenuitem">Expand selected subgraph</span>: Expand
+            the state transition graph using several levels of successors
+            and/or predecessors of the selected states. Display this graph in
+            a new tab;</p></li><li class="listitem" style="list-style-type: disc"><p><span class="guimenuitem">Display variables in selected
+            path</span>: Display the qualitative evolution of the
+            variables in a selected path in the state transition graph;</p></li><li class="listitem" style="list-style-type: disc"><p><span class="guimenuitem">Display focal sets in selected
+            path</span>: Display the qualitative evolution of the
+            values toward which the state variables locally converge;</p></li><li class="listitem" style="list-style-type: disc"><p><span class="guimenuitem">Zoom in graph</span>: Zoom in on state
+            transition graph;</p></li><li class="listitem" style="list-style-type: disc"><p><span class="guimenuitem">Zoom out graph</span>: Zoom out of state
+            transition graph.</p></li><li class="listitem" style="list-style-type: disc"><p><span class="guimenuitem">Fit graph</span>: Zoom in or out so that
+            the whole state transition graph is displayed in the window</p></li><li class="listitem" style="list-style-type: disc"><p><span class="guimenuitem">Reset zoom</span>: Zoom to 1:1
+            level</p></li></ul></div><p>The above functions are also accessible by clicking the
+        <span class="mousebutton">right</span> mouse button in the
+        <span class="guilabel">Transition graph</span> window. States in the
+        <span class="guilabel">Transition graph</span> window can be selected by means
+        of the mouse while pressing the <span class="keycap"><strong>Ctrl</strong></span> key. Deselection is achieved by
+        clicking and pressing the <span class="keycap"><strong>Ctrl</strong></span>
+        key. Some shortcuts allow to easily navigate within the graph: while
+        maintaining the <span class="keycap"><strong>Ctrl</strong></span> and <span class="keycap"><strong>Alt</strong></span> keys pressed, you can drag the graph with
+        the mouse ; when the <span class="keycap"><strong>Ctrl</strong></span> key is
+        pressed, the mouse wheel allows to zoom in and out.</p></div><div class="section" title="2.8.2.5.&nbsp;Windows menu (model editor mode)"><div class="titlepage"><div><div><h4 class="title"><a name="N10D4C"></a>2.8.2.5.&nbsp;<span class="guimenu">Windows</span> menu (model editor mode)</h4></div></div></div><p>This menu lists the active windows and allows you to make some
+        of them invisible.</p></div><div class="section" title="2.8.2.6.&nbsp;Help menu"><div class="titlepage"><div><div><h4 class="title"><a name="N10D54"></a>2.8.2.6.&nbsp;<span class="guimenu">Help</span> menu</h4></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem" style="list-style-type: disc"><p><span class="guimenuitem">Help</span>: Open help pages;</p></li><li class="listitem" style="list-style-type: disc"><p><span class="guimenuitem">About GNA</span>: Display GNA
+            version.</p></li></ul></div></div></div></div></body></html>

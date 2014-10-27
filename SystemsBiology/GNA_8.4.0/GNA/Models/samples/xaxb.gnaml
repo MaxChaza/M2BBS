@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gnaml xmlns="http://www-gna.inrialpes.fr/gnaml/version1" version="1.0">
+   <model id="xaxb">
+      <notes>
+         <pre xmlns="http://www.w3.org/1999/xhtml">xaxb.gna
+  two-gene model used in HSCC05, IJCAI05, and ISMB05</pre>
+      </notes>
+      <state-variable id="xa">
+         <zero-parameter id="z_xa"/>
+         <box-parameter id="max_xa"/>
+         <list-of-threshold-parameters>
+            <threshold-parameter id="t_xa1"/>
+            <threshold-parameter id="t_xa2"/>
+         </list-of-threshold-parameters>
+         <list-of-synthesis-parameters>
+            <synthesis-parameter id="k_xa"/>
+         </list-of-synthesis-parameters>
+         <list-of-degradation-parameters>
+            <degradation-parameter id="g_xa"/>
+         </list-of-degradation-parameters>
+         <state-equation>
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+               <semantics>
+                  <apply>
+                     <minus/>
+                     <apply>
+                        <times/>
+                        <ci>k_xa</ci>
+                        <apply>
+                           <csymbol definitionURL="http://www-gna.inrialpes.fr/gnaml/symbols/step-minus"
+                                    encoding="text">s-</csymbol>
+                           <ci>xa</ci>
+                           <ci>t_xa2</ci>
+                        </apply>
+                        <apply>
+                           <csymbol definitionURL="http://www-gna.inrialpes.fr/gnaml/symbols/step-minus"
+                                    encoding="text">s-</csymbol>
+                           <ci>xb</ci>
+                           <ci>t_xb</ci>
+                        </apply>
+                     </apply>
+                     <apply>
+                        <times/>
+                        <ci>g_xa</ci>
+                        <ci>xa</ci>
+                     </apply>
+                  </apply>
+                  <annotation encoding="text">d/dt xa = k_xa * s-(xa, t_xa2)  * s-(xb,t_xb) - g_xa * xa</annotation>
+               </semantics>
+            </math>
+         </state-equation>
+         <parameter-inequalities>
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+               <apply>
+                  <lt/>
+                  <ci>z_xa</ci>
+                  <ci>t_xa1</ci>
+                  <ci>t_xa2</ci>
+                  <apply>
+                     <divide/>
+                     <ci>k_xa</ci>
+                     <ci>g_xa</ci>
+                  </apply>
+                  <ci>max_xa</ci>
+               </apply>
+            </math>
+         </parameter-inequalities>
+      </state-variable>
+      <state-variable id="xb">
+         <zero-parameter id="z_xb"/>
+         <box-parameter id="max_xb"/>
+         <list-of-threshold-parameters>
+            <threshold-parameter id="t_xb"/>
+         </list-of-threshold-parameters>
+         <list-of-synthesis-parameters>
+            <synthesis-parameter id="k_xb"/>
+         </list-of-synthesis-parameters>
+         <list-of-degradation-parameters>
+            <degradation-parameter id="g_xb"/>
+         </list-of-degradation-parameters>
+         <state-equation>
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+               <semantics>
+                  <apply>
+                     <minus/>
+                     <apply>
+                        <times/>
+                        <ci>k_xb</ci>
+                        <apply>
+                           <csymbol definitionURL="http://www-gna.inrialpes.fr/gnaml/symbols/step-minus"
+                                    encoding="text">s-</csymbol>
+                           <ci>xa</ci>
+                           <ci>t_xa1</ci>
+                        </apply>
+                     </apply>
+                     <apply>
+                        <times/>
+                        <ci>g_xb</ci>
+                        <ci>xb</ci>
+                     </apply>
+                  </apply>
+                  <annotation encoding="text">d/dt xb = k_xb * s-(xa, t_xa1)  - g_xb * xb</annotation>
+               </semantics>
+            </math>
+         </state-equation>
+         <parameter-inequalities>
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+               <apply>
+                  <lt/>
+                  <ci>z_xb</ci>
+                  <ci>t_xb</ci>
+                  <apply>
+                     <divide/>
+                     <ci>k_xb</ci>
+                     <ci>g_xb</ci>
+                  </apply>
+                  <ci>max_xb</ci>
+               </apply>
+            </math>
+         </parameter-inequalities>
+      </state-variable>
+   </model>
+   <initial-conditions id="xaxb1">
+      <constraint>
+         <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+               <geq/>
+               <ci>xa</ci>
+               <ci>z_xa</ci>
+            </apply>
+         </math>
+      </constraint>
+      <constraint>
+         <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+               <lt/>
+               <ci>xa</ci>
+               <ci>t_xa1</ci>
+            </apply>
+         </math>
+      </constraint>
+      <constraint>
+         <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+               <geq/>
+               <ci>xb</ci>
+               <ci>z_xb</ci>
+            </apply>
+         </math>
+      </constraint>
+      <constraint>
+         <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+               <lt/>
+               <ci>xb</ci>
+               <ci>t_xb</ci>
+            </apply>
+         </math>
+      </constraint>
+   </initial-conditions>
+   <initial-conditions id="xaxb27">
+      <constraint>
+         <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+               <gt/>
+               <ci>xa</ci>
+               <ci>t_xa2</ci>
+            </apply>
+         </math>
+      </constraint>
+      <constraint>
+         <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+               <leq/>
+               <ci>xa</ci>
+               <ci>max_xa</ci>
+            </apply>
+         </math>
+      </constraint>
+      <constraint>
+         <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+               <gt/>
+               <ci>xb</ci>
+               <ci>t_xb</ci>
+            </apply>
+         </math>
+      </constraint>
+      <constraint>
+         <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+               <leq/>
+               <ci>xb</ci>
+               <ci>max_xb</ci>
+            </apply>
+         </math>
+      </constraint>
+   </initial-conditions>
+</gnaml>

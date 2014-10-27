@@ -1,0 +1,2049 @@
+[slf5s.start]24 Oct 2014 10:52:56,116[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+helix.util.log4j.LogSystem[slf5s.CATEGORY]
+-> LogSystem init[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:52:56,400[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+helix.util.log4j.LogSystem[slf5s.CATEGORY]
+
+_______________________________________________________________
+
+### Log System Info (Fri Oct 24 10:52:56 CEST 2014) ###
+
+-------- Modules VERSION : --------
+AROM 2.5.2 build July 27 2012 in VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaCore.jar
+AROMApi 2.5.0 build December 16 2010 in arom/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaCore.jar
+AROMGCL 1.4.2 build July 27 2012 in arom/gui/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaCore.jar
+AROMQuery 1.5.0 build December 16 2010 in arom/kr/query/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaCore.jar
+AROMTasks 1.5.1 build July 5 2011 in romans/arom/tasks/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaCore.jar
+CartoBean 1.6.3 build July 30 2012 in helix/beans/carto/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaViews.jar
+CartoSeqBean 1.6.3 build July 30 2012 in helix/beans/cartoSeq/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaViews.jar
+ChromoBean 1.2.0 build December 16 2010 in helix/beans/chromo/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/ChromoBean.jar
+DataManager 1.5.3 build July 30 2012 in iogma/core/datamanager/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/DataManager.jar
+Expresso 1.2.3 build July 30 2012 in iogma/core/expresso/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/Expresso.jar
+GNA 8.4.0 build July 31 2012 in gna/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/GNA/bin/GNA.jar
+GeKo 1.0.1 build July 31 2012 in geko/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/GeKo.jar
+HelixUtils 1.4.3 build July 27 2012 in helix/util/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/HelixUtils.jar
+IRAROM 2.5.0 build December 16 2010 in romans/arom/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaCore.jar
+InstantAROM 1.3.0 build December 16 2010 in arom/kr/instant/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaCore.jar
+Iogma 3.11.0 build July 31 2012 in iogma/platform/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/Iogma.jar
+IogmaCore 2.4.3 build July 30 2012 in iogma/core/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaCore.jar
+IogmaMGM 1.7.0 build December 16 2010 in iogma/core/mgm/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaCore.jar
+IogmaModule 1.3.1 build July 6 2011 in iogma/core/module/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaModule.jar
+IogmaNetwork 1.1.3 build July 30 2012 in iogma/network/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaNetwork.jar
+IogmaType 1.5.3 build July 30 2012 in iogma/core/type/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaCore.jar
+IogmaUI 1.2.3 build July 30 2012 in iogma/core/ui/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaUI.jar
+IogmaViews 1.5.3 build July 30 2012 in iogma/core/views/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaViews.jar
+QueryManager 1.4.2 build December 8 2011 in iogma/core/querymanager/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/QueryManager.jar
+Sequence 2.5.3 build July 30 2012 in iogma/core/type/sequence/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaCore.jar
+TasksManager 2.3.3 build July 30 2012 in iogma/core/tasksmanager/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/TasksManager.jar
+
+
+-------- Java Properties : --------
+ java.home : /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/jre
+ java.version : 1.6.0_29
+ java.vm.name : Java HotSpot(TM) Server VM
+ java.vm.version : 20.4-b02
+ java.class.path : /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/.install4j/i4jruntime.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/activation.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/aloe.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/ant-apache-oro.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/ant-apache-regexp.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/ant.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/ant-launcher.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/avalon-framework.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/axis-ant.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/axis.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/axis-schema.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/batik-anim.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/batik-awt-util.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/batik-css.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/batik-dom.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/batik-ext.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/batik-parser.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/batik-svg-dom.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/batik-svggen.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/batik-util.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/batik-xml.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/bcprov-jdk14-136.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/biojava.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/browserlauncher2.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/bsh.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/bytecode-0.92.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/castor-xml.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/ChromoBean.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/commons-cli.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/commons-codec.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/commons-collections.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/commons-dbcp-1.1.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/commons-discovery.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/commons-httpclient.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/commons-io.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/commons-lang.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/commons-logging.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/commons-pool-1.1.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/DataManager.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/Expresso.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/fop-hyph.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/fop.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/forms.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/ganymed-ssh2.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/GeKo.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/HelixUtils.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/i4jruntime.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/icu4j-3.4.4.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/idw.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaCore.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/Iogma.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaModule.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaNetwork.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaUI.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaViews.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/jai_codec.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/jai_core.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/jasypt.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/jaxme2-rt.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/jaxmeapi.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/jaxmexs.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/jaxrpc.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/jdic.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/jdic_stub_linux.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/jdic_stub_windows.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/jgraph4.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/jgraph5.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/jgraph.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/jhall.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/jpf-boot.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/jpf.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/JSAP.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/jug.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/junit.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/log4j.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/octet.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/oro.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/pal.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/plot.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/poi.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/postgresql.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/Protection.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/QueryManager.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/rosetta.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/saaj.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/serializer.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/swingx.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/tar.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/TasksManager.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/TMNetBean.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/velocity.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/wsdl4j.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/xalan27.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/xalan.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/xercesImpl.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/xlayouts.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/xml-apis.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/xmlgraphics-commons.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/GNA/bin/GNA.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/GNA/bin/java_cup.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/GNA/bin/JobHandler.client.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/GNA/bin/MSBChart.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/GNA/bin/sat4j-1.5.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/GNA/bin/saxon8-dom.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/GNA/bin/saxon8.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/GNA/bin/wizard-framework.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/plugins/iogma.core.data/bin/iogma.core.data.jar
+ os.name : Linux
+ os.arch : i386
+ os.version : 3.16.2-201.fc20.x86_64
+ user.name : guest
+ user.home : /home/guest
+ user.dir : /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0
+
+-------- Memory Properties : --------
+ Runtime.maxMemory (normally -Xmx) : 954466304
+ Runtime.totalMemory : 128647168
+ Runtime.freeMemory : 106455048
+
+-------- Iogma Properties : --------
+ iogma.port : i386-linux
+ iogma.dev : null
+ iogma.debug : null
+ iogma.home : /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/
+ iogma.data : /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/GenoData
+ iogma.externals : /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/Externals
+ iogma.user.home : /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0
+ iogma.user.data : /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/
+ iogma.user.externals : /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/
+ iogma.tmp : /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/Externals/tmp
+_______________________________________________________________
+[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:52:56,400[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+helix.util.log4j.LogSystem[slf5s.CATEGORY]
+<- LogSystem init[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:04,462[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.platform.license.IogmaLicenserFactory[slf5s.CATEGORY]
+use of default licenser[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:04,489[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.platform.license.DefaultIogmaLicenser[slf5s.CATEGORY]
+Platform Configuration loaded : /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/scripts/iogmaPlatform.conf[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:04,493[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.platform.license.DefaultIogmaLicenser[slf5s.CATEGORY]
+iogma.application.name : GNA 8.3a[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:04,493[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.platform.license.DefaultIogmaLicenser[slf5s.CATEGORY]
+iogma.application.shortname : GNA[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:04,493[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.platform.license.DefaultIogmaLicenser[slf5s.CATEGORY]
+iogma.application.banner : /iogma/platform/images/BrowserBanner_150x315.png[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:04,540[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.platform.license.DefaultIogmaLicenser[slf5s.CATEGORY]
+platform.edition : community[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:04,540[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.platform.license.DefaultIogmaLicenser[slf5s.CATEGORY]
+platform.standalone : true[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:04,540[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.platform.license.DefaultIogmaLicenser[slf5s.CATEGORY]
+platform.plugins : ConsoleViewer,iogma.gna[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:04,543[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+AWT-EventQueue-0[slf5s.THREAD]
+iogma.platform.IogmaMainFrame[slf5s.CATEGORY]
+-> cleanupTmpDir: /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/Externals/tmp[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:04,544[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+AWT-EventQueue-0[slf5s.THREAD]
+iogma.platform.IogmaMainFrame[slf5s.CATEGORY]
+Failed to clean file: /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/Externals/tmp/.MGM_?_1353404191950[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:04,544[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+AWT-EventQueue-0[slf5s.THREAD]
+iogma.platform.IogmaMainFrame[slf5s.CATEGORY]
+<- cleanupTmpDir[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:05,326[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+org.java.plugin.standard.StandardPluginManager[slf5s.CATEGORY]
+plug-in started - iogma.core.platform@3.11.0 (active/total: 1 of 6)[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:05,326[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.platform.AbstractPlatform[slf5s.CATEGORY]
+ -> Library iogma-externals-swserver-jar,bin/iogma.externals.swserver.jar of iogma.externals.swserver 1.1.3[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:05,326[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.platform.AbstractPlatform[slf5s.CATEGORY]
+ -> Library iogmacoredata-jar,bin/iogma.core.data.jar of iogma.core.data 1.2.3[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:05,326[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.platform.AbstractPlatform[slf5s.CATEGORY]
+ -> Library mc_nusmv_explicit_jar,bin/gna.mc.nusmv.explicit.jar of gna.mc.nusmv.explicit 1.3.0[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:05,326[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.platform.AbstractPlatform[slf5s.CATEGORY]
+ -> Library mc_nusmv_implicit_jar,bin/gna.mc.nusmv.implicit.jar of gna.mc.nusmv.implicit 1.3.0[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:05,338[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.platform.AbstractPlatform[slf5s.CATEGORY]
+integrity check done: errors - 4, warnings - 0[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:05,341[slf5s.DATE]
+ERROR[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.platform.AbstractPlatform[slf5s.CATEGORY]
+integrity check report:
+-------------- REPORT BEGIN -----------------
+	severity=INFO; code=NO_ERROR; message=starting up registry; source=null
+	severity=INFO; code=NO_ERROR; message=parsing plug-in manifests; source=null
+	severity=INFO; code=NO_ERROR; message=manifest files parsed, plug-ins found - 6, fragments found - 0; source=null
+	severity=INFO; code=NO_ERROR; message=registering plug-ins; source=null
+	severity=INFO; code=NO_ERROR; message=plug-in iogma.externals.swserver@1.1.3 registered; source=null
+	severity=INFO; code=NO_ERROR; message=plug-in iogma.core.platform@3.11.0 registered; source=null
+	severity=INFO; code=NO_ERROR; message=plug-in iogma.core.data@1.2.3 registered; source=null
+	severity=INFO; code=NO_ERROR; message=plug-in gna.mc.nusmv.implicit@1.3.0 registered; source=null
+	severity=INFO; code=NO_ERROR; message=plug-in gna.mc.nusmv.explicit@1.3.0 registered; source=null
+	severity=INFO; code=NO_ERROR; message=plug-in iogma.gna@8.4.0 registered; source=null
+	severity=INFO; code=NO_ERROR; message=registering plug-in fragments; source=null
+	severity=INFO; code=NO_ERROR; message=total number of registered plug-ins now is 6; source=null
+	severity=INFO; code=NO_ERROR; message=total number of registered plug-in fragments now is 0; source=null
+	severity=INFO; code=NO_ERROR; message=checking plug-ins; source=null
+	severity=INFO; code=NO_ERROR; message=checking plug-in iogma.externals.swserver@1.1.3; source={PluginDescriptor: uid=iogma.externals.swserver@1.1.3}
+	severity=INFO; code=NO_ERROR; message=checking prerequisites for iogma.externals.swserver@1.1.3; source={PluginDescriptor: uid=iogma.externals.swserver@1.1.3}
+	severity=ERROR; code=UNSATISFIED_PREREQUISITE; message=prerequisite iogma.externals.kbserver unsatisfied in plug-in iogma.externals.swserver@1.1.3; source={PluginDescriptor: uid=iogma.externals.swserver@1.1.3}
+	severity=ERROR; code=UNSATISFIED_PREREQUISITE; message=prerequisite iogma.externals.emboss unsatisfied in plug-in iogma.externals.swserver@1.1.3; source={PluginDescriptor: uid=iogma.externals.swserver@1.1.3}
+	severity=ERROR; code=UNSATISFIED_PREREQUISITE; message=prerequisite iogma.externals.ncbi unsatisfied in plug-in iogma.externals.swserver@1.1.3; source={PluginDescriptor: uid=iogma.externals.swserver@1.1.3}
+	severity=INFO; code=NO_ERROR; message=checked 4 prerequisites for iogma.externals.swserver@1.1.3; source={PluginDescriptor: uid=iogma.externals.swserver@1.1.3}
+	severity=INFO; code=NO_ERROR; message=checking libraries for iogma.externals.swserver@1.1.3; source={PluginDescriptor: uid=iogma.externals.swserver@1.1.3}
+	severity=INFO; code=NO_ERROR; message=checked 1 libraries for iogma.externals.swserver@1.1.3; source={PluginDescriptor: uid=iogma.externals.swserver@1.1.3}
+	severity=INFO; code=NO_ERROR; message=checking extension points; source={PluginDescriptor: uid=iogma.externals.swserver@1.1.3}
+	severity=INFO; code=NO_ERROR; message=checked 0 extension points for iogma.externals.swserver@1.1.3; source={PluginDescriptor: uid=iogma.externals.swserver@1.1.3}
+	severity=INFO; code=NO_ERROR; message=checking extensions; source={PluginDescriptor: uid=iogma.externals.swserver@1.1.3}
+	severity=INFO; code=NO_ERROR; message=checking extension iogma.externals.swserver@KbserverSWRunner; source={PluginExtension: uid=iogma.externals.swserver@KbserverSWRunner}
+	severity=ERROR; code=INVALID_EXTENSION; message=extension point iogma.externals.ncbi@BlastDBRunner not available for extension iogma.externals.swserver@KbserverSWRunner; source={PluginExtension: uid=iogma.externals.swserver@KbserverSWRunner}
+	severity=INFO; code=NO_ERROR; message=extension iogma.externals.swserver@KbserverSWRunner checked; source={PluginExtension: uid=iogma.externals.swserver@KbserverSWRunner}
+	severity=INFO; code=NO_ERROR; message=checked 1 extensions for iogma.externals.swserver@1.1.3; source={PluginDescriptor: uid=iogma.externals.swserver@1.1.3}
+	severity=INFO; code=NO_ERROR; message=plug-in iogma.externals.swserver@1.1.3 checked; source={PluginDescriptor: uid=iogma.externals.swserver@1.1.3}
+	severity=INFO; code=NO_ERROR; message=checking plug-in iogma.core.data@1.2.3; source={PluginDescriptor: uid=iogma.core.data@1.2.3}
+	severity=INFO; code=NO_ERROR; message=checking prerequisites for iogma.core.data@1.2.3; source={PluginDescriptor: uid=iogma.core.data@1.2.3}
+	severity=INFO; code=NO_ERROR; message=checked 1 prerequisites for iogma.core.data@1.2.3; source={PluginDescriptor: uid=iogma.core.data@1.2.3}
+	severity=INFO; code=NO_ERROR; message=checking libraries for iogma.core.data@1.2.3; source={PluginDescriptor: uid=iogma.core.data@1.2.3}
+	severity=INFO; code=NO_ERROR; message=checked 1 libraries for iogma.core.data@1.2.3; source={PluginDescriptor: uid=iogma.core.data@1.2.3}
+	severity=INFO; code=NO_ERROR; message=checking extension points; source={PluginDescriptor: uid=iogma.core.data@1.2.3}
+	severity=INFO; code=NO_ERROR; message=checking extension point iogma.core.data@GOClassificationProvider; source={ExtensionPoint: uid=iogma.core.data@GOClassificationProvider}
+	severity=INFO; code=NO_ERROR; message=extension point iogma.core.data@GOClassificationProvider checked; source={ExtensionPoint: uid=iogma.core.data@GOClassificationProvider}
+	severity=INFO; code=NO_ERROR; message=checking extension point iogma.core.data@TaxonomyProvider; source={ExtensionPoint: uid=iogma.core.data@TaxonomyProvider}
+	severity=INFO; code=NO_ERROR; message=extension point iogma.core.data@TaxonomyProvider checked; source={ExtensionPoint: uid=iogma.core.data@TaxonomyProvider}
+	severity=INFO; code=NO_ERROR; message=checked 2 extension points for iogma.core.data@1.2.3; source={PluginDescriptor: uid=iogma.core.data@1.2.3}
+	severity=INFO; code=NO_ERROR; message=checking extensions; source={PluginDescriptor: uid=iogma.core.data@1.2.3}
+	severity=INFO; code=NO_ERROR; message=checking extension iogma.core.data@IogmaDataPlugin; source={PluginExtension: uid=iogma.core.data@IogmaDataPlugin}
+	severity=INFO; code=NO_ERROR; message=extension iogma.core.data@IogmaDataPlugin checked; source={PluginExtension: uid=iogma.core.data@IogmaDataPlugin}
+	severity=INFO; code=NO_ERROR; message=checking extension iogma.core.data@WebGOClassificationProvider; source={PluginExtension: uid=iogma.core.data@WebGOClassificationProvider}
+	severity=INFO; code=NO_ERROR; message=extension iogma.core.data@WebGOClassificationProvider checked; source={PluginExtension: uid=iogma.core.data@WebGOClassificationProvider}
+	severity=INFO; code=NO_ERROR; message=checked 2 extensions for iogma.core.data@1.2.3; source={PluginDescriptor: uid=iogma.core.data@1.2.3}
+	severity=INFO; code=NO_ERROR; message=plug-in iogma.core.data@1.2.3 checked; source={PluginDescriptor: uid=iogma.core.data@1.2.3}
+	severity=INFO; code=NO_ERROR; message=checking plug-in gna.mc.nusmv.explicit@1.3.0; source={PluginDescriptor: uid=gna.mc.nusmv.explicit@1.3.0}
+	severity=INFO; code=NO_ERROR; message=checking prerequisites for gna.mc.nusmv.explicit@1.3.0; source={PluginDescriptor: uid=gna.mc.nusmv.explicit@1.3.0}
+	severity=INFO; code=NO_ERROR; message=checked 2 prerequisites for gna.mc.nusmv.explicit@1.3.0; source={PluginDescriptor: uid=gna.mc.nusmv.explicit@1.3.0}
+	severity=INFO; code=NO_ERROR; message=checking libraries for gna.mc.nusmv.explicit@1.3.0; source={PluginDescriptor: uid=gna.mc.nusmv.explicit@1.3.0}
+	severity=INFO; code=NO_ERROR; message=checked 1 libraries for gna.mc.nusmv.explicit@1.3.0; source={PluginDescriptor: uid=gna.mc.nusmv.explicit@1.3.0}
+	severity=INFO; code=NO_ERROR; message=checking extension points; source={PluginDescriptor: uid=gna.mc.nusmv.explicit@1.3.0}
+	severity=INFO; code=NO_ERROR; message=checked 0 extension points for gna.mc.nusmv.explicit@1.3.0; source={PluginDescriptor: uid=gna.mc.nusmv.explicit@1.3.0}
+	severity=INFO; code=NO_ERROR; message=checking extensions; source={PluginDescriptor: uid=gna.mc.nusmv.explicit@1.3.0}
+	severity=INFO; code=NO_ERROR; message=checking extension gna.mc.nusmv.explicit@NuSMVExplicitWriter; source={PluginExtension: uid=gna.mc.nusmv.explicit@NuSMVExplicitWriter}
+	severity=INFO; code=NO_ERROR; message=extension gna.mc.nusmv.explicit@NuSMVExplicitWriter checked; source={PluginExtension: uid=gna.mc.nusmv.explicit@NuSMVExplicitWriter}
+	severity=INFO; code=NO_ERROR; message=checked 1 extensions for gna.mc.nusmv.explicit@1.3.0; source={PluginDescriptor: uid=gna.mc.nusmv.explicit@1.3.0}
+	severity=INFO; code=NO_ERROR; message=plug-in gna.mc.nusmv.explicit@1.3.0 checked; source={PluginDescriptor: uid=gna.mc.nusmv.explicit@1.3.0}
+	severity=INFO; code=NO_ERROR; message=checking plug-in iogma.core.platform@3.11.0; source={PluginDescriptor: uid=iogma.core.platform@3.11.0}
+	severity=INFO; code=NO_ERROR; message=checking prerequisites for iogma.core.platform@3.11.0; source={PluginDescriptor: uid=iogma.core.platform@3.11.0}
+	severity=INFO; code=NO_ERROR; message=checked 0 prerequisites for iogma.core.platform@3.11.0; source={PluginDescriptor: uid=iogma.core.platform@3.11.0}
+	severity=INFO; code=NO_ERROR; message=checking libraries for iogma.core.platform@3.11.0; source={PluginDescriptor: uid=iogma.core.platform@3.11.0}
+	severity=INFO; code=NO_ERROR; message=checked 0 libraries for iogma.core.platform@3.11.0; source={PluginDescriptor: uid=iogma.core.platform@3.11.0}
+	severity=INFO; code=NO_ERROR; message=checking extension points; source={PluginDescriptor: uid=iogma.core.platform@3.11.0}
+	severity=INFO; code=NO_ERROR; message=checking extension point iogma.core.platform@ICAction; source={ExtensionPoint: uid=iogma.core.platform@ICAction}
+	severity=INFO; code=NO_ERROR; message=extension point iogma.core.platform@ICAction checked; source={ExtensionPoint: uid=iogma.core.platform@ICAction}
+	severity=INFO; code=NO_ERROR; message=checking extension point iogma.core.platform@PreferencesTab; source={ExtensionPoint: uid=iogma.core.platform@PreferencesTab}
+	severity=INFO; code=NO_ERROR; message=extension point iogma.core.platform@PreferencesTab checked; source={ExtensionPoint: uid=iogma.core.platform@PreferencesTab}
+	severity=INFO; code=NO_ERROR; message=checking extension point iogma.core.platform@KnowledgeBase; source={ExtensionPoint: uid=iogma.core.platform@KnowledgeBase}
+	severity=INFO; code=NO_ERROR; message=extension point iogma.core.platform@KnowledgeBase checked; source={ExtensionPoint: uid=iogma.core.platform@KnowledgeBase}
+	severity=INFO; code=NO_ERROR; message=checking extension point iogma.core.platform@Service; source={ExtensionPoint: uid=iogma.core.platform@Service}
+	severity=INFO; code=NO_ERROR; message=extension point iogma.core.platform@Service checked; source={ExtensionPoint: uid=iogma.core.platform@Service}
+	severity=INFO; code=NO_ERROR; message=checking extension point iogma.core.platform@HelpLocation; source={ExtensionPoint: uid=iogma.core.platform@HelpLocation}
+	severity=INFO; code=NO_ERROR; message=extension point iogma.core.platform@HelpLocation checked; source={ExtensionPoint: uid=iogma.core.platform@HelpLocation}
+	severity=INFO; code=NO_ERROR; message=checking extension point iogma.core.platform@TasksLocation; source={ExtensionPoint: uid=iogma.core.platform@TasksLocation}
+	severity=INFO; code=NO_ERROR; message=extension point iogma.core.platform@TasksLocation checked; source={ExtensionPoint: uid=iogma.core.platform@TasksLocation}
+	severity=INFO; code=NO_ERROR; message=checking extension point iogma.core.platform@ICModule; source={ExtensionPoint: uid=iogma.core.platform@ICModule}
+	severity=INFO; code=NO_ERROR; message=extension point iogma.core.platform@ICModule checked; source={ExtensionPoint: uid=iogma.core.platform@ICModule}
+	severity=INFO; code=NO_ERROR; message=checking extension point iogma.core.platform@PlatformElement; source={ExtensionPoint: uid=iogma.core.platform@PlatformElement}
+	severity=INFO; code=NO_ERROR; message=extension point iogma.core.platform@PlatformElement checked; source={ExtensionPoint: uid=iogma.core.platform@PlatformElement}
+	severity=INFO; code=NO_ERROR; message=checking extension point iogma.core.platform@I18nBundle; source={ExtensionPoint: uid=iogma.core.platform@I18nBundle}
+	severity=INFO; code=NO_ERROR; message=extension point iogma.core.platform@I18nBundle checked; source={ExtensionPoint: uid=iogma.core.platform@I18nBundle}
+	severity=INFO; code=NO_ERROR; message=checked 9 extension points for iogma.core.platform@3.11.0; source={PluginDescriptor: uid=iogma.core.platform@3.11.0}
+	severity=INFO; code=NO_ERROR; message=checking extensions; source={PluginDescriptor: uid=iogma.core.platform@3.11.0}
+	severity=INFO; code=NO_ERROR; message=checking extension iogma.core.platform@iogma.core.platform.jhelp; source={PluginExtension: uid=iogma.core.platform@iogma.core.platform.jhelp}
+	severity=INFO; code=NO_ERROR; message=extension iogma.core.platform@iogma.core.platform.jhelp checked; source={PluginExtension: uid=iogma.core.platform@iogma.core.platform.jhelp}
+	severity=INFO; code=NO_ERROR; message=checked 1 extensions for iogma.core.platform@3.11.0; source={PluginDescriptor: uid=iogma.core.platform@3.11.0}
+	severity=INFO; code=NO_ERROR; message=plug-in iogma.core.platform@3.11.0 checked; source={PluginDescriptor: uid=iogma.core.platform@3.11.0}
+	severity=INFO; code=NO_ERROR; message=checking plug-in gna.mc.nusmv.implicit@1.3.0; source={PluginDescriptor: uid=gna.mc.nusmv.implicit@1.3.0}
+	severity=INFO; code=NO_ERROR; message=checking prerequisites for gna.mc.nusmv.implicit@1.3.0; source={PluginDescriptor: uid=gna.mc.nusmv.implicit@1.3.0}
+	severity=INFO; code=NO_ERROR; message=checked 2 prerequisites for gna.mc.nusmv.implicit@1.3.0; source={PluginDescriptor: uid=gna.mc.nusmv.implicit@1.3.0}
+	severity=INFO; code=NO_ERROR; message=checking libraries for gna.mc.nusmv.implicit@1.3.0; source={PluginDescriptor: uid=gna.mc.nusmv.implicit@1.3.0}
+	severity=INFO; code=NO_ERROR; message=checked 1 libraries for gna.mc.nusmv.implicit@1.3.0; source={PluginDescriptor: uid=gna.mc.nusmv.implicit@1.3.0}
+	severity=INFO; code=NO_ERROR; message=checking extension points; source={PluginDescriptor: uid=gna.mc.nusmv.implicit@1.3.0}
+	severity=INFO; code=NO_ERROR; message=checked 0 extension points for gna.mc.nusmv.implicit@1.3.0; source={PluginDescriptor: uid=gna.mc.nusmv.implicit@1.3.0}
+	severity=INFO; code=NO_ERROR; message=checking extensions; source={PluginDescriptor: uid=gna.mc.nusmv.implicit@1.3.0}
+	severity=INFO; code=NO_ERROR; message=checking extension gna.mc.nusmv.implicit@NuSMVImplicitWriter; source={PluginExtension: uid=gna.mc.nusmv.implicit@NuSMVImplicitWriter}
+	severity=INFO; code=NO_ERROR; message=extension gna.mc.nusmv.implicit@NuSMVImplicitWriter checked; source={PluginExtension: uid=gna.mc.nusmv.implicit@NuSMVImplicitWriter}
+	severity=INFO; code=NO_ERROR; message=checked 1 extensions for gna.mc.nusmv.implicit@1.3.0; source={PluginDescriptor: uid=gna.mc.nusmv.implicit@1.3.0}
+	severity=INFO; code=NO_ERROR; message=plug-in gna.mc.nusmv.implicit@1.3.0 checked; source={PluginDescriptor: uid=gna.mc.nusmv.implicit@1.3.0}
+	severity=INFO; code=NO_ERROR; message=checking plug-in iogma.gna@8.4.0; source={PluginDescriptor: uid=iogma.gna@8.4.0}
+	severity=INFO; code=NO_ERROR; message=checking prerequisites for iogma.gna@8.4.0; source={PluginDescriptor: uid=iogma.gna@8.4.0}
+	severity=INFO; code=NO_ERROR; message=checked 1 prerequisites for iogma.gna@8.4.0; source={PluginDescriptor: uid=iogma.gna@8.4.0}
+	severity=INFO; code=NO_ERROR; message=checking libraries for iogma.gna@8.4.0; source={PluginDescriptor: uid=iogma.gna@8.4.0}
+	severity=INFO; code=NO_ERROR; message=checked 0 libraries for iogma.gna@8.4.0; source={PluginDescriptor: uid=iogma.gna@8.4.0}
+	severity=INFO; code=NO_ERROR; message=checking extension points; source={PluginDescriptor: uid=iogma.gna@8.4.0}
+	severity=INFO; code=NO_ERROR; message=checking extension point iogma.gna@MCWriter; source={ExtensionPoint: uid=iogma.gna@MCWriter}
+	severity=INFO; code=NO_ERROR; message=extension point iogma.gna@MCWriter checked; source={ExtensionPoint: uid=iogma.gna@MCWriter}
+	severity=INFO; code=NO_ERROR; message=checked 1 extension points for iogma.gna@8.4.0; source={PluginDescriptor: uid=iogma.gna@8.4.0}
+	severity=INFO; code=NO_ERROR; message=checking extensions; source={PluginDescriptor: uid=iogma.gna@8.4.0}
+	severity=INFO; code=NO_ERROR; message=checking extension iogma.gna@GnaModule; source={PluginExtension: uid=iogma.gna@GnaModule}
+	severity=INFO; code=NO_ERROR; message=extension iogma.gna@GnaModule checked; source={PluginExtension: uid=iogma.gna@GnaModule}
+	severity=INFO; code=NO_ERROR; message=checking extension iogma.gna@iogma.gna.jhelp; source={PluginExtension: uid=iogma.gna@iogma.gna.jhelp}
+	severity=INFO; code=NO_ERROR; message=extension iogma.gna@iogma.gna.jhelp checked; source={PluginExtension: uid=iogma.gna@iogma.gna.jhelp}
+	severity=INFO; code=NO_ERROR; message=checked 2 extensions for iogma.gna@8.4.0; source={PluginDescriptor: uid=iogma.gna@8.4.0}
+	severity=INFO; code=NO_ERROR; message=plug-in iogma.gna@8.4.0 checked; source={PluginDescriptor: uid=iogma.gna@8.4.0}
+	severity=INFO; code=NO_ERROR; message=6 plug-ins checked; source=null
+-------------- REPORT END -----------------[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:05,342[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.platform.IogmaServicesProvider[slf5s.CATEGORY]
+use of javahelp help system[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:05,437[slf5s.DATE]
+ERROR[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.ui.help.impl.JavaHelpService[slf5s.CATEGORY]
+Could not find helpset : /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/IogmaHelp/jhelpset.hs[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:05,437[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.platform.help.IogmaHelpService[slf5s.CATEGORY]
+Default HelpSet path: /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/IogmaHelp/jhelpset.hs[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:05,437[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+org.java.plugin.standard.StandardPluginManager[slf5s.CATEGORY]
+plug-in started - iogma.gna@8.4.0 (active/total: 2 of 6)[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:05,437[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.platform.IogmaPlatform[slf5s.CATEGORY]
+Add helpset to HelpService: /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/GNA/docs/javahelp/jhelpset.hs[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:05,499[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+userLogger[slf5s.CATEGORY]
+0 module(s) found in the configuration file[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:05,507[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.platform.IPModuleDescriptor[slf5s.CATEGORY]
+IPModuleDescriptor description created for module GNA[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:06,056[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.platform.IogmaMainFrame[slf5s.CATEGORY]
+launch standalone module : GNA[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:06,057[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.platform.IPModuleDescriptor[slf5s.CATEGORY]
+Will instantiate GNA[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:06,297[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+-> Creates IAAromSystem[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:06,297[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+Will find ia.properties files in classpath[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:06,332[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+found ia properties file in classpath : iogma/core/model/BioModel.ia.properties[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:06,333[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+API.PACKNAME=iogma.core.model[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:06,333[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+FACTORY.KB.NAME=@KBNAME@[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:06,333[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+FACTORY.PREFIX=[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:06,333[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+IMPL.PREFIX=Default[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:06,333[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+MODEL.NAME=BioModel[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:06,333[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+FACTORY.PACKNAME=iogma.core.model[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:06,333[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+IMPL.PACKNAME=iogma.core.model.impl[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:06,333[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+/*=of the template used for implementation classes.[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:06,333[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+IMPL.KB=iogma.core.model.impl.DefaultBioModelIMPL[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:06,340[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+Successful register of instant AROM properties for : BioModel[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:06,341[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+found ia properties file in classpath : iogma/network/IogmaNetworkModel.ia.properties[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:06,341[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+FACTORY.KB.NAME=@KBNAME@[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:06,341[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+FACTORY.PREFIX=[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:06,341[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+IMPL.PREFIX=Default[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:06,341[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+MODEL.NAME=IogmaNetworkModel[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:06,341[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+FACTORY.PACKNAME=iogma.network.model[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:06,341[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+IMPL.PACKNAME=iogma.network.model.impl[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:06,341[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+/*=of the template used for implementation classes.[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:06,341[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+IMPL.KB=iogma.network.model.impl.DefaultIogmaNetworkModelIMPL[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:06,341[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+Successful register of instant AROM properties for : IogmaNetworkModel[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:06,376[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+Will find static ia.properties properties[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:06,376[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+<- Creates IAAromSystem[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:06,376[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.network.NetworkModel[slf5s.CATEGORY]
+[standard, records, instances][slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:06,513[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.type.arom.AnnotationCT[slf5s.CATEGORY]
+Annotation operators  : [slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:06,513[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.type.arom.AnnotationCT[slf5s.CATEGORY]
+ - cardContent[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:06,513[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.type.arom.AnnotationCT[slf5s.CATEGORY]
+ - cardCount[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:06,513[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.type.arom.AnnotationCT[slf5s.CATEGORY]
+ - hasCard[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:06,555[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+Instant AROM Knowledge Base for : IogmaNetworkModel[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:06,603[slf5s.DATE]
+WARN[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+Error initializing InstantAROM KB Factory:iogma.network.model.IogmaNetworkModel.setKB(arom.kr.model.KnowledgeBase) - iogma.network.model.IogmaNetworkModel[slf5s.MESSAGE]
+
+java.lang.NoSuchMethodException: iogma.network.model.IogmaNetworkModel.setKB(arom.kr.model.KnowledgeBase)
+	at java.lang.Class.getDeclaredMethod(Unknown Source)
+	at romans.arom.ia.kr.factory.IAAromSystem.initializeIA(Unknown Source)
+	at romans.arom.ia.kr.factory.IAAromSystem.createKB(Unknown Source)
+	at arom.kr.parser.standard.AromCreationVisitor.visit(Unknown Source)
+	at arom.kr.parser.standard.AromKnowledgeBaseNode.jjtAccept(Unknown Source)
+	at arom.kr.parser.standard.StandardVisitorManager.createKnowledgeBase(Unknown Source)
+	at arom.kr.parser.standard.StandardReader.createKB(Unknown Source)
+	at arom.kr.parser.standard.StandardReader.createKB(Unknown Source)
+	at iogma.network.NetworkModel.loadAROMModel(Unknown Source)
+	at iogma.network.NetworkModel.<init>(Unknown Source)
+	at gna.kernel.Network.<init>(Unknown Source)
+	at gna.kernel.Project.createNetwork(Unknown Source)
+	at gna.kernel.Project.createNetwork(Unknown Source)
+	at gna.kernel.Project.<init>(Unknown Source)
+	at gna.gui.ime.IME.<init>(Unknown Source)
+	at gna.gui.module.GnaModule.<init>(Unknown Source)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at iogma.platform.IPModuleDescriptor.getModuleInstance(Unknown Source)
+	at iogma.platform.IogmaPlatform.instanciateModule(Unknown Source)
+	at iogma.platform.IogmaMainFrame.<init>(Unknown Source)
+	at iogma.platform.IogmaMainFrame.startIogma(Unknown Source)
+	at iogma.platform.launcher.IogmaLauncher.main(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.exe4j.runtime.LauncherEngine.launch(Unknown Source)
+	at com.install4j.runtime.Launcher.main(Unknown Source)
+[slf5s.start]24 Oct 2014 10:53:06,604[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+Instant AROM Knowledge Base successful created : IogmaNetworkModel[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:06,706[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.network.NetworkModel[slf5s.CATEGORY]
+ Knowledge base class = class iogma.network.model.impl.DefaultIogmaNetworkModelIMPL[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:06,723[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.mgm.cachesoftref.CSRMemoryManager[slf5s.CATEGORY]
+--> Try to init CSRMemoryManager with System Properties[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:06,724[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.mgm.cachesoftref.CSRMemoryManager[slf5s.CATEGORY]
+--> Continue init CSRMemoryManager with Properties file (only for missing properties) =/iogma/core/mgm/cachesoftref/config.properties[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:06,724[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.mgm.cachesoftref.CSRMemoryManager[slf5s.CATEGORY]
+sizeMax = 2000000[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:06,724[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.mgm.cachesoftref.CSRMemoryManager[slf5s.CATEGORY]
+threadMemMonitor = enable[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:06,724[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.mgm.cachesoftref.CSRMemoryManager[slf5s.CATEGORY]
+memoryLevel = 50000000[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:06,724[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.mgm.cachesoftref.CSRMemoryManager[slf5s.CATEGORY]
+lowMemoryLevel = 50000000[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:06,724[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.mgm.cachesoftref.CSRMemoryManager[slf5s.CATEGORY]
+logDelay = 0[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:06,725[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.mgm.persistence.RAFPersistence[slf5s.CATEGORY]
+RAFPersistence implInstanceValues = romans.arom.kr.model.RInstanceValues[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:06,725[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.mgm.persistence.RAFPersistence[slf5s.CATEGORY]
+RAFPersistence nbInstMax = 2000000[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:06,733[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.mgm.persistence.Storage[slf5s.CATEGORY]
+TRY Temp directory = /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/Externals/tmp/.MGM_guest_1414140786733[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:06,734[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.mgm.persistence.Storage[slf5s.CATEGORY]
+Finally MGM Temp directory is  = /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/Externals/tmp/.MGM_guest_1414140786733[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:07,034[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.mgm.JVMMemoryMonitor[slf5s.CATEGORY]
+JVMMemoryMonitor INIT :  needMemoryLevel = 50000000 lowMemoryLevel = 50000000[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:07,040[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.mgm.cachesoftref.CacheManagerLFU[slf5s.CATEGORY]
+CacheManagerLFU INIT :  nbInstance = 2000000 needMemoryLevel = 50000000 lowMemoryLevel = 50000000[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:07,040[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.mgm.cachesoftref.CSRMemoryManager[slf5s.CATEGORY]
+<-- Init CSRMemoryManager[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:07,062[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.network.IogmaNetworkResources[slf5s.CATEGORY]
+--> read resources[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:07,114[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.network.IogmaNetworkResources[slf5s.CATEGORY]
+<-- read resources[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:07,864[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+org.java.plugin.standard.StandardPluginManager[slf5s.CATEGORY]
+plug-in started - gna.mc.nusmv.explicit@1.3.0 (active/total: 3 of 6)[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:07,870[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+org.java.plugin.standard.StandardPluginManager[slf5s.CATEGORY]
+plug-in started - gna.mc.nusmv.implicit@1.3.0 (active/total: 4 of 6)[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:07,944[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.network.NetworkModel[slf5s.CATEGORY]
+[standard, records, instances][slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:07,953[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+Instant AROM Knowledge Base for : IogmaNetworkModel[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:07,953[slf5s.DATE]
+WARN[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+Error initializing InstantAROM KB Factory:iogma.network.model.IogmaNetworkModel.setKB(arom.kr.model.KnowledgeBase) - iogma.network.model.IogmaNetworkModel[slf5s.MESSAGE]
+
+java.lang.NoSuchMethodException: iogma.network.model.IogmaNetworkModel.setKB(arom.kr.model.KnowledgeBase)
+	at java.lang.Class.getDeclaredMethod(Unknown Source)
+	at romans.arom.ia.kr.factory.IAAromSystem.initializeIA(Unknown Source)
+	at romans.arom.ia.kr.factory.IAAromSystem.createKB(Unknown Source)
+	at arom.kr.parser.standard.AromCreationVisitor.visit(Unknown Source)
+	at arom.kr.parser.standard.AromKnowledgeBaseNode.jjtAccept(Unknown Source)
+	at arom.kr.parser.standard.StandardVisitorManager.createKnowledgeBase(Unknown Source)
+	at arom.kr.parser.standard.StandardReader.createKB(Unknown Source)
+	at arom.kr.parser.standard.StandardReader.createKB(Unknown Source)
+	at iogma.network.NetworkModel.loadAROMModel(Unknown Source)
+	at iogma.network.NetworkModel.<init>(Unknown Source)
+	at gna.kernel.Network.<init>(Unknown Source)
+	at gna.kernel.Project.createNetwork(Unknown Source)
+	at gna.kernel.Project.createNetwork(Unknown Source)
+	at gna.kernel.Project.<init>(Unknown Source)
+	at gna.gui.module.GnaModule.<init>(Unknown Source)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at iogma.platform.IPModuleDescriptor.getModuleInstance(Unknown Source)
+	at iogma.platform.IogmaPlatform.instanciateModule(Unknown Source)
+	at iogma.platform.IogmaMainFrame.<init>(Unknown Source)
+	at iogma.platform.IogmaMainFrame.startIogma(Unknown Source)
+	at iogma.platform.launcher.IogmaLauncher.main(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.exe4j.runtime.LauncherEngine.launch(Unknown Source)
+	at com.install4j.runtime.Launcher.main(Unknown Source)
+[slf5s.start]24 Oct 2014 10:53:07,954[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+Instant AROM Knowledge Base successful created : IogmaNetworkModel[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:08,031[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.network.NetworkModel[slf5s.CATEGORY]
+ Knowledge base class = class iogma.network.model.impl.DefaultIogmaNetworkModelIMPL[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:08,724[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+helix.util.log4j.LogSystem[slf5s.CATEGORY]
+IOGMA LAUNCHED. Bye... see you in log4j logs.[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:08,724[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+helix.util.log4j.LogSystem[slf5s.CATEGORY]
+
+[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:25,893[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+Thread-6[slf5s.THREAD]
+iogma.core.mgm.persistence.ShutdownThread[slf5s.CATEGORY]
+--> ShutdownThread TRY to delete all files in the directory = /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/Externals/tmp/.MGM_guest_1414140786733[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:25,894[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+Thread-6[slf5s.THREAD]
+iogma.core.mgm.persistence.ShutdownThread[slf5s.CATEGORY]
+<-- ShutdownThread[slf5s.MESSAGE]
+
+n[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+found ia properties file in classpath : iogma/network/IogmaNetworkModel.ia.properties[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:02,831[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+FACTORY.KB.NAME=@KBNAME@[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:02,831[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+FACTORY.PREFIX=[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:02,831[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+IMPL.PREFIX=Default[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:02,831[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+MODEL.NAME=IogmaNetworkModel[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:02,831[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+FACTORY.PACKNAME=iogma.network.model[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:02,831[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+IMPL.PACKNAME=iogma.network.model.impl[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:02,831[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+/*=of the template used for implementation classes.[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:02,831[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+IMPL.KB=iogma.network.model.impl.DefaultIogmaNetworkModelIMPL[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:02,831[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+Successful register of instant AROM properties for : IogmaNetworkModel[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:02,866[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+Will find static ia.properties properties[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:02,866[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+<- Creates IAAromSystem[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:02,866[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.network.NetworkModel[slf5s.CATEGORY]
+[standard, records, instances][slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:02,945[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.type.arom.AnnotationCT[slf5s.CATEGORY]
+Annotation operators  : [slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:02,945[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.type.arom.AnnotationCT[slf5s.CATEGORY]
+ - cardContent[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:02,945[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.type.arom.AnnotationCT[slf5s.CATEGORY]
+ - cardCount[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:02,945[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.type.arom.AnnotationCT[slf5s.CATEGORY]
+ - hasCard[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:02,966[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+Instant AROM Knowledge Base for : IogmaNetworkModel[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:02,990[slf5s.DATE]
+WARN[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+Error initializing InstantAROM KB Factory:iogma.network.model.IogmaNetworkModel.setKB(arom.kr.model.KnowledgeBase) - iogma.network.model.IogmaNetworkModel[slf5s.MESSAGE]
+
+java.lang.NoSuchMethodException: iogma.network.model.IogmaNetworkModel.setKB(arom.kr.model.KnowledgeBase)
+	at java.lang.Class.getDeclaredMethod(Unknown Source)
+	at romans.arom.ia.kr.factory.IAAromSystem.initializeIA(Unknown Source)
+	at romans.arom.ia.kr.factory.IAAromSystem.createKB(Unknown Source)
+	at arom.kr.parser.standard.AromCreationVisitor.visit(Unknown Source)
+	at arom.kr.parser.standard.AromKnowledgeBaseNode.jjtAccept(Unknown Source)
+	at arom.kr.parser.standard.StandardVisitorManager.createKnowledgeBase(Unknown Source)
+	at arom.kr.parser.standard.StandardReader.createKB(Unknown Source)
+	at arom.kr.parser.standard.StandardReader.createKB(Unknown Source)
+	at iogma.network.NetworkModel.loadAROMModel(Unknown Source)
+	at iogma.network.NetworkModel.<init>(Unknown Source)
+	at gna.kernel.Network.<init>(Unknown Source)
+	at gna.kernel.Project.createNetwork(Unknown Source)
+	at gna.kernel.Project.createNetwork(Unknown Source)
+	at gna.kernel.Project.<init>(Unknown Source)
+	at gna.gui.ime.IME.<init>(Unknown Source)
+	at gna.gui.module.GnaModule.<init>(Unknown Source)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at iogma.platform.IPModuleDescriptor.getModuleInstance(Unknown Source)
+	at iogma.platform.IogmaPlatform.instanciateModule(Unknown Source)
+	at iogma.platform.IogmaMainFrame.<init>(Unknown Source)
+	at iogma.platform.IogmaMainFrame.startIogma(Unknown Source)
+	at iogma.platform.launcher.IogmaLauncher.main(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.exe4j.runtime.LauncherEngine.launch(Unknown Source)
+	at com.install4j.runtime.Launcher.main(Unknown Source)
+[slf5s.start]24 Oct 2014 10:53:02,991[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+Instant AROM Knowledge Base successful created : IogmaNetworkModel[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:03,043[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.network.NetworkModel[slf5s.CATEGORY]
+ Knowledge base class = class iogma.network.model.impl.DefaultIogmaNetworkModelIMPL[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:03,053[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.mgm.cachesoftref.CSRMemoryManager[slf5s.CATEGORY]
+--> Try to init CSRMemoryManager with System Properties[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:03,053[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.mgm.cachesoftref.CSRMemoryManager[slf5s.CATEGORY]
+--> Continue init CSRMemoryManager with Properties file (only for missing properties) =/iogma/core/mgm/cachesoftref/config.properties[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:03,053[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.mgm.cachesoftref.CSRMemoryManager[slf5s.CATEGORY]
+sizeMax = 2000000[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:03,053[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.mgm.cachesoftref.CSRMemoryManager[slf5s.CATEGORY]
+threadMemMonitor = enable[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:03,053[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.mgm.cachesoftref.CSRMemoryManager[slf5s.CATEGORY]
+memoryLevel = 50000000[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:03,053[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.mgm.cachesoftref.CSRMemoryManager[slf5s.CATEGORY]
+lowMemoryLevel = 50000000[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:03,053[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.mgm.cachesoftref.CSRMemoryManager[slf5s.CATEGORY]
+logDelay = 0[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:03,054[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.mgm.persistence.RAFPersistence[slf5s.CATEGORY]
+RAFPersistence implInstanceValues = romans.arom.kr.model.RInstanceValues[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:03,054[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.mgm.persistence.RAFPersistence[slf5s.CATEGORY]
+RAFPersistence nbInstMax = 2000000[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:03,055[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.mgm.persistence.Storage[slf5s.CATEGORY]
+TRY Temp directory = /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/Externals/tmp/.MGM_guest_1414140783055[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:03,055[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.mgm.persistence.Storage[slf5s.CATEGORY]
+Finally MGM Temp directory is  = /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/Externals/tmp/.MGM_guest_1414140783055[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:03,225[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.mgm.JVMMemoryMonitor[slf5s.CATEGORY]
+JVMMemoryMonitor INIT :  needMemoryLevel = 50000000 lowMemoryLevel = 50000000[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:03,227[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.mgm.cachesoftref.CacheManagerLFU[slf5s.CATEGORY]
+CacheManagerLFU INIT :  nbInstance = 2000000 needMemoryLevel = 50000000 lowMemoryLevel = 50000000[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:03,227[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.mgm.cachesoftref.CSRMemoryManager[slf5s.CATEGORY]
+<-- Init CSRMemoryManager[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:03,236[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.network.IogmaNetworkResources[slf5s.CATEGORY]
+--> read resources[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:03,272[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.network.IogmaNetworkResources[slf5s.CATEGORY]
+<-- read resources[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:04,042[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+org.java.plugin.standard.StandardPluginManager[slf5s.CATEGORY]
+plug-in started - gna.mc.nusmv.explicit@1.3.0 (active/total: 3 of 6)[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:04,047[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+org.java.plugin.standard.StandardPluginManager[slf5s.CATEGORY]
+plug-in started - gna.mc.nusmv.implicit@1.3.0 (active/total: 4 of 6)[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:04,122[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.network.NetworkModel[slf5s.CATEGORY]
+[standard, records, instances][slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:04,127[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+Instant AROM Knowledge Base for : IogmaNetworkModel[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:04,128[slf5s.DATE]
+WARN[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+Error initializing InstantAROM KB Factory:iogma.network.model.IogmaNetworkModel.setKB(arom.kr.model.KnowledgeBase) - iogma.network.model.IogmaNetworkModel[slf5s.MESSAGE]
+
+java.lang.NoSuchMethodException: iogma.network.model.IogmaNetworkModel.setKB(arom.kr.model.KnowledgeBase)
+	at java.lang.Class.getDeclaredMethod(Unknown Source)
+	at romans.arom.ia.kr.factory.IAAromSystem.initializeIA(Unknown Source)
+	at romans.arom.ia.kr.factory.IAAromSystem.createKB(Unknown Source)
+	at arom.kr.parser.standard.AromCreationVisitor.visit(Unknown Source)
+	at arom.kr.parser.standard.AromKnowledgeBaseNode.jjtAccept(Unknown Source)
+	at arom.kr.parser.standard.StandardVisitorManager.createKnowledgeBase(Unknown Source)
+	at arom.kr.parser.standard.StandardReader.createKB(Unknown Source)
+	at arom.kr.parser.standard.StandardReader.createKB(Unknown Source)
+	at iogma.network.NetworkModel.loadAROMModel(Unknown Source)
+	at iogma.network.NetworkModel.<init>(Unknown Source)
+	at gna.kernel.Network.<init>(Unknown Source)
+	at gna.kernel.Project.createNetwork(Unknown Source)
+	at gna.kernel.Project.createNetwork(Unknown Source)
+	at gna.kernel.Project.<init>(Unknown Source)
+	at gna.gui.module.GnaModule.<init>(Unknown Source)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at iogma.platform.IPModuleDescriptor.getModuleInstance(Unknown Source)
+	at iogma.platform.IogmaPlatform.instanciateModule(Unknown Source)
+	at iogma.platform.IogmaMainFrame.<init>(Unknown Source)
+	at iogma.platform.IogmaMainFrame.startIogma(Unknown Source)
+	at iogma.platform.launcher.IogmaLauncher.main(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.exe4j.runtime.LauncherEngine.launch(Unknown Source)
+	at com.install4j.runtime.Launcher.main(Unknown Source)
+[slf5s.start]24 Oct 2014 10:53:04,135[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+Instant AROM Knowledge Base successful created : IogmaNetworkModel[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:04,201[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.network.NetworkModel[slf5s.CATEGORY]
+ Knowledge base class = class iogma.network.model.impl.DefaultIogmaNetworkModelIMPL[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:05,186[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+helix.util.log4j.LogSystem[slf5s.CATEGORY]
+IOGMA LAUNCHED. Bye... see you in log4j logs.[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 10:53:05,186[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+helix.util.log4j.LogSystem[slf5s.CATEGORY]
+
+[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:35,135[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+Thread-6[slf5s.THREAD]
+iogma.core.mgm.persistence.ShutdownThread[slf5s.CATEGORY]
+--> ShutdownThread TRY to delete all files in the directory = /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/Externals/tmp/.MGM_guest_1414140783055[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:35,137[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+Thread-6[slf5s.THREAD]
+iogma.core.mgm.persistence.ShutdownThread[slf5s.CATEGORY]
+<-- ShutdownThread[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:51,721[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+helix.util.log4j.LogSystem[slf5s.CATEGORY]
+-> LogSystem init[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:51,821[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+helix.util.log4j.LogSystem[slf5s.CATEGORY]
+
+_______________________________________________________________
+
+### Log System Info (Fri Oct 24 11:13:51 CEST 2014) ###
+
+-------- Modules VERSION : --------
+AROM 2.5.2 build July 27 2012 in VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaCore.jar
+AROMApi 2.5.0 build December 16 2010 in arom/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaCore.jar
+AROMGCL 1.4.2 build July 27 2012 in arom/gui/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaCore.jar
+AROMQuery 1.5.0 build December 16 2010 in arom/kr/query/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaCore.jar
+AROMTasks 1.5.1 build July 5 2011 in romans/arom/tasks/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaCore.jar
+CartoBean 1.6.3 build July 30 2012 in helix/beans/carto/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaViews.jar
+CartoSeqBean 1.6.3 build July 30 2012 in helix/beans/cartoSeq/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaViews.jar
+ChromoBean 1.2.0 build December 16 2010 in helix/beans/chromo/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/ChromoBean.jar
+DataManager 1.5.3 build July 30 2012 in iogma/core/datamanager/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/DataManager.jar
+Expresso 1.2.3 build July 30 2012 in iogma/core/expresso/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/Expresso.jar
+GNA 8.4.0 build July 31 2012 in gna/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/GNA/bin/GNA.jar
+GeKo 1.0.1 build July 31 2012 in geko/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/GeKo.jar
+HelixUtils 1.4.3 build July 27 2012 in helix/util/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/HelixUtils.jar
+IRAROM 2.5.0 build December 16 2010 in romans/arom/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaCore.jar
+InstantAROM 1.3.0 build December 16 2010 in arom/kr/instant/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaCore.jar
+Iogma 3.11.0 build July 31 2012 in iogma/platform/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/Iogma.jar
+IogmaCore 2.4.3 build July 30 2012 in iogma/core/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaCore.jar
+IogmaMGM 1.7.0 build December 16 2010 in iogma/core/mgm/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaCore.jar
+IogmaModule 1.3.1 build July 6 2011 in iogma/core/module/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaModule.jar
+IogmaNetwork 1.1.3 build July 30 2012 in iogma/network/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaNetwork.jar
+IogmaType 1.5.3 build July 30 2012 in iogma/core/type/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaCore.jar
+IogmaUI 1.2.3 build July 30 2012 in iogma/core/ui/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaUI.jar
+IogmaViews 1.5.3 build July 30 2012 in iogma/core/views/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaViews.jar
+QueryManager 1.4.2 build December 8 2011 in iogma/core/querymanager/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/QueryManager.jar
+Sequence 2.5.3 build July 30 2012 in iogma/core/type/sequence/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaCore.jar
+TasksManager 2.3.3 build July 30 2012 in iogma/core/tasksmanager/VERSION of file /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/TasksManager.jar
+
+
+-------- Java Properties : --------
+ java.home : /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/jre
+ java.version : 1.6.0_29
+ java.vm.name : Java HotSpot(TM) Server VM
+ java.vm.version : 20.4-b02
+ java.class.path : /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/.install4j/i4jruntime.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/activation.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/aloe.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/ant-apache-oro.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/ant-apache-regexp.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/ant.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/ant-launcher.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/avalon-framework.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/axis-ant.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/axis.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/axis-schema.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/batik-anim.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/batik-awt-util.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/batik-css.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/batik-dom.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/batik-ext.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/batik-parser.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/batik-svg-dom.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/batik-svggen.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/batik-util.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/batik-xml.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/bcprov-jdk14-136.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/biojava.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/browserlauncher2.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/bsh.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/bytecode-0.92.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/castor-xml.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/ChromoBean.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/commons-cli.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/commons-codec.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/commons-collections.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/commons-dbcp-1.1.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/commons-discovery.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/commons-httpclient.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/commons-io.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/commons-lang.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/commons-logging.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/commons-pool-1.1.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/DataManager.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/Expresso.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/fop-hyph.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/fop.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/forms.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/ganymed-ssh2.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/GeKo.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/HelixUtils.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/i4jruntime.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/icu4j-3.4.4.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/idw.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaCore.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/Iogma.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaModule.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaNetwork.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaUI.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/IogmaViews.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/jai_codec.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/jai_core.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/jasypt.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/jaxme2-rt.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/jaxmeapi.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/jaxmexs.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/jaxrpc.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/jdic.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/jdic_stub_linux.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/jdic_stub_windows.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/jgraph4.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/jgraph5.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/jgraph.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/jhall.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/jpf-boot.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/jpf.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/JSAP.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/jug.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/junit.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/log4j.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/octet.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/oro.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/pal.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/plot.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/poi.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/postgresql.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/Protection.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/QueryManager.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/rosetta.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/saaj.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/serializer.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/swingx.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/tar.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/TasksManager.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/TMNetBean.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/velocity.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/wsdl4j.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/xalan27.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/xalan.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/xercesImpl.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/xlayouts.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/xml-apis.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/bin/xmlgraphics-commons.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/GNA/bin/GNA.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/GNA/bin/java_cup.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/GNA/bin/JobHandler.client.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/GNA/bin/MSBChart.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/GNA/bin/sat4j-1.5.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/GNA/bin/saxon8-dom.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/GNA/bin/saxon8.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/GNA/bin/wizard-framework.jar:/home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/plugins/iogma.core.data/bin/iogma.core.data.jar
+ os.name : Linux
+ os.arch : i386
+ os.version : 3.16.2-201.fc20.x86_64
+ user.name : guest
+ user.home : /home/guest
+ user.dir : /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0
+
+-------- Memory Properties : --------
+ Runtime.maxMemory (normally -Xmx) : 954466304
+ Runtime.totalMemory : 128647168
+ Runtime.freeMemory : 106451296
+
+-------- Iogma Properties : --------
+ iogma.port : i386-linux
+ iogma.dev : null
+ iogma.debug : null
+ iogma.home : /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/
+ iogma.data : /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/GenoData
+ iogma.externals : /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/Externals
+ iogma.user.home : /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0
+ iogma.user.data : /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/
+ iogma.user.externals : /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/
+ iogma.tmp : /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/Externals/tmp
+_______________________________________________________________
+[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:51,821[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+helix.util.log4j.LogSystem[slf5s.CATEGORY]
+<- LogSystem init[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:51,823[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.platform.license.IogmaLicenserFactory[slf5s.CATEGORY]
+use of default licenser[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:51,824[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.platform.license.DefaultIogmaLicenser[slf5s.CATEGORY]
+Platform Configuration loaded : /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/scripts/iogmaPlatform.conf[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:51,826[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.platform.license.DefaultIogmaLicenser[slf5s.CATEGORY]
+iogma.application.name : GNA 8.3a[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:51,826[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.platform.license.DefaultIogmaLicenser[slf5s.CATEGORY]
+iogma.application.shortname : GNA[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:51,826[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.platform.license.DefaultIogmaLicenser[slf5s.CATEGORY]
+iogma.application.banner : /iogma/platform/images/BrowserBanner_150x315.png[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:51,857[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.platform.license.DefaultIogmaLicenser[slf5s.CATEGORY]
+platform.edition : community[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:51,857[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.platform.license.DefaultIogmaLicenser[slf5s.CATEGORY]
+platform.standalone : true[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:51,857[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.platform.license.DefaultIogmaLicenser[slf5s.CATEGORY]
+platform.plugins : ConsoleViewer,iogma.gna[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:51,860[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+AWT-EventQueue-0[slf5s.THREAD]
+iogma.platform.IogmaMainFrame[slf5s.CATEGORY]
+-> cleanupTmpDir: /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/Externals/tmp[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:51,861[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+AWT-EventQueue-0[slf5s.THREAD]
+iogma.platform.IogmaMainFrame[slf5s.CATEGORY]
+Failed to clean file: /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/Externals/tmp/.MGM_?_1353404191950[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:51,861[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+AWT-EventQueue-0[slf5s.THREAD]
+iogma.platform.IogmaMainFrame[slf5s.CATEGORY]
+<- cleanupTmpDir[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:52,165[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+org.java.plugin.standard.StandardPluginManager[slf5s.CATEGORY]
+plug-in started - iogma.core.platform@3.11.0 (active/total: 1 of 6)[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:52,165[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.platform.AbstractPlatform[slf5s.CATEGORY]
+ -> Library iogma-externals-swserver-jar,bin/iogma.externals.swserver.jar of iogma.externals.swserver 1.1.3[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:52,165[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.platform.AbstractPlatform[slf5s.CATEGORY]
+ -> Library iogmacoredata-jar,bin/iogma.core.data.jar of iogma.core.data 1.2.3[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:52,165[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.platform.AbstractPlatform[slf5s.CATEGORY]
+ -> Library mc_nusmv_explicit_jar,bin/gna.mc.nusmv.explicit.jar of gna.mc.nusmv.explicit 1.3.0[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:52,165[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.platform.AbstractPlatform[slf5s.CATEGORY]
+ -> Library mc_nusmv_implicit_jar,bin/gna.mc.nusmv.implicit.jar of gna.mc.nusmv.implicit 1.3.0[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:52,169[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.platform.AbstractPlatform[slf5s.CATEGORY]
+integrity check done: errors - 4, warnings - 0[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:52,173[slf5s.DATE]
+ERROR[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.platform.AbstractPlatform[slf5s.CATEGORY]
+integrity check report:
+-------------- REPORT BEGIN -----------------
+	severity=INFO; code=NO_ERROR; message=starting up registry; source=null
+	severity=INFO; code=NO_ERROR; message=parsing plug-in manifests; source=null
+	severity=INFO; code=NO_ERROR; message=manifest files parsed, plug-ins found - 6, fragments found - 0; source=null
+	severity=INFO; code=NO_ERROR; message=registering plug-ins; source=null
+	severity=INFO; code=NO_ERROR; message=plug-in iogma.externals.swserver@1.1.3 registered; source=null
+	severity=INFO; code=NO_ERROR; message=plug-in iogma.core.platform@3.11.0 registered; source=null
+	severity=INFO; code=NO_ERROR; message=plug-in iogma.core.data@1.2.3 registered; source=null
+	severity=INFO; code=NO_ERROR; message=plug-in gna.mc.nusmv.implicit@1.3.0 registered; source=null
+	severity=INFO; code=NO_ERROR; message=plug-in gna.mc.nusmv.explicit@1.3.0 registered; source=null
+	severity=INFO; code=NO_ERROR; message=plug-in iogma.gna@8.4.0 registered; source=null
+	severity=INFO; code=NO_ERROR; message=registering plug-in fragments; source=null
+	severity=INFO; code=NO_ERROR; message=total number of registered plug-ins now is 6; source=null
+	severity=INFO; code=NO_ERROR; message=total number of registered plug-in fragments now is 0; source=null
+	severity=INFO; code=NO_ERROR; message=checking plug-ins; source=null
+	severity=INFO; code=NO_ERROR; message=checking plug-in iogma.externals.swserver@1.1.3; source={PluginDescriptor: uid=iogma.externals.swserver@1.1.3}
+	severity=INFO; code=NO_ERROR; message=checking prerequisites for iogma.externals.swserver@1.1.3; source={PluginDescriptor: uid=iogma.externals.swserver@1.1.3}
+	severity=ERROR; code=UNSATISFIED_PREREQUISITE; message=prerequisite iogma.externals.kbserver unsatisfied in plug-in iogma.externals.swserver@1.1.3; source={PluginDescriptor: uid=iogma.externals.swserver@1.1.3}
+	severity=ERROR; code=UNSATISFIED_PREREQUISITE; message=prerequisite iogma.externals.emboss unsatisfied in plug-in iogma.externals.swserver@1.1.3; source={PluginDescriptor: uid=iogma.externals.swserver@1.1.3}
+	severity=ERROR; code=UNSATISFIED_PREREQUISITE; message=prerequisite iogma.externals.ncbi unsatisfied in plug-in iogma.externals.swserver@1.1.3; source={PluginDescriptor: uid=iogma.externals.swserver@1.1.3}
+	severity=INFO; code=NO_ERROR; message=checked 4 prerequisites for iogma.externals.swserver@1.1.3; source={PluginDescriptor: uid=iogma.externals.swserver@1.1.3}
+	severity=INFO; code=NO_ERROR; message=checking libraries for iogma.externals.swserver@1.1.3; source={PluginDescriptor: uid=iogma.externals.swserver@1.1.3}
+	severity=INFO; code=NO_ERROR; message=checked 1 libraries for iogma.externals.swserver@1.1.3; source={PluginDescriptor: uid=iogma.externals.swserver@1.1.3}
+	severity=INFO; code=NO_ERROR; message=checking extension points; source={PluginDescriptor: uid=iogma.externals.swserver@1.1.3}
+	severity=INFO; code=NO_ERROR; message=checked 0 extension points for iogma.externals.swserver@1.1.3; source={PluginDescriptor: uid=iogma.externals.swserver@1.1.3}
+	severity=INFO; code=NO_ERROR; message=checking extensions; source={PluginDescriptor: uid=iogma.externals.swserver@1.1.3}
+	severity=INFO; code=NO_ERROR; message=checking extension iogma.externals.swserver@KbserverSWRunner; source={PluginExtension: uid=iogma.externals.swserver@KbserverSWRunner}
+	severity=ERROR; code=INVALID_EXTENSION; message=extension point iogma.externals.ncbi@BlastDBRunner not available for extension iogma.externals.swserver@KbserverSWRunner; source={PluginExtension: uid=iogma.externals.swserver@KbserverSWRunner}
+	severity=INFO; code=NO_ERROR; message=extension iogma.externals.swserver@KbserverSWRunner checked; source={PluginExtension: uid=iogma.externals.swserver@KbserverSWRunner}
+	severity=INFO; code=NO_ERROR; message=checked 1 extensions for iogma.externals.swserver@1.1.3; source={PluginDescriptor: uid=iogma.externals.swserver@1.1.3}
+	severity=INFO; code=NO_ERROR; message=plug-in iogma.externals.swserver@1.1.3 checked; source={PluginDescriptor: uid=iogma.externals.swserver@1.1.3}
+	severity=INFO; code=NO_ERROR; message=checking plug-in iogma.core.data@1.2.3; source={PluginDescriptor: uid=iogma.core.data@1.2.3}
+	severity=INFO; code=NO_ERROR; message=checking prerequisites for iogma.core.data@1.2.3; source={PluginDescriptor: uid=iogma.core.data@1.2.3}
+	severity=INFO; code=NO_ERROR; message=checked 1 prerequisites for iogma.core.data@1.2.3; source={PluginDescriptor: uid=iogma.core.data@1.2.3}
+	severity=INFO; code=NO_ERROR; message=checking libraries for iogma.core.data@1.2.3; source={PluginDescriptor: uid=iogma.core.data@1.2.3}
+	severity=INFO; code=NO_ERROR; message=checked 1 libraries for iogma.core.data@1.2.3; source={PluginDescriptor: uid=iogma.core.data@1.2.3}
+	severity=INFO; code=NO_ERROR; message=checking extension points; source={PluginDescriptor: uid=iogma.core.data@1.2.3}
+	severity=INFO; code=NO_ERROR; message=checking extension point iogma.core.data@GOClassificationProvider; source={ExtensionPoint: uid=iogma.core.data@GOClassificationProvider}
+	severity=INFO; code=NO_ERROR; message=extension point iogma.core.data@GOClassificationProvider checked; source={ExtensionPoint: uid=iogma.core.data@GOClassificationProvider}
+	severity=INFO; code=NO_ERROR; message=checking extension point iogma.core.data@TaxonomyProvider; source={ExtensionPoint: uid=iogma.core.data@TaxonomyProvider}
+	severity=INFO; code=NO_ERROR; message=extension point iogma.core.data@TaxonomyProvider checked; source={ExtensionPoint: uid=iogma.core.data@TaxonomyProvider}
+	severity=INFO; code=NO_ERROR; message=checked 2 extension points for iogma.core.data@1.2.3; source={PluginDescriptor: uid=iogma.core.data@1.2.3}
+	severity=INFO; code=NO_ERROR; message=checking extensions; source={PluginDescriptor: uid=iogma.core.data@1.2.3}
+	severity=INFO; code=NO_ERROR; message=checking extension iogma.core.data@IogmaDataPlugin; source={PluginExtension: uid=iogma.core.data@IogmaDataPlugin}
+	severity=INFO; code=NO_ERROR; message=extension iogma.core.data@IogmaDataPlugin checked; source={PluginExtension: uid=iogma.core.data@IogmaDataPlugin}
+	severity=INFO; code=NO_ERROR; message=checking extension iogma.core.data@WebGOClassificationProvider; source={PluginExtension: uid=iogma.core.data@WebGOClassificationProvider}
+	severity=INFO; code=NO_ERROR; message=extension iogma.core.data@WebGOClassificationProvider checked; source={PluginExtension: uid=iogma.core.data@WebGOClassificationProvider}
+	severity=INFO; code=NO_ERROR; message=checked 2 extensions for iogma.core.data@1.2.3; source={PluginDescriptor: uid=iogma.core.data@1.2.3}
+	severity=INFO; code=NO_ERROR; message=plug-in iogma.core.data@1.2.3 checked; source={PluginDescriptor: uid=iogma.core.data@1.2.3}
+	severity=INFO; code=NO_ERROR; message=checking plug-in gna.mc.nusmv.explicit@1.3.0; source={PluginDescriptor: uid=gna.mc.nusmv.explicit@1.3.0}
+	severity=INFO; code=NO_ERROR; message=checking prerequisites for gna.mc.nusmv.explicit@1.3.0; source={PluginDescriptor: uid=gna.mc.nusmv.explicit@1.3.0}
+	severity=INFO; code=NO_ERROR; message=checked 2 prerequisites for gna.mc.nusmv.explicit@1.3.0; source={PluginDescriptor: uid=gna.mc.nusmv.explicit@1.3.0}
+	severity=INFO; code=NO_ERROR; message=checking libraries for gna.mc.nusmv.explicit@1.3.0; source={PluginDescriptor: uid=gna.mc.nusmv.explicit@1.3.0}
+	severity=INFO; code=NO_ERROR; message=checked 1 libraries for gna.mc.nusmv.explicit@1.3.0; source={PluginDescriptor: uid=gna.mc.nusmv.explicit@1.3.0}
+	severity=INFO; code=NO_ERROR; message=checking extension points; source={PluginDescriptor: uid=gna.mc.nusmv.explicit@1.3.0}
+	severity=INFO; code=NO_ERROR; message=checked 0 extension points for gna.mc.nusmv.explicit@1.3.0; source={PluginDescriptor: uid=gna.mc.nusmv.explicit@1.3.0}
+	severity=INFO; code=NO_ERROR; message=checking extensions; source={PluginDescriptor: uid=gna.mc.nusmv.explicit@1.3.0}
+	severity=INFO; code=NO_ERROR; message=checking extension gna.mc.nusmv.explicit@NuSMVExplicitWriter; source={PluginExtension: uid=gna.mc.nusmv.explicit@NuSMVExplicitWriter}
+	severity=INFO; code=NO_ERROR; message=extension gna.mc.nusmv.explicit@NuSMVExplicitWriter checked; source={PluginExtension: uid=gna.mc.nusmv.explicit@NuSMVExplicitWriter}
+	severity=INFO; code=NO_ERROR; message=checked 1 extensions for gna.mc.nusmv.explicit@1.3.0; source={PluginDescriptor: uid=gna.mc.nusmv.explicit@1.3.0}
+	severity=INFO; code=NO_ERROR; message=plug-in gna.mc.nusmv.explicit@1.3.0 checked; source={PluginDescriptor: uid=gna.mc.nusmv.explicit@1.3.0}
+	severity=INFO; code=NO_ERROR; message=checking plug-in iogma.core.platform@3.11.0; source={PluginDescriptor: uid=iogma.core.platform@3.11.0}
+	severity=INFO; code=NO_ERROR; message=checking prerequisites for iogma.core.platform@3.11.0; source={PluginDescriptor: uid=iogma.core.platform@3.11.0}
+	severity=INFO; code=NO_ERROR; message=checked 0 prerequisites for iogma.core.platform@3.11.0; source={PluginDescriptor: uid=iogma.core.platform@3.11.0}
+	severity=INFO; code=NO_ERROR; message=checking libraries for iogma.core.platform@3.11.0; source={PluginDescriptor: uid=iogma.core.platform@3.11.0}
+	severity=INFO; code=NO_ERROR; message=checked 0 libraries for iogma.core.platform@3.11.0; source={PluginDescriptor: uid=iogma.core.platform@3.11.0}
+	severity=INFO; code=NO_ERROR; message=checking extension points; source={PluginDescriptor: uid=iogma.core.platform@3.11.0}
+	severity=INFO; code=NO_ERROR; message=checking extension point iogma.core.platform@ICAction; source={ExtensionPoint: uid=iogma.core.platform@ICAction}
+	severity=INFO; code=NO_ERROR; message=extension point iogma.core.platform@ICAction checked; source={ExtensionPoint: uid=iogma.core.platform@ICAction}
+	severity=INFO; code=NO_ERROR; message=checking extension point iogma.core.platform@PreferencesTab; source={ExtensionPoint: uid=iogma.core.platform@PreferencesTab}
+	severity=INFO; code=NO_ERROR; message=extension point iogma.core.platform@PreferencesTab checked; source={ExtensionPoint: uid=iogma.core.platform@PreferencesTab}
+	severity=INFO; code=NO_ERROR; message=checking extension point iogma.core.platform@KnowledgeBase; source={ExtensionPoint: uid=iogma.core.platform@KnowledgeBase}
+	severity=INFO; code=NO_ERROR; message=extension point iogma.core.platform@KnowledgeBase checked; source={ExtensionPoint: uid=iogma.core.platform@KnowledgeBase}
+	severity=INFO; code=NO_ERROR; message=checking extension point iogma.core.platform@Service; source={ExtensionPoint: uid=iogma.core.platform@Service}
+	severity=INFO; code=NO_ERROR; message=extension point iogma.core.platform@Service checked; source={ExtensionPoint: uid=iogma.core.platform@Service}
+	severity=INFO; code=NO_ERROR; message=checking extension point iogma.core.platform@HelpLocation; source={ExtensionPoint: uid=iogma.core.platform@HelpLocation}
+	severity=INFO; code=NO_ERROR; message=extension point iogma.core.platform@HelpLocation checked; source={ExtensionPoint: uid=iogma.core.platform@HelpLocation}
+	severity=INFO; code=NO_ERROR; message=checking extension point iogma.core.platform@TasksLocation; source={ExtensionPoint: uid=iogma.core.platform@TasksLocation}
+	severity=INFO; code=NO_ERROR; message=extension point iogma.core.platform@TasksLocation checked; source={ExtensionPoint: uid=iogma.core.platform@TasksLocation}
+	severity=INFO; code=NO_ERROR; message=checking extension point iogma.core.platform@ICModule; source={ExtensionPoint: uid=iogma.core.platform@ICModule}
+	severity=INFO; code=NO_ERROR; message=extension point iogma.core.platform@ICModule checked; source={ExtensionPoint: uid=iogma.core.platform@ICModule}
+	severity=INFO; code=NO_ERROR; message=checking extension point iogma.core.platform@PlatformElement; source={ExtensionPoint: uid=iogma.core.platform@PlatformElement}
+	severity=INFO; code=NO_ERROR; message=extension point iogma.core.platform@PlatformElement checked; source={ExtensionPoint: uid=iogma.core.platform@PlatformElement}
+	severity=INFO; code=NO_ERROR; message=checking extension point iogma.core.platform@I18nBundle; source={ExtensionPoint: uid=iogma.core.platform@I18nBundle}
+	severity=INFO; code=NO_ERROR; message=extension point iogma.core.platform@I18nBundle checked; source={ExtensionPoint: uid=iogma.core.platform@I18nBundle}
+	severity=INFO; code=NO_ERROR; message=checked 9 extension points for iogma.core.platform@3.11.0; source={PluginDescriptor: uid=iogma.core.platform@3.11.0}
+	severity=INFO; code=NO_ERROR; message=checking extensions; source={PluginDescriptor: uid=iogma.core.platform@3.11.0}
+	severity=INFO; code=NO_ERROR; message=checking extension iogma.core.platform@iogma.core.platform.jhelp; source={PluginExtension: uid=iogma.core.platform@iogma.core.platform.jhelp}
+	severity=INFO; code=NO_ERROR; message=extension iogma.core.platform@iogma.core.platform.jhelp checked; source={PluginExtension: uid=iogma.core.platform@iogma.core.platform.jhelp}
+	severity=INFO; code=NO_ERROR; message=checked 1 extensions for iogma.core.platform@3.11.0; source={PluginDescriptor: uid=iogma.core.platform@3.11.0}
+	severity=INFO; code=NO_ERROR; message=plug-in iogma.core.platform@3.11.0 checked; source={PluginDescriptor: uid=iogma.core.platform@3.11.0}
+	severity=INFO; code=NO_ERROR; message=checking plug-in gna.mc.nusmv.implicit@1.3.0; source={PluginDescriptor: uid=gna.mc.nusmv.implicit@1.3.0}
+	severity=INFO; code=NO_ERROR; message=checking prerequisites for gna.mc.nusmv.implicit@1.3.0; source={PluginDescriptor: uid=gna.mc.nusmv.implicit@1.3.0}
+	severity=INFO; code=NO_ERROR; message=checked 2 prerequisites for gna.mc.nusmv.implicit@1.3.0; source={PluginDescriptor: uid=gna.mc.nusmv.implicit@1.3.0}
+	severity=INFO; code=NO_ERROR; message=checking libraries for gna.mc.nusmv.implicit@1.3.0; source={PluginDescriptor: uid=gna.mc.nusmv.implicit@1.3.0}
+	severity=INFO; code=NO_ERROR; message=checked 1 libraries for gna.mc.nusmv.implicit@1.3.0; source={PluginDescriptor: uid=gna.mc.nusmv.implicit@1.3.0}
+	severity=INFO; code=NO_ERROR; message=checking extension points; source={PluginDescriptor: uid=gna.mc.nusmv.implicit@1.3.0}
+	severity=INFO; code=NO_ERROR; message=checked 0 extension points for gna.mc.nusmv.implicit@1.3.0; source={PluginDescriptor: uid=gna.mc.nusmv.implicit@1.3.0}
+	severity=INFO; code=NO_ERROR; message=checking extensions; source={PluginDescriptor: uid=gna.mc.nusmv.implicit@1.3.0}
+	severity=INFO; code=NO_ERROR; message=checking extension gna.mc.nusmv.implicit@NuSMVImplicitWriter; source={PluginExtension: uid=gna.mc.nusmv.implicit@NuSMVImplicitWriter}
+	severity=INFO; code=NO_ERROR; message=extension gna.mc.nusmv.implicit@NuSMVImplicitWriter checked; source={PluginExtension: uid=gna.mc.nusmv.implicit@NuSMVImplicitWriter}
+	severity=INFO; code=NO_ERROR; message=checked 1 extensions for gna.mc.nusmv.implicit@1.3.0; source={PluginDescriptor: uid=gna.mc.nusmv.implicit@1.3.0}
+	severity=INFO; code=NO_ERROR; message=plug-in gna.mc.nusmv.implicit@1.3.0 checked; source={PluginDescriptor: uid=gna.mc.nusmv.implicit@1.3.0}
+	severity=INFO; code=NO_ERROR; message=checking plug-in iogma.gna@8.4.0; source={PluginDescriptor: uid=iogma.gna@8.4.0}
+	severity=INFO; code=NO_ERROR; message=checking prerequisites for iogma.gna@8.4.0; source={PluginDescriptor: uid=iogma.gna@8.4.0}
+	severity=INFO; code=NO_ERROR; message=checked 1 prerequisites for iogma.gna@8.4.0; source={PluginDescriptor: uid=iogma.gna@8.4.0}
+	severity=INFO; code=NO_ERROR; message=checking libraries for iogma.gna@8.4.0; source={PluginDescriptor: uid=iogma.gna@8.4.0}
+	severity=INFO; code=NO_ERROR; message=checked 0 libraries for iogma.gna@8.4.0; source={PluginDescriptor: uid=iogma.gna@8.4.0}
+	severity=INFO; code=NO_ERROR; message=checking extension points; source={PluginDescriptor: uid=iogma.gna@8.4.0}
+	severity=INFO; code=NO_ERROR; message=checking extension point iogma.gna@MCWriter; source={ExtensionPoint: uid=iogma.gna@MCWriter}
+	severity=INFO; code=NO_ERROR; message=extension point iogma.gna@MCWriter checked; source={ExtensionPoint: uid=iogma.gna@MCWriter}
+	severity=INFO; code=NO_ERROR; message=checked 1 extension points for iogma.gna@8.4.0; source={PluginDescriptor: uid=iogma.gna@8.4.0}
+	severity=INFO; code=NO_ERROR; message=checking extensions; source={PluginDescriptor: uid=iogma.gna@8.4.0}
+	severity=INFO; code=NO_ERROR; message=checking extension iogma.gna@GnaModule; source={PluginExtension: uid=iogma.gna@GnaModule}
+	severity=INFO; code=NO_ERROR; message=extension iogma.gna@GnaModule checked; source={PluginExtension: uid=iogma.gna@GnaModule}
+	severity=INFO; code=NO_ERROR; message=checking extension iogma.gna@iogma.gna.jhelp; source={PluginExtension: uid=iogma.gna@iogma.gna.jhelp}
+	severity=INFO; code=NO_ERROR; message=extension iogma.gna@iogma.gna.jhelp checked; source={PluginExtension: uid=iogma.gna@iogma.gna.jhelp}
+	severity=INFO; code=NO_ERROR; message=checked 2 extensions for iogma.gna@8.4.0; source={PluginDescriptor: uid=iogma.gna@8.4.0}
+	severity=INFO; code=NO_ERROR; message=plug-in iogma.gna@8.4.0 checked; source={PluginDescriptor: uid=iogma.gna@8.4.0}
+	severity=INFO; code=NO_ERROR; message=6 plug-ins checked; source=null
+-------------- REPORT END -----------------[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:52,179[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.platform.IogmaServicesProvider[slf5s.CATEGORY]
+use of javahelp help system[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:52,277[slf5s.DATE]
+ERROR[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.ui.help.impl.JavaHelpService[slf5s.CATEGORY]
+Could not find helpset : /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/IogmaHelp/jhelpset.hs[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:52,277[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.platform.help.IogmaHelpService[slf5s.CATEGORY]
+Default HelpSet path: /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/IogmaHelp/jhelpset.hs[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:52,277[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+org.java.plugin.standard.StandardPluginManager[slf5s.CATEGORY]
+plug-in started - iogma.gna@8.4.0 (active/total: 2 of 6)[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:52,278[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.platform.IogmaPlatform[slf5s.CATEGORY]
+Add helpset to HelpService: /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/GNA/docs/javahelp/jhelpset.hs[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:52,309[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+userLogger[slf5s.CATEGORY]
+0 module(s) found in the configuration file[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:52,312[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.platform.IPModuleDescriptor[slf5s.CATEGORY]
+IPModuleDescriptor description created for module GNA[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:52,651[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.platform.IogmaMainFrame[slf5s.CATEGORY]
+launch standalone module : GNA[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:52,651[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.platform.IPModuleDescriptor[slf5s.CATEGORY]
+Will instantiate GNA[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:52,761[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+-> Creates IAAromSystem[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:52,762[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+Will find ia.properties files in classpath[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:52,780[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+found ia properties file in classpath : iogma/core/model/BioModel.ia.properties[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:52,781[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+API.PACKNAME=iogma.core.model[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:52,781[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+FACTORY.KB.NAME=@KBNAME@[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:52,781[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+FACTORY.PREFIX=[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:52,781[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+IMPL.PREFIX=Default[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:52,781[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+MODEL.NAME=BioModel[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:52,781[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+FACTORY.PACKNAME=iogma.core.model[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:52,781[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+IMPL.PACKNAME=iogma.core.model.impl[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:52,781[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+/*=of the template used for implementation classes.[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:52,781[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+IMPL.KB=iogma.core.model.impl.DefaultBioModelIMPL[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:52,781[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+Successful register of instant AROM properties for : BioModel[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:52,782[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+found ia properties file in classpath : iogma/network/IogmaNetworkModel.ia.properties[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:52,782[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+FACTORY.KB.NAME=@KBNAME@[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:52,782[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+FACTORY.PREFIX=[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:52,782[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+IMPL.PREFIX=Default[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:52,782[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+MODEL.NAME=IogmaNetworkModel[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:52,782[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+FACTORY.PACKNAME=iogma.network.model[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:52,782[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+IMPL.PACKNAME=iogma.network.model.impl[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:52,782[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+/*=of the template used for implementation classes.[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:52,782[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+IMPL.KB=iogma.network.model.impl.DefaultIogmaNetworkModelIMPL[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:52,782[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+Successful register of instant AROM properties for : IogmaNetworkModel[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:52,817[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+Will find static ia.properties properties[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:52,817[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+<- Creates IAAromSystem[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:52,817[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.network.NetworkModel[slf5s.CATEGORY]
+[standard, records, instances][slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:52,937[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.type.arom.AnnotationCT[slf5s.CATEGORY]
+Annotation operators  : [slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:52,937[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.type.arom.AnnotationCT[slf5s.CATEGORY]
+ - cardContent[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:52,937[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.type.arom.AnnotationCT[slf5s.CATEGORY]
+ - cardCount[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:52,937[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.type.arom.AnnotationCT[slf5s.CATEGORY]
+ - hasCard[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:52,964[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+Instant AROM Knowledge Base for : IogmaNetworkModel[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:53,009[slf5s.DATE]
+WARN[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+Error initializing InstantAROM KB Factory:iogma.network.model.IogmaNetworkModel.setKB(arom.kr.model.KnowledgeBase) - iogma.network.model.IogmaNetworkModel[slf5s.MESSAGE]
+
+java.lang.NoSuchMethodException: iogma.network.model.IogmaNetworkModel.setKB(arom.kr.model.KnowledgeBase)
+	at java.lang.Class.getDeclaredMethod(Unknown Source)
+	at romans.arom.ia.kr.factory.IAAromSystem.initializeIA(Unknown Source)
+	at romans.arom.ia.kr.factory.IAAromSystem.createKB(Unknown Source)
+	at arom.kr.parser.standard.AromCreationVisitor.visit(Unknown Source)
+	at arom.kr.parser.standard.AromKnowledgeBaseNode.jjtAccept(Unknown Source)
+	at arom.kr.parser.standard.StandardVisitorManager.createKnowledgeBase(Unknown Source)
+	at arom.kr.parser.standard.StandardReader.createKB(Unknown Source)
+	at arom.kr.parser.standard.StandardReader.createKB(Unknown Source)
+	at iogma.network.NetworkModel.loadAROMModel(Unknown Source)
+	at iogma.network.NetworkModel.<init>(Unknown Source)
+	at gna.kernel.Network.<init>(Unknown Source)
+	at gna.kernel.Project.createNetwork(Unknown Source)
+	at gna.kernel.Project.createNetwork(Unknown Source)
+	at gna.kernel.Project.<init>(Unknown Source)
+	at gna.gui.ime.IME.<init>(Unknown Source)
+	at gna.gui.module.GnaModule.<init>(Unknown Source)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at iogma.platform.IPModuleDescriptor.getModuleInstance(Unknown Source)
+	at iogma.platform.IogmaPlatform.instanciateModule(Unknown Source)
+	at iogma.platform.IogmaMainFrame.<init>(Unknown Source)
+	at iogma.platform.IogmaMainFrame.startIogma(Unknown Source)
+	at iogma.platform.launcher.IogmaLauncher.main(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.exe4j.runtime.LauncherEngine.launch(Unknown Source)
+	at com.install4j.runtime.Launcher.main(Unknown Source)
+[slf5s.start]24 Oct 2014 11:13:53,016[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+Instant AROM Knowledge Base successful created : IogmaNetworkModel[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:53,111[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.network.NetworkModel[slf5s.CATEGORY]
+ Knowledge base class = class iogma.network.model.impl.DefaultIogmaNetworkModelIMPL[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:53,127[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.mgm.cachesoftref.CSRMemoryManager[slf5s.CATEGORY]
+--> Try to init CSRMemoryManager with System Properties[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:53,127[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.mgm.cachesoftref.CSRMemoryManager[slf5s.CATEGORY]
+--> Continue init CSRMemoryManager with Properties file (only for missing properties) =/iogma/core/mgm/cachesoftref/config.properties[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:53,127[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.mgm.cachesoftref.CSRMemoryManager[slf5s.CATEGORY]
+sizeMax = 2000000[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:53,127[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.mgm.cachesoftref.CSRMemoryManager[slf5s.CATEGORY]
+threadMemMonitor = enable[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:53,134[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.mgm.cachesoftref.CSRMemoryManager[slf5s.CATEGORY]
+memoryLevel = 50000000[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:53,134[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.mgm.cachesoftref.CSRMemoryManager[slf5s.CATEGORY]
+lowMemoryLevel = 50000000[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:53,134[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.mgm.cachesoftref.CSRMemoryManager[slf5s.CATEGORY]
+logDelay = 0[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:53,135[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.mgm.persistence.RAFPersistence[slf5s.CATEGORY]
+RAFPersistence implInstanceValues = romans.arom.kr.model.RInstanceValues[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:53,135[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.mgm.persistence.RAFPersistence[slf5s.CATEGORY]
+RAFPersistence nbInstMax = 2000000[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:53,136[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.mgm.persistence.Storage[slf5s.CATEGORY]
+TRY Temp directory = /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/Externals/tmp/.MGM_guest_1414142033136[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:53,136[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.mgm.persistence.Storage[slf5s.CATEGORY]
+Finally MGM Temp directory is  = /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/Externals/tmp/.MGM_guest_1414142033136[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:53,415[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.mgm.JVMMemoryMonitor[slf5s.CATEGORY]
+JVMMemoryMonitor INIT :  needMemoryLevel = 50000000 lowMemoryLevel = 50000000[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:53,421[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.mgm.cachesoftref.CacheManagerLFU[slf5s.CATEGORY]
+CacheManagerLFU INIT :  nbInstance = 2000000 needMemoryLevel = 50000000 lowMemoryLevel = 50000000[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:53,421[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.core.mgm.cachesoftref.CSRMemoryManager[slf5s.CATEGORY]
+<-- Init CSRMemoryManager[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:53,436[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.network.IogmaNetworkResources[slf5s.CATEGORY]
+--> read resources[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:53,463[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.network.IogmaNetworkResources[slf5s.CATEGORY]
+<-- read resources[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:54,336[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+org.java.plugin.standard.StandardPluginManager[slf5s.CATEGORY]
+plug-in started - gna.mc.nusmv.explicit@1.3.0 (active/total: 3 of 6)[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:54,347[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+org.java.plugin.standard.StandardPluginManager[slf5s.CATEGORY]
+plug-in started - gna.mc.nusmv.implicit@1.3.0 (active/total: 4 of 6)[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:54,429[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.network.NetworkModel[slf5s.CATEGORY]
+[standard, records, instances][slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:54,434[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+Instant AROM Knowledge Base for : IogmaNetworkModel[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:54,435[slf5s.DATE]
+WARN[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+Error initializing InstantAROM KB Factory:iogma.network.model.IogmaNetworkModel.setKB(arom.kr.model.KnowledgeBase) - iogma.network.model.IogmaNetworkModel[slf5s.MESSAGE]
+
+java.lang.NoSuchMethodException: iogma.network.model.IogmaNetworkModel.setKB(arom.kr.model.KnowledgeBase)
+	at java.lang.Class.getDeclaredMethod(Unknown Source)
+	at romans.arom.ia.kr.factory.IAAromSystem.initializeIA(Unknown Source)
+	at romans.arom.ia.kr.factory.IAAromSystem.createKB(Unknown Source)
+	at arom.kr.parser.standard.AromCreationVisitor.visit(Unknown Source)
+	at arom.kr.parser.standard.AromKnowledgeBaseNode.jjtAccept(Unknown Source)
+	at arom.kr.parser.standard.StandardVisitorManager.createKnowledgeBase(Unknown Source)
+	at arom.kr.parser.standard.StandardReader.createKB(Unknown Source)
+	at arom.kr.parser.standard.StandardReader.createKB(Unknown Source)
+	at iogma.network.NetworkModel.loadAROMModel(Unknown Source)
+	at iogma.network.NetworkModel.<init>(Unknown Source)
+	at gna.kernel.Network.<init>(Unknown Source)
+	at gna.kernel.Project.createNetwork(Unknown Source)
+	at gna.kernel.Project.createNetwork(Unknown Source)
+	at gna.kernel.Project.<init>(Unknown Source)
+	at gna.gui.module.GnaModule.<init>(Unknown Source)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at iogma.platform.IPModuleDescriptor.getModuleInstance(Unknown Source)
+	at iogma.platform.IogmaPlatform.instanciateModule(Unknown Source)
+	at iogma.platform.IogmaMainFrame.<init>(Unknown Source)
+	at iogma.platform.IogmaMainFrame.startIogma(Unknown Source)
+	at iogma.platform.launcher.IogmaLauncher.main(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.exe4j.runtime.LauncherEngine.launch(Unknown Source)
+	at com.install4j.runtime.Launcher.main(Unknown Source)
+[slf5s.start]24 Oct 2014 11:13:54,439[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+romans.arom.ia.kr.factory.IAAromSystem[slf5s.CATEGORY]
+Instant AROM Knowledge Base successful created : IogmaNetworkModel[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:54,490[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+iogma.network.NetworkModel[slf5s.CATEGORY]
+ Knowledge base class = class iogma.network.model.impl.DefaultIogmaNetworkModelIMPL[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:55,453[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+helix.util.log4j.LogSystem[slf5s.CATEGORY]
+IOGMA LAUNCHED. Bye... see you in log4j logs.[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:13:55,454[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+main[slf5s.THREAD]
+helix.util.log4j.LogSystem[slf5s.CATEGORY]
+
+[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:24:53,905[slf5s.DATE]
+ERROR[slf5s.PRIORITY]
+AWT-EventQueue-0[slf5s.THREAD]
+gna.parser.model.GnaParser[slf5s.CATEGORY]
+Syntax error in line 1, column 16[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:24:57,795[slf5s.DATE]
+ERROR[slf5s.PRIORITY]
+AWT-EventQueue-0[slf5s.THREAD]
+gna.parser.model.GnaParser[slf5s.CATEGORY]
+Syntax error in line 1, column 16[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:25:09,394[slf5s.DATE]
+ERROR[slf5s.PRIORITY]
+AWT-EventQueue-0[slf5s.THREAD]
+gna.parser.model.GnaParser[slf5s.CATEGORY]
+Syntax error in line 1, column 16[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:25:23,178[slf5s.DATE]
+ERROR[slf5s.PRIORITY]
+AWT-EventQueue-0[slf5s.THREAD]
+gna.parser.model.GnaParser[slf5s.CATEGORY]
+Syntax error in line 1, column 16[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:28:20,760[slf5s.DATE]
+ERROR[slf5s.PRIORITY]
+AWT-EventQueue-0[slf5s.THREAD]
+gna.parser.model.GnaParser[slf5s.CATEGORY]
+Syntax error in line 1, column 16[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:29:04,608[slf5s.DATE]
+ERROR[slf5s.PRIORITY]
+AWT-EventQueue-0[slf5s.THREAD]
+gna.parser.model.GnaParser[slf5s.CATEGORY]
+Syntax error in line 1, column 16[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:29:20,064[slf5s.DATE]
+ERROR[slf5s.PRIORITY]
+AWT-EventQueue-0[slf5s.THREAD]
+gna.parser.model.GnaParser[slf5s.CATEGORY]
+Syntax error in line 1, column 16[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:29:25,784[slf5s.DATE]
+ERROR[slf5s.PRIORITY]
+AWT-EventQueue-0[slf5s.THREAD]
+gna.parser.model.GnaParser[slf5s.CATEGORY]
+Syntax error in line 1, column 16[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:35:29,121[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+SwingWorker-pool-1-thread-1[slf5s.THREAD]
+gna.kernel.Project[slf5s.CATEGORY]
+
+Simulation has been completed: yes[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:35:29,121[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+SwingWorker-pool-1-thread-1[slf5s.THREAD]
+gna.kernel.Project[slf5s.CATEGORY]
+Number of initial states: 1[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:35:29,121[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+SwingWorker-pool-1-thread-1[slf5s.THREAD]
+gna.kernel.Project[slf5s.CATEGORY]
+Number of states reached in transition graph: 9[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:35:29,121[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+SwingWorker-pool-1-thread-1[slf5s.THREAD]
+gna.kernel.Project[slf5s.CATEGORY]
+Number of non-instantaneous states: 7[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:35:29,121[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+SwingWorker-pool-1-thread-1[slf5s.THREAD]
+gna.kernel.Project[slf5s.CATEGORY]
+Number of equilibrium sets: 3[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:35:29,121[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+SwingWorker-pool-1-thread-1[slf5s.THREAD]
+gna.kernel.Project[slf5s.CATEGORY]
+Number of cycles: 0[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 11:35:29,121[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+SwingWorker-pool-1-thread-1[slf5s.THREAD]
+gna.kernel.Project[slf5s.CATEGORY]
+Simulation executed in 0.0080 s[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 16:57:19,758[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+AWT-EventQueue-0[slf5s.THREAD]
+iogma.platform.actions.QuitAction[slf5s.CATEGORY]
+##### EXIT IOGMA  : (next line) AromSetUp.getAromSystem().cleanup()[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 16:57:19,758[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+AWT-EventQueue-0[slf5s.THREAD]
+iogma.core.mgm.cachesoftref.CSRMemoryManager[slf5s.CATEGORY]
+<<< MemoryManager STOP >>>[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 16:57:19,851[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+AWT-EventQueue-0[slf5s.THREAD]
+iogma.platform.actions.QuitAction[slf5s.CATEGORY]
+##### EXIT IOGMA  : (next line) System.exit(0)[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 16:57:19,856[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+Thread-6[slf5s.THREAD]
+iogma.core.mgm.persistence.ShutdownThread[slf5s.CATEGORY]
+--> ShutdownThread TRY to delete all files in the directory = /home/guest/Documents/M2BBS/SystemsBiology/GNA_8.4.0/Externals/tmp/.MGM_guest_1414142033136[slf5s.MESSAGE]
+
+[slf5s.start]24 Oct 2014 16:57:19,857[slf5s.DATE]
+INFO[slf5s.PRIORITY]
+Thread-6[slf5s.THREAD]
+iogma.core.mgm.persistence.ShutdownThread[slf5s.CATEGORY]
+<-- ShutdownThread[slf5s.MESSAGE]
+

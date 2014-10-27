@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE plugin PUBLIC "-//JPF//Java Plug-in Manifest 0.5"
+  "http://jpf.sourceforge.net/plugin_0_5.dtd">
+
+<plugin id="iogma.externals.swserver" version="1.1.3">
+
+  <requires>
+    <import plugin-id="iogma.core.data"/>
+    <import plugin-id="iogma.externals.emboss"/>
+    <import plugin-id="iogma.externals.kbserver"/>
+    <import plugin-id="iogma.externals.ncbi"/>
+  </requires>
+
+  <runtime>
+    <library id="iogma-externals-swserver-jar" path="bin/iogma.externals.swserver.jar" type="code">
+      <export prefix="*"/>
+    </library>
+  </runtime>
+  
+  <extension plugin-id="iogma.externals.ncbi" point-id="BlastDBRunner"
+             id="KbserverSWRunner">
+    <parameter id="name" value="KbserverSWRunner"/>
+    <parameter id="class" value="iogma.externals.swserver.client.KbserverSWRunner"/>
+    <parameter id="provider" value="iogma.externals.kbserver.KbserverProvider" />
+    <parameter id="description" value="Kbserver SW runner" />
+  </extension>
+</plugin>

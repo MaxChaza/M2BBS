@@ -1,0 +1,11 @@
+jasypt - Java Simplified Encryption
+http://www.jasypt.org/
+--------------------------
+
+Version : 1.5
+Dependencies : 
+ + commons-codec 1.1
+ + commons-lang 2.1
+ + icu4j-3.4.4 (ICU4J not needed if you are using Java 6 or higher)
+ 
+ 

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE plugin PUBLIC "-//JPF//Java Plug-in Manifest 0.5"
+  "http://jpf.sourceforge.net/plugin_0_5.dtd">
+
+<plugin id="iogma.core.data" version="1.2.3">
+
+  <requires>
+    <import plugin-id="iogma.core.platform"/>
+  </requires>
+
+  <runtime>
+    <library id="iogmacoredata-jar" path="bin/iogma.core.data.jar" type="code">
+      <export prefix="*"/>
+    </library>
+  </runtime>
+
+  <extension plugin-id="iogma.core.platform" point-id="PlatformElement"
+             id="IogmaDataPlugin">
+    <parameter id="name" value="IogmaDataPlugin"/>
+    <parameter id="class" value="iogma.core.data.IogmaDataPlugin"/>
+    <parameter id="description" value="IogmaData plugin" />
+  </extension>
+
+  <extension-point id="TaxonomyProvider">
+    <parameter-def id="class" type="string" />
+    <parameter-def id="name" type="string" />
+    <parameter-def id="description" type="string" multiplicity="none-or-one"/>
+  </extension-point>
+  
+  <extension-point id="GOClassificationProvider">
+    <parameter-def id="class" type="string" />
+    <parameter-def id="name" type="string" />
+    <parameter-def id="description" type="string" multiplicity="none-or-one"/>
+  </extension-point>
+  
+  <extension plugin-id="iogma.core.data" point-id="GOClassificationProvider"
+             id="WebGOClassificationProvider">
+    <parameter id="name" value="WebGOClassificationProvider"/>
+    <parameter id="class" value="iogma.core.data.go.WebGOClassificationProvider"/>
+    <parameter id="description" value="WebGOClassificationProvider plugin" />
+  </extension>
+</plugin>

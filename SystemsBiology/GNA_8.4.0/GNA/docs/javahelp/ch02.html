@@ -1,0 +1,81 @@
+<html><head><META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>Part 2. Using GNA</title><link href="javahelp.css" rel="stylesheet" type="text/css"><meta content="DocBook XSL Stylesheets V1.75.2" name="generator"><link rel="home" href="index.html" title="Genetic Network Analyzer Tutorial"><link rel="up" href="index.html" title="Genetic Network Analyzer Tutorial"><link rel="prev" href="ch01s02.html" title="1.2.&nbsp;Projects using GNA"><link rel="next" href="ch02s02.html" title="2.2.&nbsp;Building a model"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="chapter" title="Part 2. Using GNA"><div class="titlepage"><div><div><h2 class="title"><a name="iogma.gna.help.using"></a>Part 2. Using GNA</h2></div></div></div><div class="section" title="2.1.&nbsp;Defining a network"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="iogma.gna.help.using.defining_network"></a>2.1.&nbsp;Defining a network</h2></div></div></div><p>The initial step in modeling a genetic regulatory network consists
+    of the unambiguous definition of the network structure and the
+    representation of this information in visual form. The genes, proteins,
+    and interactions making up the network are obtained from the experimental
+    literature and completed with plausible hypotheses. Notice that the
+    collection of this information may take a sizeable amount of the total
+    time invested in the modeling project, as it demands reflection on the
+    precise biological questions to be addressed, followed by a careful
+    evaluation of the available experimental data.</p><p>The network editor of GNA supports the modeler in defining and
+    representing the network structure. It takes its inspiration from the
+    visual modeling language <a class="ulink" href="http://link.aip.org/link/?CHAOEH/11/84/1" target="_top">MIM (Molecular Interaction
+    Maps)</a> developed by Kohn and colleagues, and adheres as much as
+    possible to the visualization standard proposed in the <a class="ulink" href="http://sbgn.org" target="_top">Systems Biology Graphical Notation (SBGN)</a>
+    project. The network editor is built upon the IogmaNetwork library
+    developed by <a class="ulink" href="http://www.genostar.com" target="_top">Genostar</a>.</p><div class="section" title="2.1.1.&nbsp;Define simple genetic regulatory network"><div class="titlepage"><div><div><h3 class="title"><a name="N1018A"></a>2.1.1.&nbsp;Define simple genetic regulatory network</h3></div></div></div><p>In order to illustrate the construction of a genetic regulatory
+      network by means of the network editor, we consider a small network of
+      three genes. Each gene codes for a protein that controls the expression
+      of one or more target genes by binding to the promoter region. In
+      particular, gene <span class="emphasis"><em>b</em></span> codes for a protein that
+      activates the transcription of gene <span class="emphasis"><em>a</em></span>, while gene
+      <span class="emphasis"><em>a</em></span> and gene <span class="emphasis"><em>c</em></span> code for proteins
+      that form a heterodimer inhibiting the transcription of gene
+      <span class="emphasis"><em>b</em></span>. In addition, protein A activates gene
+      <span class="emphasis"><em>c</em></span>, while protein C inhibits the expression of its
+      own gene.</p><p>The network can be created from the elements shown in the toolbar,
+      among which we find genes and promoters, proteins, complex formation
+      reactions, and activating and inhibiting interactions. Upon selecting a
+      network element, the user is asked to specify the name of the gene or
+      the protein. The position of the network elements in the editor can be
+      changed by selecting an element and dragging it to another location
+      using the mouse or the keyboard arrows. The network lay-out can be
+      modified by adding or removing breakpoints in the lines representing the
+      complex formation reactions and regulatory interactions. These
+      breakpoints are added by means of mouse clicks while holding the
+      <span class="keycap"><strong>Shift</strong></span> key down and can be moved like other network
+      entities. The result for the example network is shown in <a class="xref" href="ch02.html#figure.network" title="Fig.&nbsp;2.1.&nbsp;&nbsp;Schema of simple genetic regulatory network">Figure&nbsp;2.1</a>. To create reactions with multiple inputs
+      and/or outputs, create first a simple reaction, then use the reaction
+      tool again between the entity you want to add and the targeted part of
+      the reaction (either its start, or its end).</p><div class="figure"><a name="figure.network"></a><div class="figure-contents"><div class="mediaobject" align="center"><img src="images/GNAscreen1.png" align="middle" alt="Schema of simple genetic regulatory network"></div></div><p class="title"><b>Fig.&nbsp;2.1.&nbsp;&nbsp;Schema of simple genetic regulatory network</b></p></div><br class="figure-break"><p>The network thus constructed is saved in a so-called <span class="bold"><strong>project</strong></span>. You can save the project by choosing
+      <span class="guimenuitem">Save project</span> in the <span class="guimenu">File</span>
+      menu.When saving the schema, the lay-out is stored as well. You can also
+      start a new project or load an existing project by choosing the
+      corresponding options in the <span class="guimenu">File</span> menu.</p></div><div class="section" title="2.1.2.&nbsp;Define more complex regulatory networks"><div class="titlepage"><div><div><h3 class="title"><a name="N101CC"></a>2.1.2.&nbsp;Define more complex regulatory networks</h3></div></div></div><p>In <a class="xref" href="ch02.html#figure.network" title="Fig.&nbsp;2.1.&nbsp;&nbsp;Schema of simple genetic regulatory network">Figure&nbsp;2.1</a> only a limited range of
+      biochemical mechanisms involved in gene regulation was used, notably
+      activation and inhibition of gene expression by transcription factors
+      and the formation of protein complexes through dimerization. The network
+      editor allows a much wider range of biochemical mechanisms to be
+      described, as illustrated in <a class="xref" href="ch02.html#figure.complex_network" title="Fig.&nbsp;2.2.&nbsp;&nbsp;Schema of a more complex genetic regulatory network">Figure&nbsp;2.2</a>.
+      Examples include:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>Enzymatic reactions (the reaction transforming E into F,
+            catalyzed by D);</p></li><li class="listitem"><p>Post-translational modifications (the modification of B into
+            B*, induced by an external signal);</p></li><li class="listitem"><p>Active degradation of proteins and mRNA (the degradation of
+            C, regulated by B*).</p></li></ul></div><p>The types of network elements and biochemical reaction mechanisms
+      supported by the network editor are shown in the menus and the toolbar
+      (see <a class="xref" href="ch02s08.html" title="2.8.&nbsp;Functions of the graphical user interface">Section&nbsp;2.8</a>).</p><div class="figure"><a name="figure.complex_network"></a><div class="figure-contents"><div class="mediaobject" align="center"><img src="images/network_complex.png" align="middle" alt="Schema of a more complex genetic regulatory network"></div></div><p class="title"><b>Fig.&nbsp;2.2.&nbsp;&nbsp;Schema of a more complex genetic regulatory network</b></p></div><br class="figure-break"></div><div class="section" title="2.1.3.&nbsp;Reduction of regulatory network"><div class="titlepage"><div><div><h3 class="title"><a name="N101F6"></a>2.1.3.&nbsp;Reduction of regulatory network</h3></div></div></div><p><a class="xref" href="ch02.html#figure.complex_network" title="Fig.&nbsp;2.2.&nbsp;&nbsp;Schema of a more complex genetic regulatory network">Figure&nbsp;2.2</a> gives an impression of
+      the diversity of the elements composing a genetic regulatory network.
+      For our purposes, it is convenient to have a more restricted view of a
+      genetic regulatory network, as consisting of genes, gene products
+      (proteins and mRNAs), and the direct and indirect regulation of gene
+      expression exerted by the gene products. This results in a reduced
+      network structure where boxes represent indirect regulatory interactions
+      mediated by, for example, protein-protein interactions, metabolism, and
+      signal transduction. The construction of these boxes is based on the
+      assumption that the latter processes are typically fast on the
+      time-scale of gene expression. A detailed explanation of this reduction
+      step is beyond the scope of this tutorial, but more details can be found
+      in publications listed in the <a class="link" href="ch01.html#iogma.gna.help.overview.whatis_gna" title="1.1.&nbsp;What is GNA?">literature
+      section</a>.</p><p>The reduction process is automatic and the user can see the result
+      at any time by pressing the <span class="guibutton">Show reduced network</span>
+      button in the toolbar. <a class="xref" href="ch02.html#figure.reduced_network" title="Fig.&nbsp;2.3.&nbsp;&nbsp;Schema of reduced genetic regulatory network, obtained from Figure&nbsp;2.1">Figure&nbsp;2.3</a> shows
+      the result for the simple three-gene network in <a class="xref" href="ch02.html#figure.network" title="Fig.&nbsp;2.1.&nbsp;&nbsp;Schema of simple genetic regulatory network">Figure&nbsp;2.1</a>. The grey circles represent the proteins and
+      the arrows the direct and indirect regulatory interactions controlling
+      their synthesis and degradation. Notice that the reduction step has
+      introduced a box mediating the influence of A and C on the expression of
+      the gene encoding protein B. This influence is exerted through the
+      heterodimerization of A and C, an interaction no longer explicitly
+      represented but hidden in the box. The user can easily switch back and
+      forth between the full and reduced network representation, thus making
+      it possible to verify the pattern of indirect interactions induced by
+      particular hypotheses on the biochemical mechanisms involved in the
+      regulation of a gene.</p><div class="figure"><a name="figure.reduced_network"></a><div class="figure-contents"><div class="mediaobject" align="center"><img src="images/network_reduced.png" align="middle" alt="Schema of reduced genetic regulatory network, obtained from"></div></div><p class="title"><b>Fig.&nbsp;2.3.&nbsp;&nbsp;Schema of reduced genetic regulatory network, obtained from
+        <a class="xref" href="ch02.html#figure.network" title="Fig.&nbsp;2.1.&nbsp;&nbsp;Schema of simple genetic regulatory network">Figure&nbsp;2.1</a></b></p></div><br class="figure-break"></div></div></div></body></html>

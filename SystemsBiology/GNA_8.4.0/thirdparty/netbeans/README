@@ -1,0 +1,19 @@
+
+//----------------------------------------------------------------------------
+//
+//                           NetBeans Text Editor
+//
+// author : Regis Monte : regis.monte@inrialpes.fr
+//
+//----------------------------------------------------------------------------
+
+
+This package is patched version of the NetBeans Text Editor version 3.51 
+
+As the initial version could not work without the whole NetBeans context (although it should have according to specs), few part of code where modified in order to remove dependency (probably due to some wrong adds by collaborative users) :
+
+The modified code lines may be localized using keyword PATCH
+File modified :
+* src/org/netbeans/editor/Annotations.java
+* src/org/netbeans/editor/ext/Completion.java
+* src/org/netbeans/editor/ext/java/JavaFastImportPanel.java  

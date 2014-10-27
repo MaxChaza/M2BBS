@@ -1,0 +1,1 @@
+java -classpath "bin/GNA.jar:../bin/log4j.jar:../bin/IogmaModule.jar:../bin/IogmaCore.jar:bin/saxon8.jar:bin/saxon8-dom.jar" gna.io.sbml.SBMLWriter $1 $2

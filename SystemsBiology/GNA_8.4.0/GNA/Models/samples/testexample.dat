@@ -1,0 +1,3 @@
+initial-conditions:
+X_a > t_a_1; X_a < t_a_2;
+X_b >= z_b; X_b < t_b_2;

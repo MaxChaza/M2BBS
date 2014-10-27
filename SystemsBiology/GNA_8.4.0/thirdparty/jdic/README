@@ -1,0 +1,25 @@
+JDesktop Integration Components  (jdic)
+---------------------------------------
+
+URL : https://jdic.dev.java.net/
+
+JDIC provides Java applications with access to facilities provided 
+by the native desktop such as the mailer, the browser, and registered 
+document viewing applications. 
+Additionally it provides the mechanisms by which Java applications 
+can integrate into the native desktop such as registering Java applications 
+as document viewers on the desktop and creating installer packages.
+
+
+Note : requires Java 1.5.0
+
+The distribution integrates a standard Java API with a stub link for each 
+platform : 
+ + jdic.jar
+ + jdic_stub_linux.jar
+ + jdic_stub_windows.jar
+
+It provides native library for following platform :
+ + linux
+ + windows
+ ( + sunos ) => not published in Iogma environment

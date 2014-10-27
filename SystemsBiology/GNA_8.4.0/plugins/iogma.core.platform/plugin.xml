@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<!DOCTYPE plugin PUBLIC "-//JPF//Java Plug-in Manifest 0.5"
+  "http://jpf.sourceforge.net/plugin_0_5.dtd">
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ --> 
+<!-- This plugin defines the main Extension points provided by   --> 
+<!-- Iogma platform.                                             --> 
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ --> 
+<plugin id="iogma.core.platform" version="3.11.0"
+        class="iogma.platform.plugin.IogmaPlatformPlugin">
+
+  <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ --> 
+  <!-- Extension points                                            --> 
+  <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ --> 
+  <!-- Any software element
+        + class : java class that provides the extension
+        + name : identifier of this platform element
+    -->
+  <extension-point id="PlatformElement">
+    <parameter-def id="class"/>
+    <parameter-def id="name"/>
+    <parameter-def id="description" multiplicity="none-or-one"/>
+  </extension-point>
+  <!-- ICModule 
+        + class : java class that provides the extension
+        + name : identifier of this platform element
+        + uiname : label which represents the module in UI
+        + description : (not used)
+        + icon : icon of the module
+    -->
+  <extension-point id="ICModule">
+    <parameter-def id="class" type="string" />
+    <parameter-def id="name" type="string" />
+    <parameter-def id="uiname" type="string" multiplicity="none-or-one" />
+    <parameter-def id="description" type="string" multiplicity="none-or-one"/>
+    <parameter-def id="icon" multiplicity="none-or-one"/>
+  </extension-point>
+  <!-- Service : NOT YET IMPLMENTED
+        + class : java class that provides the extension
+        + name : identifier of this platform element
+        + uiname : label which represents the service in UI
+        + description : (not used)
+        + icon : icon of the service
+     -->
+  <extension-point id="Service">
+    <parameter-def id="class"/>
+    <parameter-def id="name"/>
+    <parameter-def id="uiname" type="string" multiplicity="none-or-one" />
+    <parameter-def id="description" multiplicity="none-or-one"/>
+    <parameter-def id="icon" multiplicity="none-or-one"/>
+  </extension-point>
+  <!-- ICAction
+    An action will be set in the UI with a menu.
+    -->
+  <extension-point id="ICAction">
+    <parameter-def id="class" type="string" />
+    <parameter-def id="name" type="string" />
+    <parameter-def id="module" type="string" />
+    <parameter-def id="uiname" type="string" multiplicity="none-or-one" />
+    <parameter-def id="location" type="string" multiplicity="none-or-one"/>
+    <parameter-def id="description" multiplicity="none-or-one" />
+    <parameter-def id="icon" type="string" multiplicity="none-or-one"/>
+  </extension-point>
+  
+  <!-- TasksLocation
+    A location of tasks for a specified module.
+    -->
+  <extension-point id="TasksLocation">
+    <parameter-def id="module" type="string" />
+    <parameter-def id="tasksLocation" type="string" />
+  </extension-point>
+  
+	<!-- HelpLocation
+    A location of tasks for a specified module.
+    -->
+  <extension-point id="HelpLocation">
+    <parameter-def id="helpLocation" type="string" />
+  </extension-point>
+
+	<!-- KnowledgeBase
+    An AROM database that could be mapped in IogmaDatabase.
+		+ model-path : TXTA file relative path from the plugin root directory
+		+ model-version : a string version number
+		+ model-uiname : a UI name for the KnowledgeBase
+		+ model-description : a description for the KnowledgeBase
+    -->
+  <extension-point id="KnowledgeBase">
+	<parameter-def id="model-path" type="string" multiplicity="one" />
+	<parameter-def id="model-version" type="string" multiplicity="none-or-one"/>
+	<parameter-def id="model-uiname" type="string" multiplicity="none-or-one"/>
+	<parameter-def id="model-description" type="string" multiplicity="none-or-one"/>
+  </extension-point>
+
+  <extension-point id="PreferencesTab">
+    <parameter-def id="class" type="string" />
+    <parameter-def id="name" type="string" />
+    <parameter-def id="parent-id" type="string" />
+  </extension-point>
+  
+  <extension-point id="I18nBundle">
+    <parameter-def id="class" type="string" />
+    <parameter-def id="namespace" type="string" multiplicity="one-or-more" />
+  </extension-point>
+
+  <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ --> 
+  <!-- Provided extensions                                         --> 
+  <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ --> 
+  <extension plugin-id="iogma.core.platform" point-id="HelpLocation" 
+             id="iogma.core.platform.jhelp">
+	<parameter id="helpLocation" value="docs/javahelp/jhelpset.hs" />
+  </extension>
+  
+</plugin>

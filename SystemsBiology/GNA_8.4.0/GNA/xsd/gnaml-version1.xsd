@@ -1,0 +1,1227 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xsd:schema targetNamespace="http://www-gna.inrialpes.fr/gnaml/version1"
+            xmlns="http://www-gna.inrialpes.fr/gnaml/version1"
+            xmlns:gna="http://www-gna.inrialpes.fr/gnaml/version1"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns:mml="http://www.w3.org/1998/Math/MathML"
+            xmlns:xhtml="http://www.w3.org/1999/xhtml"
+            elementFormDefault="qualified"
+            attributeFormDefault="unqualified"
+            version="1.0">
+  <xsd:import namespace="http://www.w3.org/1998/Math/MathML"
+              schemaLocation="gnaml-mathml.xsd" />
+  <xsd:import namespace="http://www.w3.org/1999/xhtml"
+              schemaLocation="xhtml1-transitional.xsd" />
+
+  <xsd:annotation>
+    <xsd:documentation>
+      Documentation schema for GNAML version 1.0
+
+      This XML Schema defines an XML structure - GNAML - which represents
+      projects in the GNA software.
+
+      Author: Bruno Besson
+    </xsd:documentation>
+  </xsd:annotation>
+
+  <!-- definition of simple types -->
+
+  <xsd:simpleType name="Id">
+    <xsd:annotation>
+      <xsd:documentation>
+        Identifiers in GNAML are restricted to a pattern described above. It is
+        compatible with identifiers in SBML.
+
+        Example:
+        <element id="z_Crp_1" />
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="([a-z]|[A-Z])(_|[a-z]|[A-Z]|[0-9])*" />
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="AROMId">
+    <xsd:annotation>
+      <xsd:documentation>
+        Identifiers for the network, less strict than those for GNA.
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="($|_|\p{L})(\p{L}|\p{Nd}|_|$)*"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="DerivativeValue">
+    <xsd:annotation>
+      <xsd:documentation>
+        Restriction of values for Derivative's value attribute.
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="undefined|zero|positive|negative|all" />
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:complexType name="GBase" abstract="true">
+    <xsd:annotation>
+      <xsd:documentation>
+        The GBase type is the base type of all main components in GNAML. It
+        supports notes to components.
+    </xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="notes" minOccurs="0">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:choice>
+              <xsd:element ref="xhtml:html" />
+              <xsd:element ref="xhtml:body" />
+              <xsd:sequence minOccurs="1" maxOccurs="unbounded">
+                <xsd:choice>
+                  <xsd:element ref="xhtml:p" />
+                  <xsd:element ref="xhtml:h1" />
+                  <xsd:element ref="xhtml:h2" />
+                  <xsd:element ref="xhtml:h3" />
+                  <xsd:element ref="xhtml:h4" />
+                  <xsd:element ref="xhtml:h5" />
+                  <xsd:element ref="xhtml:h6" />
+                  <xsd:element ref="xhtml:div" />
+                  <xsd:element ref="xhtml:pre" />
+                  <xsd:element ref="xhtml:address" />
+                  <xsd:element ref="xhtml:fieldset" />
+                  <xsd:element ref="xhtml:ins" />
+                  <xsd:element ref="xhtml:del" />
+                </xsd:choice>
+              </xsd:sequence>
+            </xsd:choice>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <!-- definition of complex types and elements -->
+
+  <xsd:complexType name="NetworkObject">
+    <xsd:annotation>
+      <xsd:documentation>
+        A NetworkObject is an abstract type for all network elements
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="annotation" minOccurs="0">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:any processContents="skip"
+                     minOccurs="0" maxOccurs="unbounded"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+    <xsd:attribute name="id" type="AROMId" use="required" />
+    <xsd:attribute name="type" type="xsd:string" use="required" />
+  </xsd:complexType>
+
+  <xsd:complexType name="DummyEntity">
+    <xsd:annotation>
+      <xsd:documentation>
+        Dummy Entity because of combined extension and restriction needs.
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="NetworkObject">
+        <xsd:sequence>
+          <xsd:element name="entity" type="Entity" minOccurs="0"
+                      maxOccurs="unbounded" />
+          <xsd:element name="reaction" type="Reaction" minOccurs="0"
+                      maxOccurs="unbounded" />
+        </xsd:sequence>
+        <xsd:attribute name="name" type="xsd:string" use="optional" />
+        <xsd:attribute name="count" type="xsd:positiveInteger" use="optional" />
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="Entity">
+    <xsd:annotation>
+      <xsd:documentation>
+        Entity, e.g. Gene, Promoter...
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:restriction base="DummyEntity">
+        <xsd:sequence>
+          <xsd:element name="entity" type="Entity" minOccurs="0"
+                      maxOccurs="unbounded" />
+          <xsd:element name="reaction" type="Reaction" minOccurs="0"
+                      maxOccurs="unbounded" />
+        </xsd:sequence>
+        <xsd:attribute name="type" use="required">
+          <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+              <xsd:enumeration value="Gene" />
+              <xsd:enumeration value="Promoter" />
+              <xsd:enumeration value="CDS" />
+              <xsd:enumeration value="ChemicalEntity" />
+              <xsd:enumeration value="Metabolite" />
+              <xsd:enumeration value="Drug" />
+              <xsd:enumeration value="Complex" />
+              <xsd:enumeration value="Protein" />
+              <xsd:enumeration value="RNA" />
+              <xsd:enumeration value="DegradationProduct" />
+              <xsd:enumeration value="ExternalSignal" />
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:attribute>
+      </xsd:restriction>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="ListOfSources">
+    <xsd:sequence>
+      <xsd:element name="source" maxOccurs="unbounded">
+        <xsd:complexType>
+          <xsd:attribute name="id" type="AROMId" use="optional" />
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="ListOfTargets">
+    <xsd:sequence>
+      <xsd:element name="target" maxOccurs="unbounded">
+        <xsd:complexType>
+          <xsd:attribute name="id" type="AROMId" use="optional" />
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="DummyReaction">
+    <xsd:annotation>
+      <xsd:documentation>
+        Dummy Reaction because of combined extension and restriction needs.
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="NetworkObject">
+        <xsd:sequence>
+          <xsd:element name="list-of-sources" type="ListOfSources"
+                      minOccurs="0" />
+          <xsd:element name="list-of-targets" type="ListOfTargets"
+                      minOccurs="0" />
+        </xsd:sequence>
+        <xsd:attribute name="source" type="AROMId" />
+        <xsd:attribute name="target" type="AROMId" />
+        <xsd:attribute name="reversible" type="xsd:boolean" />
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="Reaction">
+    <xsd:annotation>
+      <xsd:documentation>
+        Reaction
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:restriction base="DummyReaction">
+        <xsd:sequence>
+          <xsd:element name="list-of-sources" type="ListOfSources"
+                      minOccurs="0" />
+          <xsd:element name="list-of-targets" type="ListOfTargets"
+                      minOccurs="0" />
+        </xsd:sequence>
+        <xsd:attribute name="type" use="required">
+          <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+              <xsd:enumeration value="Conversion" />
+              <xsd:enumeration value="GeneExpression" />
+              <xsd:enumeration value="Degradation" />
+              <xsd:enumeration value="Transport" />
+              <xsd:enumeration value="ComplexFormation" />
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:attribute>
+      </xsd:restriction>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="DummyRegulation">
+    <xsd:annotation>
+      <xsd:documentation>
+        Dummy Regulation because of combined extension and restriction needs.
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="NetworkObject">
+        <xsd:attribute name="source" type="AROMId" />
+        <xsd:attribute name="target" type="AROMId" />
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="Regulation">
+    <xsd:annotation>
+      <xsd:documentation>
+        Regulation
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:restriction base="DummyRegulation">
+        <xsd:attribute name="type" use="required">
+          <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+              <xsd:enumeration value="Activation" />
+              <xsd:enumeration value="Inhibition" />
+              <xsd:enumeration value="Catalysis" />
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:attribute>
+      </xsd:restriction>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="Surrounds">
+    <xsd:attribute name="id" type="AROMId" use="required" />
+  </xsd:complexType>
+
+  <xsd:complexType name="DummyGNAEntity">
+    <xsd:annotation>
+      <xsd:documentation>
+        Dummy GNAEntity because of combined extension and restriction needs.
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="NetworkObject">
+        <xsd:sequence>
+          <xsd:element name="surrounds" type="Surrounds" maxOccurs="unbounded" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="GNAEntity">
+    <xsd:annotation>
+      <xsd:documentation>
+        GNAEntity
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:restriction base="DummyGNAEntity">
+        <xsd:sequence>
+          <xsd:element name="surrounds" type="Surrounds" maxOccurs="unbounded" />
+        </xsd:sequence>
+        <xsd:attribute name="type" use="required">
+          <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+              <xsd:enumeration value="GNAVariable" />
+              <xsd:enumeration value="GVDegradationProduct" />
+              <xsd:enumeration value="Box" />
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:attribute>
+      </xsd:restriction>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="DummyGNARegulation">
+    <xsd:annotation>
+      <xsd:documentation>
+        Dummy GNARegulation because of combined extension and restriction needs.
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="NetworkObject">
+        <xsd:attribute name="source" type="AROMId" />
+        <xsd:attribute name="target" type="AROMId" />
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="GNARegulation">
+    <xsd:annotation>
+      <xsd:documentation>
+        GNARegulation
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:restriction base="DummyGNARegulation">
+        <xsd:attribute name="type" use="required">
+          <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+              <xsd:enumeration value="GNARegulation" />
+              <xsd:enumeration value="GNAActivation" />
+              <xsd:enumeration value="GNAInhibition" />
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:attribute>
+      </xsd:restriction>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:element name="networkobject" type="NetworkObject" abstract="true">
+    <xsd:annotation>
+      <xsd:documentation>
+        The NetworkObject type is instanciated as abstract for use in the
+        layout.
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+
+  <xsd:element name="entity" type="Entity" substitutionGroup="networkobject">
+    <xsd:annotation>
+      <xsd:documentation>
+        Instanciation of the Entity type, with networkobject as substitution
+        group.
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+
+  <xsd:element name="reaction" type="Reaction"
+               substitutionGroup="networkobject">
+    <xsd:annotation>
+      <xsd:documentation>
+        Instanciation of the Reaction type, with networkobject as substitution
+        group.
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+
+  <xsd:element name="regulation" type="Regulation"
+               substitutionGroup="networkobject">
+    <xsd:annotation>
+      <xsd:documentation>
+        Instanciation of the Regulation type, with networkobject as substitution
+        group.
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+
+  <xsd:element name="gna-regulation" type="GNARegulation"
+               substitutionGroup="networkobject">
+    <xsd:annotation>
+      <xsd:documentation>
+        Instanciation of the GNAregulation type, with networkobject as
+        substitution group.
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+
+  <xsd:element name="gna-entity" type="GNAEntity"
+               substitutionGroup="networkobject">
+    <xsd:annotation>
+      <xsd:documentation>
+        Instanciation of the GNAEntity type, with networkobject as
+        substitution group.
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+
+  <xsd:complexType name="LayoutNode">
+    <xsd:annotation>
+      <xsd:documentation>
+        A LayoutNode is any of the layout description objects
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:attribute name="id" type="AROMId" />
+  </xsd:complexType>
+
+  <xsd:complexType name="Point">
+    <xsd:attribute name="x" type="xsd:nonNegativeInteger" />
+    <xsd:attribute name="y" type="xsd:nonNegativeInteger" />
+  </xsd:complexType>
+
+  <xsd:complexType name="DummyBounds">
+    <xsd:annotation>
+      <xsd:documentation>
+        Dummy Bounds because of combined extension and restriction needs.
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="LayoutNode">
+        <xsd:attribute name="width" type="xsd:positiveInteger"
+                      use="required" />
+        <xsd:attribute name="height" type="xsd:positiveInteger"
+                      use="required" />
+        <xsd:attribute name="x" type="xsd:nonNegativeInteger" use="required" />
+        <xsd:attribute name="y" type="xsd:nonNegativeInteger" use="required" />
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="Bounds">
+    <xsd:annotation>
+      <xsd:documentation>
+        Bounds are used to describe entity layout properties
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:restriction base="DummyBounds">
+        <xsd:attribute name="id" type="AROMId" use="required" />
+      </xsd:restriction>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="Routing">
+    <xsd:annotation>
+      <xsd:documentation>
+        Routing is used to describe edge layout properties
+      </xsd:documentation>
+    </xsd:annotation>
+      <xsd:complexContent>
+      <xsd:extension base="LayoutNode">
+        <xsd:sequence>
+          <xsd:element name="point" type="Point" minOccurs="1"
+                      maxOccurs="unbounded" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="BackboneRouting">
+    <xsd:annotation>
+      <xsd:documentation>
+        Backbone routing in the case of a complex routing (multiple reaction)
+      </xsd:documentation>
+    </xsd:annotation>
+      <xsd:complexContent>
+        <xsd:restriction base="Routing">
+          <xsd:sequence>
+          <xsd:element name="point" type="Point" minOccurs="1"
+                      maxOccurs="unbounded" />
+        </xsd:sequence>
+          <xsd:attribute name="id" type="AROMId" use="prohibited" />
+        </xsd:restriction>
+      </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="InOutputRouting">
+    <xsd:annotation>
+      <xsd:documentation>
+        Input or output routing in the case of a complex routing (multiple
+        reaction)
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:restriction base="Routing">
+        <xsd:sequence>
+          <xsd:element name="point" type="Point" minOccurs="1"
+                      maxOccurs="unbounded" />
+        </xsd:sequence>
+        <xsd:attribute name="id" type="AROMId" use="required" />
+      </xsd:restriction>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="ComplexRouting">
+    <xsd:annotation>
+      <xsd:documentation>
+        Complex routing for multiple reactions
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="LayoutNode">
+        <xsd:sequence>
+          <xsd:element name="backbone-routing" type="BackboneRouting" />
+          <xsd:element name="input-routing" type="InOutputRouting" minOccurs="0"
+                       maxOccurs="unbounded" />
+          <xsd:element name="output-routing" type="InOutputRouting"
+                       minOccurs="0" maxOccurs="unbounded" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:element name="layoutnode" type="LayoutNode" abstract="true">
+    <xsd:annotation>
+      <xsd:documentation>
+        The LayoutNode type is instanciated as abstract for use in the layout.
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+
+  <xsd:element name="bounds" type="Bounds" substitutionGroup="layoutnode">
+    <xsd:annotation>
+      <xsd:documentation>
+        Instanciation of the Bounds type, with layoutnode as substitution
+        group.
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+
+  <xsd:element name="routing" type="Routing" substitutionGroup="layoutnode">
+    <xsd:annotation>
+      <xsd:documentation>
+        Instanciation of the Routing type, with layoutnode as substitution
+        group.
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+
+  <xsd:element name="complex-routing" type="ComplexRouting"
+               substitutionGroup="layoutnode">
+    <xsd:annotation>
+      <xsd:documentation>
+        Instanciation of the ComplexRouting type, with layoutnode as
+        substitution group.
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+
+  <xsd:complexType name="Layout">
+    <xsd:annotation>
+      <xsd:documentation>
+        Layout of the network
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element ref="layoutnode" minOccurs="1" maxOccurs="unbounded" />
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="Network">
+    <xsd:annotation>
+      <xsd:documentation>
+        Network
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="GBase">
+        <xsd:sequence>
+          <xsd:element ref="networkobject" minOccurs="0"
+                       maxOccurs="unbounded" />
+          <xsd:element name="layout" type="Layout" minOccurs="0" />
+        </xsd:sequence>
+        <xsd:attribute name="id" type="xsd:string" use="optional" />
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="Parameter">
+    <xsd:annotation>
+      <xsd:documentation>
+        A Parameter is a generic type for all parameters, e.g. box-parameter,
+        synthesis-parameter, etc.
+        It only consists of a required identifier.
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="GBase">
+        <xsd:attribute name="id" type="Id" use="required" />
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="ListOfThresholdParameters">
+    <xsd:annotation>
+      <xsd:documentation>
+        The list of threshold parameters consists in at least one threshold
+        parameter.
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="GBase">
+        <xsd:sequence>
+          <xsd:element name="threshold-parameter" type="Parameter" minOccurs="1"
+                       maxOccurs="unbounded" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="ListOfSynthesisParameters">
+    <xsd:annotation>
+      <xsd:documentation>
+        The list of synthesis parameters consists in at least one threshold
+        parameter.
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="GBase">
+        <xsd:sequence>
+          <xsd:element name="synthesis-parameter" type="Parameter" minOccurs="1"
+                       maxOccurs="unbounded" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="ListOfDegradationParameters">
+    <xsd:annotation>
+      <xsd:documentation>
+        The list of degradation parameters consists in at least one threshold
+        parameter.
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="GBase">
+        <xsd:sequence>
+          <xsd:element name="degradation-parameter" type="Parameter"
+                       	minOccurs="1" maxOccurs="unbounded" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="ParameterInequalities">
+    <xsd:annotation>
+      <xsd:documentation>
+        Parameter inequalities are a single mathematical expression, using an
+        n-ary 'lower than' operator. Structure is the following:
+
+        (...)
+        <parameter-inequalities>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <lt />
+              {term}[1..n]
+            </apply>
+          </math>
+        </parameter-inequalities>
+        (...)
+
+        Each term referred is then one of the following:
+        - a zero-parameter
+        - a box-parameter
+        - a threshold-parameter
+        - a focal-parameter
+
+        The first term must be the zero-parameter, and the last term the
+        box-parameter.
+
+        A focal parameter is the ratio of a sum of synthesis parameters and a
+        sum of degradation parameters, as defined in the syntax of GNA models.
+        Each term used must be defined in the lists of synthesis or degradation
+        parameters.
+
+        (...)
+        <apply>
+          <divide />
+          <apply>
+            <plus />
+            <ci>k_a_1</ci>
+            <ci>k_a_2</ci>
+          </apply>
+          <ci>g_a</ci>
+        </apply>
+        (...)
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="GBase">
+        <xsd:sequence>
+          <xsd:element ref="mml:math" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="StateEquation">
+    <xsd:annotation>
+      <xsd:documentation>
+        A state equation is expressed via a math element. It structure must
+        respect the canonical form defined in the syntax of GNA models.
+        Each term that appears as a ci element must be defined as a parameter
+        or variable elsewhere in the model.
+
+        To express step functions, one must make use of the csymbol element:
+
+        (...)
+        <apply>
+          <csymbol encoding="text"
+                   definitionURL="http://www-gna.inrialpes.fr/gnaml/symbols/step-plus">
+            s+
+          </csymbol>
+          {variable}
+          {threshold}
+        </apply>
+        (...)
+
+        Variable need to be one of the variables declared in the model, and
+        threshold must be a threshold parameter relative to that variable.
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="GBase">
+        <xsd:sequence>
+          <xsd:element ref="mml:math" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="Variable">
+    <xsd:annotation>
+      <xsd:documentation>
+        A variable an abstract parent of input-variable and state-variable. It
+        is used to allow models to have such elements in any order.
+
+        The id attribute define the variable identifier.
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="GBase">
+        <xsd:attribute name="id" type="Id" use="required" />
+        <xsd:attribute name="network-entity-id" type="Id" />
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="InputVariable">
+    <xsd:annotation>
+      <xsd:documentation>
+        An input variable inherits from the Variable type and contains the
+        usual parameter definitions and the parameter inequalities.
+
+        Elements must appear in the order commonly found in the GNA examples:
+        - zero-parameter
+        - box-parameter
+        - list of threshold parameters
+        - parameter inequalities
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="Variable">
+        <xsd:sequence>
+          <xsd:element name="zero-parameter" type="Parameter" minOccurs="0" />
+          <xsd:element name="box-parameter" type="Parameter" minOccurs="0" />
+          <xsd:element name="list-of-threshold-parameters"
+                       type="ListOfThresholdParameters" minOccurs="0" />
+          <xsd:element name="parameter-inequalities"
+                       type="ParameterInequalities" minOccurs="0" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="StateVariable">
+    <xsd:annotation>
+      <xsd:documentation>
+        A state variable inherits from the variable type and contains the same
+        elements as the input-variable plus the lists of synthesis and
+        degradation parameters and the definition of the state equation. These
+        fields must be placed in that order between the list of threshold
+        parameters and the parameter inequalities.
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="Variable">
+        <xsd:sequence>
+          <xsd:element name="zero-parameter" type="Parameter" minOccurs="0" />
+          <xsd:element name="box-parameter" type="Parameter" minOccurs="0" />
+          <xsd:element name="list-of-threshold-parameters"
+                       type="ListOfThresholdParameters" minOccurs="0" />
+          <xsd:element name="list-of-synthesis-parameters"
+                       type="ListOfSynthesisParameters" minOccurs="0" />
+          <xsd:element name="list-of-degradation-parameters"
+                       type="ListOfDegradationParameters" minOccurs="0" />
+          <xsd:element name="state-equation" type="StateEquation" minOccurs="0" />
+          <xsd:element name="parameter-inequalities"
+                       type="ParameterInequalities" minOccurs="0" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:element name="variable" type="Variable" abstract="true">
+    <xsd:annotation>
+      <xsd:documentation>
+        The Variable type is instanciated as abstract for use in the model.
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+
+  <xsd:element name="state-variable" type="StateVariable"
+               substitutionGroup="variable">
+    <xsd:annotation>
+      <xsd:documentation>
+        Instanciation of the StateVariable type, with variable as substitution
+        group.
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+
+  <xsd:element name="input-variable" type="InputVariable"
+               substitutionGroup="variable">
+    <xsd:annotation>
+      <xsd:documentation>
+        Instanciation of the InputVariable type, with variable as substitution
+        group.
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+
+  <xsd:complexType name="Model">
+    <xsd:annotation>
+      <xsd:documentation>
+        Model contains an optional comment plus a succession of input- and
+        state-variables.
+
+        The id attribute expresses the name of the model, and is used as
+        reference in GNA.
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="GBase">
+        <xsd:sequence>
+          <xsd:element ref="variable" minOccurs="1" maxOccurs="unbounded" />
+        </xsd:sequence>
+        <xsd:attribute name="id" type="Id" use="optional" />
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="Constraint">
+    <xsd:annotation>
+      <xsd:documentation>
+        A constraint is a math field that apply a constraint on a variable of
+        the model. This constraint is either an inequality operator, or an
+        equality one. The left hand side is always a variable reference, and
+        the RHS is either a simple parameter or a focal parameter (as defined
+        in the GNA syntax).
+
+        Example:
+        (...)
+        <constraint>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <leq />
+              <ci>x_a</ci>
+              <ci>max_a</ci>
+            </apply>
+          </math>
+        </constraint>
+        (...)
+
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="GBase">
+        <xsd:sequence>
+          <xsd:element ref="mml:math" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="IntervalDomain">
+    <xsd:annotation>
+      <xsd:documentation>
+        Interval domain isn't really used in GNAML, but is an abstract class
+        inherited by initial conditions, domain and focal set.
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="GBase">
+        <xsd:sequence>
+          <xsd:element name="constraint" type="Constraint" minOccurs="0"
+                       maxOccurs="unbounded" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="InitialConditions">
+    <xsd:annotation>
+      <xsd:documentation>
+        Initial conditions contain an optional comment followed by a list of
+        constraints.
+
+        The id attribute expresses the name of the initial conditions, and is
+        used as reference in GNA.
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="IntervalDomain">
+        <xsd:attribute name="id" type="Id" use="optional" />
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="Domain">
+    <xsd:annotation>
+      <xsd:documentation>
+        Domain of an atomic proposition (optional).
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="IntervalDomain" />
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="FocalSet">
+    <xsd:annotation>
+      <xsd:documentation>
+        Focal set of an atomic proposition (optional).
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="IntervalDomain" />
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="Derivative">
+    <xsd:annotation>
+      <xsd:documentation>
+        Derivative for a variable.
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="GBase">
+        <xsd:attribute name="variable" type="Id" use="required" />
+        <xsd:attribute name="value" type="DerivativeValue" use="required" />
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="Derivatives">
+    <xsd:annotation>
+      <xsd:documentation>
+        Derivatives of an atomic proposition (optional).
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="GBase">
+        <xsd:sequence>
+          <xsd:element name="derivative" type="Derivative" minOccurs="1"
+                       maxOccurs="unbounded" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="State">
+    <xsd:annotation>
+      <xsd:documentation>
+        State of an atomic proposition (optional).
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="GBase">
+        <xsd:attribute name="is-steady-state" type="xsd:boolean" use="optional"
+                       default="false" />
+        <xsd:attribute name="is-initial-state" type="xsd:boolean" use="optional"
+                       default="false" />
+        <xsd:attribute name="is-in-scc" type="xsd:boolean" use="optional"
+                       default="false" />
+        <xsd:attribute name="is-in-terminal-cycle" type="xsd:boolean"
+                       use="optional" default="false" />
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="AtomicProposition">
+    <xsd:annotation>
+      <xsd:documentation>
+        Atomic proposition contains optional domain, focal set, derivatives and
+        state description.
+
+        The id attribute expresses the name of the atomic proposition, and is
+        used as reference in GNA.
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="GBase">
+        <xsd:sequence>
+          <xsd:element name="domain" type="Domain" minOccurs="0"
+                       maxOccurs="1" />
+          <xsd:element name="focal-set" type="FocalSet" minOccurs="0"
+                       maxOccurs="1" />
+          <xsd:element name="derivatives" type="Derivatives" minOccurs="0"
+                       maxOccurs="1" />
+          <xsd:element name="state" type="State" minOccurs="0" maxOccurs="1" />
+        </xsd:sequence>
+        <xsd:attribute name="id" type="Id" use="required" />
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="Formula">
+    <xsd:simpleContent>
+      <xsd:extension base="xsd:string">
+        <xsd:attribute name="encoding" type="xsd:string" use="required"
+                      fixed="text" />
+      </xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="CtrlProperty">
+    <xsd:annotation>
+      <xsd:documentation>
+        Property. It only contains the formula, which is CDATA only.
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="GBase">
+        <xsd:sequence>
+          <xsd:element name="formula" type="Formula" minOccurs="1"
+                       maxOccurs="1" />
+        </xsd:sequence>
+        <xsd:attribute name="id" type="Id" use="optional" />
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:group name="ModelGroup">
+    <xsd:sequence>
+      <xsd:element name="model" type="Model">
+        <xsd:key name="Id">
+          <xsd:selector xpath="gna:input-variable|gna:state-variable|.//gna:zero-parameter
+                               |.//gna:box-parameter|.//gna:list-of-threshold-parameters/gna:threshold-parameter
+                               |.//gna:synthesis-parameter|.//gna:degradation-parameter"/>
+          <xsd:field xpath="@id"/>
+        </xsd:key>
+        <!-- referencing the network appropriately -->
+        <xsd:unique name="NetworkEntityId">
+          <xsd:selector xpath="gna:input-variable|gna:state-variable" />
+          <xsd:field xpath="@network-entity-id" />
+        </xsd:unique>
+      </xsd:element>
+      <xsd:element name="initial-conditions" type="InitialConditions"
+                   minOccurs="0" maxOccurs="unbounded" />
+      <xsd:element name="atomic-proposition" type="AtomicProposition"
+                   minOccurs="0" maxOccurs="unbounded" />
+      <xsd:element name="property" type="CtrlProperty"
+                   minOccurs="0" maxOccurs="unbounded" />
+    </xsd:sequence>
+  </xsd:group>
+
+  <xsd:element name="network" type="Network">
+    <!-- all network instances have a unique id for the network -->
+    <xsd:key name="NetworkObjectId">
+      <xsd:selector xpath=".//gna:entity|.//gna:reaction|gna:regulation|gna:gna-entity|gna:gna-regulation" />
+      <xsd:field xpath="@id" />
+    </xsd:key>
+    <!-- reaction sources and targets should reference entity ids-->
+    <xsd:key name="EntityId">
+      <xsd:selector xpath=".//gna:entity" />
+      <xsd:field xpath="@id" />
+    </xsd:key>
+    <xsd:keyref name="SimpleReactionSourceConstraint" refer="EntityId">
+      <xsd:selector xpath=".//gna:reaction" />
+      <xsd:field xpath="@source" />
+    </xsd:keyref>
+    <xsd:keyref name="SimpleReactionTargetConstraint" refer="EntityId">
+      <xsd:selector xpath=".//gna:reaction" />
+      <xsd:field xpath="@target" />
+    </xsd:keyref>
+    <xsd:keyref name="ComplexReactionSourceConstraint" refer="EntityId">
+      <xsd:selector xpath=".//gna:reaction/gna:list-of-sources/gna:source" />
+      <xsd:field xpath="@id" />
+    </xsd:keyref>
+    <xsd:keyref name="ComplexReactionTargetConstraint" refer="EntityId">
+      <xsd:selector xpath=".//gna:reaction/gna:list-of-targets/gna:target" />
+      <xsd:field xpath="@id" />
+    </xsd:keyref>
+    <!-- regulation sources must references entities, targets reactions -->
+    <xsd:key name="ReactionId">
+      <xsd:selector xpath=".//gna:reaction" />
+      <xsd:field xpath="@id" />
+    </xsd:key>
+    <xsd:keyref name="RegulationSourceConstraint" refer="EntityId">
+      <xsd:selector xpath="gna:regulation" />
+      <xsd:field xpath="@source" />
+    </xsd:keyref>
+    <xsd:keyref name="RegulationTargetConstraint" refer="ReactionId">
+      <xsd:selector xpath="gna:regulation" />
+      <xsd:field xpath="@target" />
+    </xsd:keyref>
+    <!-- gna entitiy surrounds must refer to entities -->
+    <xsd:keyref name="GNAEntitySurroundsConstraint" refer="EntityId">
+      <xsd:selector xpath="gna:gna-entity/gna:surrounds" />
+      <xsd:field xpath="@id" />
+    </xsd:keyref>
+    <!-- gna regulation must reference gna entities -->
+    <xsd:key name="GNAEntityId">
+      <xsd:selector xpath="gna:gna-entity" />
+      <xsd:field xpath="@id" />
+    </xsd:key>
+    <xsd:keyref name="GNARegulationSourceConstraint" refer="GNAEntityId">
+      <xsd:selector xpath="gna:gna-regulation" />
+      <xsd:field xpath="@source" />
+    </xsd:keyref>
+    <xsd:keyref name="GNARegulationTargetConstraint" refer="GNAEntityId">
+      <xsd:selector xpath="gna:gna-regulation" />
+      <xsd:field xpath="@target" />
+    </xsd:keyref>
+    <!-- layout ids must refer to network objetcs -->
+    <xsd:key name="AllNetworkEntityId">
+      <xsd:selector xpath=".//gna:entity|gna:gna-entity" />
+      <xsd:field xpath="@id" />
+    </xsd:key>
+    <xsd:keyref name="LayoutBoundsConstraint" refer="AllNetworkEntityId">
+      <xsd:selector xpath="gna:layout/gna:bounds
+                           |gna:layout/gna:complex-routing/gna:input-routing
+                           |gna:layout/gna:complex-routing/gna:output-routing" />
+      <xsd:field xpath="@id" />
+    </xsd:keyref>
+    <xsd:key name="AllNetworkEdgeId">
+      <xsd:selector xpath=".//gna:reaction|gna:regulation|gna:gna-regulation" />
+      <xsd:field xpath="@id" />
+    </xsd:key>
+    <xsd:keyref name="LayoutRoutingConstraint" refer="AllNetworkEdgeId">
+      <xsd:selector xpath="gna:layout/gna:routing|gna:layout/gna:complex-routing" />
+      <xsd:field xpath="@id" />
+    </xsd:keyref>
+  </xsd:element>
+
+  <xsd:complexType name="Gnaml">
+    <xsd:annotation>
+      <xsd:documentation>
+        gnaml is the container for the network, model and co.
+
+        The version attribute must be '1.0'
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="GBase">
+        <xsd:choice>
+          <xsd:sequence>
+            <xsd:element ref="network" />
+            <xsd:group ref="ModelGroup" minOccurs="0" />
+          </xsd:sequence>
+          <xsd:sequence>
+            <xsd:group ref="ModelGroup" />
+          </xsd:sequence>
+        </xsd:choice>
+        <xsd:attribute name="version" type="xsd:string" use="required"
+                       fixed="1.0" />
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:element name="gnaml" type="Gnaml">
+    <xsd:annotation>
+      <xsd:documentation>
+        Instanciation of the Gnaml type.
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:unique name="APId">
+      <xsd:selector xpath="gna:atomic-proposition"/>
+      <xsd:field xpath="@id"/>
+    </xsd:unique>
+    <xsd:unique name="ICId">
+      <xsd:selector xpath="gna:initial-conditions"/>
+      <xsd:field xpath="@id"/>
+    </xsd:unique>
+    <xsd:unique name="CPId">
+      <xsd:selector xpath="gna:property"/>
+      <xsd:field xpath="@id"/>
+    </xsd:unique>
+    <xsd:key name="NetworkVariableId">
+      <!-- to do this correctly, we should select only the subpath of
+            gna-entities whose type is 'GNAVariable', but this is not allowed
+            in the XML schema specification -->
+      <xsd:selector xpath="gna:network/gna:gna-entity" />
+      <xsd:field xpath="@id" />
+    </xsd:key>
+    <xsd:keyref name="NetworkVariableIdConstraint"
+                refer="NetworkVariableId">
+      <xsd:selector xpath="gna:model/gna:input-variable|gna:model/gna:state-variable" />
+      <xsd:field xpath="@network-entity-id" />
+    </xsd:keyref>
+  </xsd:element>
+
+</xsd:schema>

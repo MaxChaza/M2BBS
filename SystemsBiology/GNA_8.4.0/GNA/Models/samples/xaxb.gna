@@ -1,0 +1,26 @@
+/*
+xaxb.gna
+  two-gene model used in HSCC05, IJCAI05, and ISMB05
+*/
+
+state-variable: xa
+  zero-parameter: z_xa
+  box-parameter: max_xa
+  threshold-parameters: t_xa1, t_xa2
+  synthesis-parameters: k_xa
+  degradation-parameters: g_xa
+  state-equation:
+    d/dt xa = k_xa * s-(xa, t_xa2)  * s-(xb,t_xb) - g_xa * xa
+  parameter-inequalities:
+    z_xa < t_xa1 < t_xa2 < k_xa/g_xa < max_xa 
+
+state-variable: xb
+  zero-parameter: z_xb
+  box-parameter: max_xb
+  threshold-parameters: t_xb
+  synthesis-parameters: k_xb
+  degradation-parameters: g_xb
+  state-equation:
+    d/dt xb = k_xb * s-(xa, t_xa1)  - g_xb * xb
+  parameter-inequalities:
+    z_xb < t_xb < k_xb/g_xb < max_xb 

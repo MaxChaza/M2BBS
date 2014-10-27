@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><META http-equiv="Content-Type" content="text/html; charset=iso-8859-1"><title>3.2.&nbsp;Syntax of GNA initial conditions</title><link href="style.css" rel="stylesheet" type="text/css"><meta content="DocBook XSL Stylesheets V1.75.2" name="generator"><link rel="home" href="index.html" title="Genetic Network Analyzer Tutorial"><link rel="up" href="ch03.html" title="Part 3. Appendices"><link rel="prev" href="ch03.html" title="Part 3. Appendices"><link rel="next" href="ch03s03.html" title="3.3.&nbsp;Syntax of CTRL property"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div id="banner"></div><div align="right">31 July 2012</div><p class="navigation_current_title">Part 3. Appendices<br>3.2.&nbsp;Syntax of GNA initial conditions</p><div class="navigationmenu"><div class="navigation_bgleft"></div><div class="navigation_bgright"></div><div class="navigation_bgmiddle"></div><div class="button prevbutton"><a title="Previous" accesskey="p" href="ch03.html">Prev</a></div><div class="button nextbutton"><a title="Next" accesskey="n" href="ch03s03.html">Next</a></div><div class="menubuttons"><div style="float:left;" class="button"><a title="Up" accesskey="u" href="ch03.html">Up</a></div><div style="float:right;" class="button"><a title="Home" accesskey="h" href="index.html">Home</a></div></div><div style="clear:both;"></div><div class="navigation_titles"><div style="float:left;">Part 3. Appendices</div><div style="float:right;">3.3.&nbsp;Syntax of CTRL property</div></div><div style="clear:both;"></div></div><div class="section" title="3.2.&nbsp;Syntax of GNA initial conditions"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="iogma.gna.help.appendix.initialconditions_syntax"></a>3.2.&nbsp;Syntax of GNA initial conditions</h2></div></div></div><p>The initial conditions file specifies the initial domain(s), and
+    hence initial qualitative state(s), from which the genetic regulatory
+    network is to be simulated. Initial conditions files have the
+    extension<code class="filename">.dat</code> and can be edited using any text
+    editor.</p><div class="section" title="3.2.1.&nbsp;Syntactic conventions"><div class="titlepage"><div><div><h3 class="title"><a name="N10FED"></a>3.2.1.&nbsp;Syntactic conventions</h3></div></div></div><p>Terminals are written in <span class="bold"><strong>bold</strong></span>,
+      whereas non-terminals are written in <span class="emphasis"><em>italics</em></span>.
+      Furthermore,</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem" style="list-style-type: disc"><p>| separates alternatives;</p></li><li class="listitem" style="list-style-type: disc"><p>(...) delimitates a block composed of several
+          alternatives;</p></li><li class="listitem" style="list-style-type: disc"><p>[...] delimitates an optional block;</p></li><li class="listitem" style="list-style-type: disc"><p>[...]<sup>*</sup> denotes a block repeated any
+          (possibly 0) number of times;</p></li><li class="listitem" style="list-style-type: disc"><p>[...]<sup>+ </sup>denotes a block repeated at
+          least once.</p></li></ul></div></div><div class="section" title="3.2.2.&nbsp;BNF of an initial conditions file"><div class="titlepage"><div><div><h3 class="title"><a name="N11011"></a>3.2.2.&nbsp;BNF of an initial conditions file</h3></div></div></div><p>The BNF definition of the syntax of the GNA initial conditions is
+      shown below. The axiom is
+      <span class="emphasis"><em>initial-conditions</em></span>.</p><div class="sidebar"><p xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:date="http://exslt.org/dates-and-times" class="title"></p><p><span class="emphasis"><em>initial-conditions</em></span> ::= <span class="bold"><strong>initial-conditions:
+        </strong></span>[<span class="emphasis"><em>initial-condition</em></span> <span class="bold"><strong>;</strong></span> ]<sup>+</sup></p><p><span class="emphasis"><em>initial-condition </em></span>::=
+        <span class="emphasis"><em>idf</em></span> <span class="bold"><strong>&lt;</strong></span><span class="emphasis"><em> idf</em></span> |
+        <span class="emphasis"><em>idf</em></span> <span class="bold"><strong>&gt;</strong></span><span class="emphasis"><em> idf</em></span>
+        |<span class="emphasis"><em>idf</em></span> <span class="bold"><strong>&lt;=</strong></span><span class="emphasis"><em> idf</em></span>
+        |<span class="emphasis"><em>idf</em></span> <span class="bold"><strong>&gt;=</strong></span><span class="emphasis"><em> idf</em></span></p><p><span class="emphasis"><em>idf</em></span> ::= (<span class="bold"><strong>a</strong></span>
+        |..| <span class="bold"><strong>z </strong></span>|<span class="bold"><strong>
+        A</strong></span> |..| <span class="bold"><strong>Z</strong></span>) [<span class="bold"><strong>a</strong></span> |..|<span class="bold"><strong>z
+        </strong></span>|<span class="bold"><strong> A</strong></span> |..| <span class="bold"><strong>Z </strong></span>|<span class="bold"><strong> 0</strong></span> |..|
+        <span class="bold"><strong>9 </strong></span>|<span class="bold"><strong> _
+        </strong></span>]*</p></div><p>Comments can be inserted into the files. The syntax of comments
+      follows the rules for comments in languages like C: multi-line comments
+      are placed between <span class="bold"><strong>/*</strong></span> and <span class="bold"><strong>*/</strong></span>, while single-line comments are placed after
+      characters <span class="bold"><strong>//</strong></span>.</p></div><div class="section" title="3.2.3.&nbsp;Additional constraints"><div class="titlepage"><div><div><h3 class="title"><a name="N11090"></a>3.2.3.&nbsp;Additional constraints</h3></div></div></div><p>In the above syntax, for each of the alternative
+      <span class="emphasis"><em>initial-condition</em></span> expressions, the first
+      <span class="emphasis"><em>idf</em></span> is a state or input variable and the second
+      <span class="emphasis"><em>idf</em></span> either the box parameter, the zero parameter,
+      or one of the threshold parameters of the variable. Initial conditions
+      come in pairs for each variable, the first one giving its lower bound,
+      the second one its upper bound. For the lower bound, the operator must
+      be <span class="bold"><strong>&gt;=</strong></span>, if the right-hand side
+      parameter is a zero parameter, and <span class="bold"><strong>&gt;</strong></span>, if it is a threshold parameter. For the
+      upper bound, the operator must be <span class="bold"><strong>&lt;=</strong></span>, if the right-hand side parameter is a box
+      parameter, and <span class="bold"><strong>&lt;</strong></span>, if it is a
+      threshold parameter. The order of the threshold parameters, zero
+      parameters, and box parameters given in the model file must be
+      respected. Examples of initial conditions files can be consulted in the
+      <code class="filename">samples</code> directory of the GNA distribution.</p></div></div><div class="navigationmenu"><div class="navigation_bgleft"></div><div class="navigation_bgright"></div><div class="navigation_bgmiddle"></div><div class="button prevbutton"><a title="Previous" accesskey="p" href="ch03.html">Prev</a></div><div class="button nextbutton"><a title="Next" accesskey="n" href="ch03s03.html">Next</a></div><div class="menubuttons"><div style="float:left;" class="button"><a title="Up" accesskey="u" href="ch03.html">Up</a></div><div style="float:right;" class="button"><a title="Home" accesskey="h" href="index.html">Home</a></div></div><div style="clear:both;"></div><div class="navigation_titles"><div style="float:left;">Part 3. Appendices</div><div style="float:right;">3.3.&nbsp;Syntax of CTRL property</div></div><div style="clear:both;"></div></div><div align="right"><a href="http://www.inria.fr"><img src="images/logo_inria.jpg"></a><a href="http://www.genostar.com"><img src="images/logo_genostar2.jpg"></a></div></body></html>

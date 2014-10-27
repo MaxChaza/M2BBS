@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gnaml xmlns="http://www-gna.inrialpes.fr/gnaml/version1" version="1.0">
+   <model id="testexample">
+      <state-variable id="X_a">
+         <zero-parameter id="z_a"/>
+         <box-parameter id="max_a"/>
+         <list-of-threshold-parameters>
+            <threshold-parameter id="t_a_1"/>
+            <threshold-parameter id="t_a_2"/>
+         </list-of-threshold-parameters>
+         <list-of-synthesis-parameters>
+            <synthesis-parameter id="k_a"/>
+         </list-of-synthesis-parameters>
+         <list-of-degradation-parameters>
+            <degradation-parameter id="g_a"/>
+         </list-of-degradation-parameters>
+         <state-equation>
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+               <semantics>
+                  <apply>
+                     <minus/>
+                     <apply>
+                        <times/>
+                        <ci>k_a</ci>
+                        <apply>
+                           <csymbol definitionURL="http://www-gna.inrialpes.fr/gnaml/symbols/step-minus"
+                                    encoding="text">s-</csymbol>
+                           <ci>X_a</ci>
+                           <ci>t_a_2</ci>
+                        </apply>
+                        <apply>
+                           <csymbol definitionURL="http://www-gna.inrialpes.fr/gnaml/symbols/step-minus"
+                                    encoding="text">s-</csymbol>
+                           <ci>X_b</ci>
+                           <ci>t_b_1</ci>
+                        </apply>
+                     </apply>
+                     <apply>
+                        <times/>
+                        <ci>g_a</ci>
+                        <ci>X_a</ci>
+                     </apply>
+                  </apply>
+                  <annotation encoding="text">d/dt X_a = k_a * s-(X_a, t_a_2) * s-(X_b, t_b_1) - g_a * X_a</annotation>
+               </semantics>
+            </math>
+         </state-equation>
+         <parameter-inequalities>
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+               <apply>
+                  <lt/>
+                  <ci>z_a</ci>
+                  <ci>t_a_1</ci>
+                  <ci>t_a_2</ci>
+                  <apply>
+                     <divide/>
+                     <ci>k_a</ci>
+                     <ci>g_a</ci>
+                  </apply>
+                  <ci>max_a</ci>
+               </apply>
+            </math>
+         </parameter-inequalities>
+      </state-variable>
+      <state-variable id="X_b">
+         <zero-parameter id="z_b"/>
+         <box-parameter id="max_b"/>
+         <list-of-threshold-parameters>
+            <threshold-parameter id="t_b_1"/>
+            <threshold-parameter id="t_b_2"/>
+         </list-of-threshold-parameters>
+         <list-of-synthesis-parameters>
+            <synthesis-parameter id="k_b"/>
+         </list-of-synthesis-parameters>
+         <list-of-degradation-parameters>
+            <degradation-parameter id="g_b"/>
+         </list-of-degradation-parameters>
+         <state-equation>
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+               <semantics>
+                  <apply>
+                     <minus/>
+                     <apply>
+                        <times/>
+                        <ci>k_b</ci>
+                        <apply>
+                           <csymbol definitionURL="http://www-gna.inrialpes.fr/gnaml/symbols/step-minus"
+                                    encoding="text">s-</csymbol>
+                           <ci>X_b</ci>
+                           <ci>t_b_2</ci>
+                        </apply>
+                        <apply>
+                           <csymbol definitionURL="http://www-gna.inrialpes.fr/gnaml/symbols/step-minus"
+                                    encoding="text">s-</csymbol>
+                           <ci>X_a</ci>
+                           <ci>t_a_1</ci>
+                        </apply>
+                     </apply>
+                     <apply>
+                        <times/>
+                        <ci>g_b</ci>
+                        <ci>X_b</ci>
+                     </apply>
+                  </apply>
+                  <annotation encoding="text">d/dt X_b = k_b * s-(X_b, t_b_2) * s-(X_a, t_a_1) - g_b * X_b</annotation>
+               </semantics>
+            </math>
+         </state-equation>
+         <parameter-inequalities>
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+               <apply>
+                  <lt/>
+                  <ci>z_b</ci>
+                  <ci>t_b_1</ci>
+                  <ci>t_b_2</ci>
+                  <apply>
+                     <divide/>
+                     <ci>k_b</ci>
+                     <ci>g_b</ci>
+                  </apply>
+                  <ci>max_b</ci>
+               </apply>
+            </math>
+         </parameter-inequalities>
+      </state-variable>
+   </model>
+   <initial-conditions id="testexample">
+      <constraint>
+         <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+               <gt/>
+               <ci>X_a</ci>
+               <ci>t_a_1</ci>
+            </apply>
+         </math>
+      </constraint>
+      <constraint>
+         <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+               <lt/>
+               <ci>X_a</ci>
+               <ci>t_a_2</ci>
+            </apply>
+         </math>
+      </constraint>
+      <constraint>
+         <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+               <geq/>
+               <ci>X_b</ci>
+               <ci>z_b</ci>
+            </apply>
+         </math>
+      </constraint>
+      <constraint>
+         <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+               <lt/>
+               <ci>X_b</ci>
+               <ci>t_b_2</ci>
+            </apply>
+         </math>
+      </constraint>
+   </initial-conditions>
+</gnaml>

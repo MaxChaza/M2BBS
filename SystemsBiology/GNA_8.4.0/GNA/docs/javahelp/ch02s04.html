@@ -1,0 +1,67 @@
+<html><head><META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>2.4.&nbsp;Running simulations</title><link href="javahelp.css" rel="stylesheet" type="text/css"><meta content="DocBook XSL Stylesheets V1.75.2" name="generator"><link rel="home" href="index.html" title="Genetic Network Analyzer Tutorial"><link rel="up" href="ch02.html" title="Part 2. Using GNA"><link rel="prev" href="ch02s03.html" title="2.3.&nbsp;Specifying initial conditions"><link rel="next" href="ch02s05.html" title="2.5.&nbsp;Interpreting simulation results"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="section" title="2.4.&nbsp;Running simulations"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="iogma.gna.help.using.running_simulations"></a>2.4.&nbsp;Running simulations</h2></div></div></div><p>In every domain of the phase space, the system behaves in a
+    qualitatively identical way, in the sense that the concentration variables
+    have a unique derivative sign pattern in the domain (see the section on
+    the <a class="link" href="ch02s03.html" title="2.3.&nbsp;Specifying initial conditions">specification
+    of initial conditions</a>). For this reason, a domain can be seen as
+    representing a <span class="bold"><strong>qualitative state</strong></span> of the
+    system. A <span class="bold"><strong>transition</strong></span> between qualitative
+    states occurs, if the concentration variables have evolved in such a way
+    that the system leaves one domain and enters another. The simulation
+    algorithm of GNA recursively computes all qualitative states that are
+    reachable through one or more transitions from the qualitative state(s)
+    corresponding to the initial domain(s). This results in a <span class="bold"><strong>state transition graph</strong></span>, summarizing the qualitative
+    dynamics of the system. The graph contains <span class="bold"><strong>qualitative steady states</strong></span> or <span class="bold"><strong>qualitative cycles</strong></span>, which may correspond to steady
+    states and limit cycles, respectively, of the underlying piecewise-linear
+    differential equations. Notice that, due to the mathematical techniques
+    used to describe the dynamics of the system in threshold planes, the
+    steady states located on the thresholds of the concentration variables may
+    be sets instead of points (see the <a class="link" href="ch01.html#iogma.gna.help.overview.whatis_gna" title="1.1.&nbsp;What is GNA?">GNA publications</a> for
+    mathematical details).</p><p>Once you have defined a model of the genetic regulatory network and
+    appropriate initial conditions, GNA allows you to perform a qualitative
+    simulation of the network. First, you need to define the simulation
+    parameters, either by choosing <span class="guisubmenu">Specify simulation</span>
+    in the <span class="guimenu">Analysis</span> menu, or by pressing the corresponding
+    button in the <span class="guilabel">Initial conditions</span> window. This opens
+    the <span class="guilabel">Properties</span> page of the
+    <span class="guilabel">Simulation</span> window, in which you can set the time-out
+    parameter and the maximum number of states of the state transition graph
+    that will be displayed. In addition, you can specify whether the
+    simulation should be constrained to the initial conditions only or not.
+    That is, by checking this option GNA only computes the transitions between
+    the qualitative states corresponding to domains included in the initial
+    conditions, and does not consider transitions to other states. This gives
+    rise to a reduced state transition graph, summarizing the qualitative
+    dynamics of the system in a specific region of the phase space, for
+    instance the dynamics of the system around a steady state.</p><p>The actual simulation is launched by choosing
+    <span class="guibutton">Run</span> in the <span class="guilabel">Simulation</span> window
+    or in the <span class="guimenu">Analysis</span> menu. The program displays run-time
+    statistics in the <span class="guilabel">Simulation</span> window, as shown in
+    figure <a class="xref" href="ch02s04.html#figure.simulation_window" title="Fig.&nbsp;2.11.&nbsp;&nbsp;Simulation window after running the model of the genetic regulatory network in Figure&nbsp;2.1">Figure&nbsp;2.11</a>, and allows you to
+    abort the simulation.</p><div class="figure"><a name="figure.simulation_window"></a><div class="figure-contents"><div class="mediaobject" align="center"><img src="images/GNAscreen7.png" align="middle" alt="Simulation window after running the model of the genetic regulatory network in"></div></div><p class="title"><b>Fig.&nbsp;2.11.&nbsp;&nbsp;<span class="guilabel">Simulation</span> window after running the model of
+      the genetic regulatory network in <a class="xref" href="ch02.html#figure.network" title="Fig.&nbsp;2.1.&nbsp;&nbsp;Schema of simple genetic regulatory network">Figure&nbsp;2.1</a></b></p></div><br class="figure-break"><p>A qualitative simulation can also be launched from the console using
+    the MS-DOS, Linux, Unix, or MacOS command:</p><pre class="screen">gna [-p] [-v] [-q] [-e &lt;plugin-directory&gt;]
+    [-f] [-i &lt;file&gt;] &lt;project/model&gt;</pre><p>The argument <code class="option">project/model</code> is mandatory and refers
+    to the project file (extension <code class="filename">.gnaml</code>) or the model file used in previous
+    GNA releases (extension <code class="filename">.gna</code>). The
+    <code class="option">-p</code> option (also accessible through
+    <code class="option">--presentation-mode</code>) is set to <em class="parameter"><code>user</code></em> when GNA is started from the command line
+    by the user, and to <em class="parameter"><code>system</code></em> when GNA
+    is called from within another application. The trace level determines the
+    amount of trace information generated during the simulation, and can be
+    adjusted through the <code class="option">-v</code> (<code class="option">--verbose</code>) and
+    <code class="option">-q</code> (<code class="option">--quiet</code>) options. If the project
+    does not contain any initial conditions, and the <code class="option">-i</code>
+    (<code class="option">--initial-conditions</code>) option is not specified, the
+    regulatory network is simulated for all possible initial conditions. That
+    is, GNA generates a state transition graph containing all possible
+    qualitative states of the system. (However, note that in enumerating the
+    possible qualitative states, GNA omits any qualitative states associated
+    with domains in which an input variable assumes a threshold value).</p><p>As will be explained in section <a class="xref" href="ch02s07.html" title="2.7.&nbsp;Checking properties of the state transition graph">Section&nbsp;2.7</a>, the simulation
+    results can be analyzed by means of a model checker. The command
+    <span class="command"><strong>gna</strong></span> is able to generate model-checker specific output,
+    as defined by customized plug-ins. The option <code class="option">-e</code>
+    (<code class="option">--export</code>) provides the plug-in directory to be used. If
+    the simulation results are in the form of an explicit state transition
+    graph, one can additionally filter the instantaneous states of the state
+    transition graph through the <code class="option">-f</code> option
+    (<code class="option">--filter-instantaneous-states</code>).</p><p>The command</p><pre class="screen">gna --help</pre><p>displays the meaning of the arguments.</p></div></body></html>
