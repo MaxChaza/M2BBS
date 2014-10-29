@@ -1,0 +1,9 @@
+#install4j response file for Genetic Network Analyzer 8.4.0
+#Tue Nov 20 10:31:07 CET 2012
+executeLauncherAction$Boolean=true
+sys.programGroup.linkDir=/usr/local/bin
+sys.languageId=en
+sys.installationDir=/home/quentin/GNA_8.4.0
+sys.programGroup.enabled$Boolean=false
+sys.programGroup.allUsers$Boolean=true
+sys.programGroup.name=Genetic Network Analyzer
