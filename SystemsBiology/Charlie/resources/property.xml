@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
-<properties>
-<comment>Properties for ToolGuiGenerator</comment>
-<entry key="tool_0">D:\Eigene Dateien\Diplom\Sourcecode\modelchecker\windows\iddmc_win.xml</entry>
-<entry key="loadLastSession">true</entry>
-<entry key="maxLogFileSize">10240</entry>
-<entry key="maxSessionCount">5</entry>
-</properties>

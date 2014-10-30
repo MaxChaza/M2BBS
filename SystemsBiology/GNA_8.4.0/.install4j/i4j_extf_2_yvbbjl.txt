@@ -1,6 +1,0 @@
-GNA (Genetic Network Analyzer) is a computer tool for the qualitative modeling and simulation of genetic regulatory networks. The aim of GNA is to assist biologists and bioinformaticians in constructing a model of a genetic regulatory network using knowledge about regulatory interactions in combination with gene expression data.
-
-The current version is GNA 8.4. In comparison with the previously distributed version, GNA 8 has the following main additional features:
-
- - A network editor for building a graphical representation of your network, adhering to the SBGN standards
- - A wizard for assisting you in translating the network representation to a simulation model

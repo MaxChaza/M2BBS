@@ -1,3 +1,0 @@
-initial-conditions:
-xa > t_xa2; xa <= max_xa;
-xb > t_xb; xb <= max_xb;

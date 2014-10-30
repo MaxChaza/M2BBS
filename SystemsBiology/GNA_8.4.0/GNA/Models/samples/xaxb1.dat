@@ -1,3 +1,0 @@
-initial-conditions:
-xa >= z_xa; xa < t_xa1;
-xb >= z_xb; xb < t_xb;

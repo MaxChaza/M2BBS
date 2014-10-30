@@ -1,4 +1,0 @@
-initial-conditions:
-x_a >= z_a; x_a < t_a2;
-x_b >= z_b; x_b < t_b;
-x_c >= z_c; x_c < t_c2;
