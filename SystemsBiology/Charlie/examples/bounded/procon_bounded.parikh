@@ -1,4 +1,0 @@
-parikh vector transition=
-1	|	0.produce		:4,
-	|	1.send		:3,
-	|	2.receive		:1
